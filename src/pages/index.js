@@ -1,16 +1,47 @@
 import React from "react";
-import {FormattedMessage} from "react-intl";
+import { FormattedMessage } from "react-intl";
 import LinkTranslated from "../LinkTranslated";
 import SimpleLocalize from "../SimpleLocalize";
+import { Navbar, Container, Offcanvas, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
-import Layout from '../components/layout'
+import Header from '../components/header'
 
 function IndexPage(props) {
   // const language = props.pageContext.language;
   return (
-    <Layout>
 
     <SimpleLocalize {...props}>
+      <div>
+        <Navbar bg="light" expand={false}>
+          <Container fluid>
+            <Navbar.Brand href="#">norellanac</Navbar.Brand>
+            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+            <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id="offcanvasNavbarLabel">norellanac</Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#action1"><FormattedMessage
+                    id="hello-world"
+                    defaultMessage="Hello World!"
+                  /></Nav.Link>
+                  <Nav.Link href="/resume">
+                    <FormattedMessage
+                      id="resume"
+                      defaultMessage="Resume"
+                    />
+                  </Nav.Link>
+                  <NavDropdown title="Lenguage" id="offcanvasNavbarDropdown">
+                    <NavDropdown.Item href="/">English (Default)</NavDropdown.Item>
+                    <NavDropdown.Item href="/es/">Español</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      </div>
       <h1>
         <FormattedMessage
           id="hello-world"
@@ -53,7 +84,6 @@ function IndexPage(props) {
       </ul>
 
     </SimpleLocalize>
-    </Layout>
   );
 }
 

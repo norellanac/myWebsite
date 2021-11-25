@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "SimpleLocalize Example",
+    title: "Nery Alexis Orellana | SoftWare Engineer",
   },
-  plugins: [],
+  pathPrefix: "/myWebsite",
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
+    `gatsby-plugin-fontawesome-css`,
+  ],
 };

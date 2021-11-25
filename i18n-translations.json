@@ -5,14 +5,27 @@
     "about-us" : "About us",
     "learn-more-about-us" : "Learn more about us",
     "homepage" : "Homepage",
-    "resume" : "Resume"
-  },
-  "pl" : {
-    "welcome-on-our-website" : "Witamy na naszej wielojęzycznej stronie internetowej",
-    "hello-world" : "Witaj Świecie!",
-    "about-us" : "O nas",
-    "learn-more-about-us" : "Dowiedz się więcej o nas",
-    "homepage" : "Strona główna"
+    "resume" : "Resume",
+    "phone": "Phone",
+    "email": "E-mail",
+    "adress": "Adress",
+    "website": "Website",
+    "education": "education",
+    "skills": "Skills",
+    "servers": "servers",
+    "experience": "Experience",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "example": "example",
+    "rp-": "rp-",
+    "example": "example"
   },
   "es" : {
     "welcome-on-our-website" : "Bienvenido a nuestro sitio web multilingüe",
@@ -20,6 +33,16 @@
     "about-us" : "Sobre nosotros",
     "learn-more-about-us" : "Más información sobre nosotros",
     "homepage" : "Página web",
-    "resume" : "Hoja de vida"
+    "resume" : "Hoja de vida",
+    "phone": "Phone",
+    "email": "E-mail",
+    "adress": "Adress",
+    "website": "Website",
+    "education": "education",
+    "skills": "Skills",
+    "servers": "servers",
+    "experience": "Empresas que formaron mi experiencia",
+    "example": "example"
+    
   }
 }
