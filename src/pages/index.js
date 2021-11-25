@@ -3,9 +3,13 @@ import {FormattedMessage} from "react-intl";
 import LinkTranslated from "../LinkTranslated";
 import SimpleLocalize from "../SimpleLocalize";
 
+import Layout from '../components/layout'
+
 function IndexPage(props) {
   // const language = props.pageContext.language;
   return (
+    <Layout>
+
     <SimpleLocalize {...props}>
       <h1>
         <FormattedMessage
@@ -30,6 +34,16 @@ function IndexPage(props) {
           defaultMessage="Learn more about us"
         />
       </LinkTranslated>
+      <p>hi</p>
+      <LinkTranslated
+        className="btn btn-link"
+        href="/resume"
+      >
+        <FormattedMessage
+          id="learn-more-about-us"
+          defaultMessage="resume"
+        />
+      </LinkTranslated>
 
 
       <ul>
@@ -39,6 +53,7 @@ function IndexPage(props) {
       </ul>
 
     </SimpleLocalize>
+    </Layout>
   );
 }
 

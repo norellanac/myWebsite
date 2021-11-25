@@ -4,7 +4,8 @@
     "hello-world" : "Hello World!",
     "about-us" : "About us",
     "learn-more-about-us" : "Learn more about us",
-    "homepage" : "Homepage"
+    "homepage" : "Homepage",
+    "resume" : "Resume"
   },
   "pl" : {
     "welcome-on-our-website" : "Witamy na naszej wielojęzycznej stronie internetowej",
@@ -18,6 +19,7 @@
     "hello-world" : "Hola, mundo.",
     "about-us" : "Sobre nosotros",
     "learn-more-about-us" : "Más información sobre nosotros",
-    "homepage" : "Página web"
+    "homepage" : "Página web",
+    "resume" : "Hoja de vida"
   }
 }
