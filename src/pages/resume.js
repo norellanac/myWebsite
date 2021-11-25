@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import SimpleLocalize from "../SimpleLocalize";
 import { FormattedMessage } from "react-intl";
 import LinkTranslated from "../LinkTranslated";
@@ -577,6 +578,9 @@ function ResumePage(props) {
                     <FontAwesomeIcon icon="check-square" />
                     Your <FontAwesomeIcon icon="coffee" /> is hot and ready!
                 </div>
+                <Link to="/" >
+              About
+            </Link>
             </div>
 
         </SimpleLocalize>
