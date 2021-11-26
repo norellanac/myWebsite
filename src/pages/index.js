@@ -41,12 +41,19 @@ function IndexPage(props) {
                   </Link>
                   <LinkTranslated
                     className="btn btn-link"
-                    href="/about"
+                    href={"https://norellanac.github.io/myWebsite"+props.location.pathname+"resume"}
                   >
                     <FormattedMessage
                       id="learn-more-about-us"
                       defaultMessage="Learn more about us"
                     />
+                  </LinkTranslated>
+
+                  <LinkTranslated
+                    className="btn btn-link"
+                    href={props.location.pathname+"resume"}
+                  >
+                    prueba resume href
                   </LinkTranslated>
                   <NavDropdown title="Lenguage" id="offcanvasNavbarDropdown">
                     <Link
