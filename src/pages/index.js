@@ -31,7 +31,7 @@ function IndexPage(props) {
                   /></Nav.Link>
                   <Link
                     className="nav-link"
-                    href="/resume"
+                    to="/resume/"
                   >
                     <FormattedMessage
                       id="resume"
@@ -41,13 +41,13 @@ function IndexPage(props) {
                   <NavDropdown title="Lenguage" id="offcanvasNavbarDropdown">
                     <Link
                       className="pl-4 dropdown-item nav-link "
-                      href="/"
+                      to="/"
                     >
                       English (Default)
                     </Link>
                     <Link
                       className="pl-4 dropdown-item nav-link"
-                      href="/es/"
+                      to="/es/"
                     >Español
                     </Link>
                   </NavDropdown>

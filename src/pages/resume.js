@@ -6,7 +6,7 @@ import LinkTranslated from "../LinkTranslated";
 import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Container, Col, Nav, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
+import { Row, Container, Col, Card, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
 
 function ResumePage(props) {
     // const language = props.pageContext.language;
@@ -16,7 +16,7 @@ function ResumePage(props) {
             <div>
                 <div>
 
-                    <section className="ftco-section services-section bg-light ftco-no-pb">
+                    <section className="bg-light">
                         <Container >
                             <Row>
                                 <Col xs={8} lg={8} md={8} className="align-self-stretch ftco-animate">
@@ -83,13 +83,13 @@ function ResumePage(props) {
                                 <Col xs={4} lg={4} md={4} className="ftco-animate justify-content-center">
                                     <div className="media block-6 services d-flex text-center">
                                         <div className="media-body">
-                                        <StaticImage
-                                                    src="../oldCv/img/logos/umg.png" alt="oracle"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={100}
-                                                    height={100}
-                                                />
+                                            <StaticImage
+                                                src="../oldCv/img/logos/umg.png" alt="oracle"
+                                                placeholder="blurred"
+                                                layout="fixed"
+                                                width={100}
+                                                height={100}
+                                            />
                                             <h3 className="" style={{ fontSize: "25px;" }}>
                                                 <FormattedMessage
                                                     id="education"
@@ -106,11 +106,11 @@ function ResumePage(props) {
                         </Container>
                     </section>
 
-                    <section className="ftco-section services-section bg-primary ftco-no-pb pb-5">
-                        <div className="container">
+                    <section className="bg-primary ftco-no-pb pb-5">
+                        <div className="container-fluid">
                             <div className="row justify-content-center mb-5 pb-3">
-                                <div className="col-md-7 text-center heading-section ftco-animate">
-                                    <h2 className="mb-4 text-light">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="mb-4 mt-4 text-light">
                                         <FormattedMessage
                                             id="skills"
                                             defaultMessage="skills"
@@ -118,146 +118,201 @@ function ResumePage(props) {
                                     </h2>
                                 </div>
                             </div>
+
+                            <div>
+                                <Row>
+                                    <Col xs={4}>
+                                        <Card
+                                            bg="light"
+                                            text="dark"
+                                            className="mb-2"
+                                        >
+                                            <Card.Header>Bases De Datos</Card.Header>
+                                            <Card.Body>
+
+                                                <div className="media-body">
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "80%" }}>
+                                                            <strong>MySql</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "60%" }}>
+                                                            <strong>DDL </strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "50%" }}>
+                                                            <strong>Triggers y cursores</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="mt-5">
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/mySql.png" alt="mySql"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={60}
+                                                            height={45}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/oracle.png" alt="oracle"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={45}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/postgres.png" alt="postgres"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={45}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col xs={4}>
+                                        <Card
+                                            bg="light"
+                                            text="dark"
+                                            className="mb-2"
+                                        >
+                                            <Card.Header>Front End</Card.Header>
+                                            <Card.Body>
+                                                <div className="">
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "90%" }}>
+                                                            <strong>Bootstrap</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "80%" }}>
+                                                            <strong> React Native</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "50%" }}>
+                                                            <strong>UI/UX</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="mt-5">
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/javascript.png" alt="javascript"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={60}
+                                                            height={45}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/bootstrap.png" alt="bootstrap"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={45}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/materialize.png" alt="materialize"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={45}
+                                                        />
+                                                    </div>
+
+                                                </div>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col xs={4}>
+                                        <Card
+                                            bg="light"
+                                            text="dark"
+                                            className="mb-2"
+                                        >
+                                            <Card.Header>Movil Apps</Card.Header>
+                                            <Card.Body>
+                                                <div >
+                                                    <div className="icon d-flex align-items-center justify-content-center">
+                                                        <span className="flaticon">
+                                                            <i className="fab fa-android"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div className="media-body pl-4">
+                                                        <div className="progress mt-3">
+                                                            <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                                style={{ width: "95%" }}>
+                                                                <strong>React Native</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div className="progress mt-3">
+                                                            <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                                style={{ width: "60%" }}>
+                                                                <strong>Redux</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div className="progress mt-3">
+                                                            <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                                style={{ width: "50%" }}>
+                                                                <strong>UI/UX</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div className="mt-5">
+                                                            <StaticImage
+                                                                className="ml-2 d-inline-block"
+                                                                src="../oldCv/img/logos/android.png" alt="android"
+                                                                placeholder="blurred"
+                                                                layout="fixed"
+                                                                width={60}
+                                                                height={45}
+                                                            />
+                                                            <StaticImage
+                                                                className="ml-2 d-inline-block"
+                                                                src="../oldCv/img/logos/reactjs.png" alt="reactjs"
+                                                                placeholder="blurred"
+                                                                layout="fixed"
+                                                                width={45}
+                                                                height={45}
+                                                            />
+                                                            <StaticImage
+                                                                className="ml-2 d-inline-block"
+                                                                src="../oldCv/img/logos/apple.png" alt="apple"
+                                                                placeholder="blurred"
+                                                                layout="fixed"
+                                                                width={45}
+                                                                height={45}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                            </div>
                             <div className="row">
-                                <div className="bg-light  col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
-                                    <div className="media block-6 services d-flex align-items-start">
-                                        <div className="icon d-flex align-items-center justify-content-center">
-                                            <span className="flaticon">
-                                                <FontAwesomeIcon icon={["fa", "database"]} />
-                                            </span>
-                                        </div>
-                                        <div className="media-body pl-4">
-                                            <h3 className="mb-3" style={{ fontSize: "25px;" }}>Bases De Datos</h3>
-                                            <div className="progress mt-5">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "80%" }}>
-                                                    <strong>MySql</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "60%" }}>
-                                                    <strong> Consultas y Reportes
-                                                    </strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "50%" }}>
-                                                    <strong>Triggers y cursores</strong>
-                                                </div>
-                                            </div>
-                                            <div className="mt-5">
-                                                <StaticImage
-                                                    className="ml-2 d-inline-block"
-                                                    src="../oldCv/img/logos/mySql.png" alt="mySql"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={45}
-                                                    height={45}
-                                                />
-                                                <StaticImage
-                                                    className="ml-2 d-inline-block"
-                                                    src="../oldCv/img/logos/oracle.png" alt="oracle"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={45}
-                                                    height={45}
-                                                />
-                                                <StaticImage
-                                                    className="ml-2 d-inline-block"
-                                                    src="../oldCv/img/logos/postgres.png" alt="postgres"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={45}
-                                                    height={45}
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
-                                    <div className="media block-6 services d-flex align-items-start">
-                                        <div className="icon d-flex align-items-center justify-content-center">
-                                            <span className="flaticon">
-                                                <i className="fab fa-react"></i>
-                                            </span>
-                                        </div>
-                                        <div className="media-body pl-4">
-                                            <h3 className="mb-3" style={{ fontSize: "25px;" }}>Front End</h3>
-                                            <div className="progress mt-5">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "90%" }}>
-                                                    <strong>Bootstrap</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "80%" }}>
-                                                    <strong> React Native</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "50%" }}>
-                                                    <strong>UI/UX</strong>
-                                                </div>
-                                            </div>
-                                            <div className="mt-5">
-                                                <img src="oldCv/img/logos/javascript.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/bootstrap.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/materialize.png" width="45px" className="ml-2 d-inline-block" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
-                                    <div className="media block-6 services d-flex align-items-start">
-                                        <div className="icon d-flex align-items-center justify-content-center">
-                                            <span className="flaticon">
-                                                <i className="fab fa-android"></i>
-                                            </span>
-                                        </div>
-                                        <div className="media-body pl-4">
-                                            <h3 className="mb-3" style={{ fontSize: "25px;" }}>Aplicaciones moviles</h3>
-                                            <div className="progress mt-5">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "95%" }}>
-                                                    <strong>React Native</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "60%" }}>
-                                                    <strong>Redux</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "50%" }}>
-                                                    <strong>UI/UX</strong>
-                                                </div>
-                                            </div>
-                                            <div className="mt-5">
-                                                <img src="oldCv/img/logos/android.png" width="40px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/reactjs.png" width="40px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/apple.png" width="45px" className="ml-2 d-inline-block" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div className="col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
                                     <div className="media block-6 services d-flex align-items-start">
                                         <div className="icon d-flex align-items-center justify-content-center">
@@ -609,6 +664,8 @@ function ResumePage(props) {
                     About
                 </Link>
             </div>
+
+
 
         </SimpleLocalize>
     );
