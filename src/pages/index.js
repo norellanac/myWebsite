@@ -29,33 +29,27 @@ function IndexPage(props) {
                     id="hello-world"
                     defaultMessage="Hello World!"
                   /></Nav.Link>
-                  <Nav.Link href="/resume">
-                    <Link
-                      className="nav-link"
-                      href="/resume"
-                    >
-                      <FormattedMessage
-                        id="resume"
-                        defaultMessage="Resume"
-                      />
-                    </Link>
-                  </Nav.Link>
+                  <Link
+                    className="nav-link"
+                    href="/resume"
+                  >
+                    <FormattedMessage
+                      id="resume"
+                      defaultMessage="Resume"
+                    />
+                  </Link>
                   <NavDropdown title="Lenguage" id="offcanvasNavbarDropdown">
-                    <NavDropdown.Item >
-                      <Link
-                        className="nav-link"
-                        href="/"
-                      >
-                        English (Default)
-                      </Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/es/">
-                      <Link
-                        className="nav-link"
-                        href="/es/"
-                      >Español
-                      </Link>
-                    </NavDropdown.Item>
+                    <Link
+                      className="pl-4 dropdown-item nav-link "
+                      href="/"
+                    >
+                      English (Default)
+                    </Link>
+                    <Link
+                      className="pl-4 dropdown-item nav-link"
+                      href="/es/"
+                    >Español
+                    </Link>
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>

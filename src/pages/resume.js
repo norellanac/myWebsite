@@ -15,15 +15,15 @@ function ResumePage(props) {
         <SimpleLocalize {...props}>
             <div>
                 <div>
-                    
+
                     <section className="ftco-section services-section bg-light ftco-no-pb">
                         <Container >
                             <Row>
-                                <Col  xs={8} lg={8} md={8} className="align-self-stretch ftco-animate">
+                                <Col xs={8} lg={8} md={8} className="align-self-stretch ftco-animate">
                                     <div className="media block-6 services d-flex align-items-start">
                                         <div className="icon d-flex align-items-center justify-content-center">
                                             <StaticImage
-                                                src="../img/norellanac1.png" alt="norellanac" alt="A dinosaur"
+                                                src="../img/norellanac1.png" alt="norellanac"
                                                 placeholder="blurred"
                                                 layout="fixed"
                                                 width={100}
@@ -82,8 +82,14 @@ function ResumePage(props) {
 
                                 <Col xs={4} lg={4} md={4} className="ftco-animate justify-content-center">
                                     <div className="media block-6 services d-flex text-center">
-                                        <div className="media-body ">
-                                            <img src="oldCv/img/umg.png" className="" style={{ height: "100px;" }} />
+                                        <div className="media-body">
+                                        <StaticImage
+                                                    src="../oldCv/img/logos/umg.png" alt="oracle"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={100}
+                                                    height={100}
+                                                />
                                             <h3 className="" style={{ fontSize: "25px;" }}>
                                                 <FormattedMessage
                                                     id="education"
@@ -113,7 +119,7 @@ function ResumePage(props) {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
+                                <div className="bg-light  col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
                                     <div className="media block-6 services d-flex align-items-start">
                                         <div className="icon d-flex align-items-center justify-content-center">
                                             <span className="flaticon">
@@ -145,9 +151,30 @@ function ResumePage(props) {
                                                 </div>
                                             </div>
                                             <div className="mt-5">
-                                                <img src="oldCv/img/logos/mySql.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/oracle.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/postgres.png" width="45px" className="ml-2 d-inline-block" />
+                                                <StaticImage
+                                                    className="ml-2 d-inline-block"
+                                                    src="../oldCv/img/logos/mySql.png" alt="mySql"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={45}
+                                                    height={45}
+                                                />
+                                                <StaticImage
+                                                    className="ml-2 d-inline-block"
+                                                    src="../oldCv/img/logos/oracle.png" alt="oracle"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={45}
+                                                    height={45}
+                                                />
+                                                <StaticImage
+                                                    className="ml-2 d-inline-block"
+                                                    src="../oldCv/img/logos/postgres.png" alt="postgres"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={45}
+                                                    height={45}
+                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -579,8 +606,8 @@ function ResumePage(props) {
                     Your <FontAwesomeIcon icon="coffee" /> is hot and ready!
                 </div>
                 <Link to="/" >
-              About
-            </Link>
+                    About
+                </Link>
             </div>
 
         </SimpleLocalize>
