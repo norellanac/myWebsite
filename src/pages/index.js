@@ -11,7 +11,7 @@ import Header from '../components/header'
 
 function IndexPage(props) {
   // const language = props.pageContext.language;
-  console.warn("lenguage: ",  props.location.pathname);
+  console.warn("lenguage: ",  props.location.href);
   return (
 
     <SimpleLocalize {...props}>
@@ -32,7 +32,7 @@ function IndexPage(props) {
                   /></Nav.Link>
                   <Link
                     className="nav-link"
-                    to={props.location.pathname + "resume/"}
+                    to={props.location.href + "resume/"}
                   >
                     <FormattedMessage
                       id="resume"
@@ -41,7 +41,7 @@ function IndexPage(props) {
                   </Link>
                   <LinkTranslated
                     className="btn btn-link"
-                    href={"https://norellanac.github.io/myWebsite"+props.location.pathname+"resume"}
+                    href={props.location.href+"resume"}
                   >
                     <FormattedMessage
                       id="learn-more-about-us"
@@ -51,7 +51,7 @@ function IndexPage(props) {
 
                   <LinkTranslated
                     className="btn btn-link"
-                    href={props.location.pathname+"resume"}
+                    href={props.location.href+"resume"}
                   >
                     prueba resume href
                   </LinkTranslated>
