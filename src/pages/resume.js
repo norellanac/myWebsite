@@ -19,7 +19,7 @@ function ResumePage(props) {
                     <section className="bg-light">
                         <Container >
                             <Row>
-                                <Col xs={8} lg={8} md={8} className="align-self-stretch ftco-animate">
+                                <Col xs={8} lg={8} md={8} className="align-self-stretch ">
                                     <div className="media block-6 services d-flex align-items-start">
                                         <div className="icon d-flex align-items-center justify-content-center">
                                             <StaticImage
@@ -84,7 +84,7 @@ function ResumePage(props) {
                                     <div className="media block-6 services d-flex text-center">
                                         <div className="media-body">
                                             <StaticImage
-                                                src="../oldCv/img/logos/umg.png" alt="oracle"
+                                                src="../oldCv/img/umg.png" alt="umg"
                                                 placeholder="blurred"
                                                 layout="fixed"
                                                 width={100}
@@ -106,9 +106,9 @@ function ResumePage(props) {
                         </Container>
                     </section>
 
-                    <section className="bg-primary ftco-no-pb pb-5">
+                    <section className="bg-primary ftco-no-pb">
                         <div className="container-fluid">
-                            <div className="row justify-content-center mb-5 pb-3">
+                            <div className="row justify-content-center mb-3">
                                 <div className="col-md-7 text-center">
                                     <h2 className="mb-4 mt-4 text-light">
                                         <FormattedMessage
@@ -152,14 +152,14 @@ function ResumePage(props) {
                                                             <strong>Triggers y cursores</strong>
                                                         </div>
                                                     </div>
-                                                    <div className="mt-5">
+                                                    <div className="mt-4">
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
                                                             src="../oldCv/img/logos/mySql.png" alt="mySql"
                                                             placeholder="blurred"
                                                             layout="fixed"
                                                             width={60}
-                                                            height={45}
+                                                            height={35}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
@@ -167,7 +167,7 @@ function ResumePage(props) {
                                                             placeholder="blurred"
                                                             layout="fixed"
                                                             width={45}
-                                                            height={45}
+                                                            height={35}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
@@ -175,7 +175,7 @@ function ResumePage(props) {
                                                             placeholder="blurred"
                                                             layout="fixed"
                                                             width={45}
-                                                            height={45}
+                                                            height={35}
                                                         />
                                                     </div>
                                                 </div>
@@ -212,14 +212,14 @@ function ResumePage(props) {
                                                             <strong>UI/UX</strong>
                                                         </div>
                                                     </div>
-                                                    <div className="mt-5">
+                                                    <div className="mt-4">
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
                                                             src="../oldCv/img/logos/javascript.png" alt="javascript"
                                                             placeholder="blurred"
                                                             layout="fixed"
                                                             width={60}
-                                                            height={45}
+                                                            height={35}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
@@ -227,7 +227,7 @@ function ResumePage(props) {
                                                             placeholder="blurred"
                                                             layout="fixed"
                                                             width={45}
-                                                            height={45}
+                                                            height={35}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
@@ -235,7 +235,7 @@ function ResumePage(props) {
                                                             placeholder="blurred"
                                                             layout="fixed"
                                                             width={45}
-                                                            height={45}
+                                                            height={35}
                                                         />
                                                     </div>
 
@@ -279,14 +279,14 @@ function ResumePage(props) {
                                                                 <strong>UI/UX</strong>
                                                             </div>
                                                         </div>
-                                                        <div className="mt-5">
+                                                        <div className="mt-4">
                                                             <StaticImage
                                                                 className="ml-2 d-inline-block"
                                                                 src="../oldCv/img/logos/android.png" alt="android"
                                                                 placeholder="blurred"
                                                                 layout="fixed"
                                                                 width={60}
-                                                                height={45}
+                                                                height={35}
                                                             />
                                                             <StaticImage
                                                                 className="ml-2 d-inline-block"
@@ -294,7 +294,7 @@ function ResumePage(props) {
                                                                 placeholder="blurred"
                                                                 layout="fixed"
                                                                 width={45}
-                                                                height={45}
+                                                                height={35}
                                                             />
                                                             <StaticImage
                                                                 className="ml-2 d-inline-block"
@@ -302,8 +302,201 @@ function ResumePage(props) {
                                                                 placeholder="blurred"
                                                                 layout="fixed"
                                                                 width={45}
-                                                                height={45}
+                                                                height={35}
                                                             />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                            </div>
+                            <div>
+                                <Row>
+                                    <Col xs={4}>
+                                        <Card
+                                            bg="light"
+                                            text="dark"
+                                            className="mb-2"
+                                        >
+                                            <Card.Header>Servidores</Card.Header>
+                                            <Card.Body>
+                                                <div >
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "80%" }}>
+                                                            <strong>Amazon EC2, Amazon RDS</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "75%" }}>
+                                                            <strong>Docker</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "50%" }}>
+                                                            <strong>kubernetes</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="mt-4">
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../img/aws.png" alt="aws"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={60}
+                                                            height={35}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/kubernetes.png" alt="kubernetes"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={35}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../img/docker1.png" alt="docker1"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={35}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col xs={4}>
+                                        <Card
+                                            bg="light"
+                                            text="dark"
+                                            className="mb-2"
+                                        >
+                                            <Card.Header>Back End</Card.Header>
+                                            <Card.Body>
+                                                <div >
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "90%" }}>
+                                                            <strong>Laravel Framework</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "60%" }}>
+                                                            <strong>Arquitectura De Software MVC</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="progress mt-3">
+                                                        <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                            style={{ width: "50%" }}>
+                                                            <strong>Microservicios</strong>
+                                                        </div>
+                                                    </div>
+                                                    <div className="mt-4">
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../img/laravel.png" alt="laravel"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={60}
+                                                            height={35}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/java.png" alt="java"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={35}
+                                                        />
+                                                        <StaticImage
+                                                            className="ml-2 d-inline-block"
+                                                            src="../oldCv/img/logos/spring.png" alt="spring"
+                                                            placeholder="blurred"
+                                                            layout="fixed"
+                                                            width={45}
+                                                            height={35}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                    <Col xs={4}>
+                                        <Card
+                                            bg="light"
+                                            text="dark"
+                                            className="mb-2"
+                                        >
+                                            <Card.Header>DevOps</Card.Header>
+                                            <Card.Body>
+                                                <div className="">
+                                                    <div className="">
+                                                        <div className="icon d-flex align-items-center justify-content-center">
+                                                            <span className="flaticon">
+                                                                <i className="fab fa-git-alt"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <div className="progress mt-3">
+                                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                                                    role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                                    style={{ width: "95%" }}>
+                                                                    <strong>Github</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div className="progress mt-3">
+                                                                <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                                                    role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                                    style={{ width: "60%" }}>
+                                                                    <strong>Scrum</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div className="progress mt-3">
+                                                                <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                                    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                                    style={{ width: "50%" }}>
+                                                                    <strong>CI/CD</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div className="mt-4">
+                                                                <StaticImage
+                                                                    className="ml-2 d-inline-block"
+                                                                    src="../oldCv/img/logos/github.png" alt="github"
+                                                                    placeholder="blurred"
+                                                                    layout="fixed"
+                                                                    width={60}
+                                                                    height={35}
+                                                                />
+                                                                <StaticImage
+                                                                    className="ml-2 d-inline-block"
+                                                                    src="../oldCv/img/logos/docker.png" alt="docker"
+                                                                    placeholder="blurred"
+                                                                    layout="fixed"
+                                                                    width={45}
+                                                                    height={35}
+                                                                />
+                                                                <StaticImage
+                                                                    className="ml-2 d-inline-block"
+                                                                    src="../oldCv/img/logos/linux.png" alt="linux"
+                                                                    placeholder="blurred"
+                                                                    layout="fixed"
+                                                                    width={45}
+                                                                    height={35}
+                                                                />
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -316,117 +509,14 @@ function ResumePage(props) {
                                 <div className="col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
                                     <div className="media block-6 services d-flex align-items-start">
                                         <div className="icon d-flex align-items-center justify-content-center">
-                                            <span className="flaticon-database">
-                                            </span>
-                                        </div>
-                                        <div className="media-body pl-4">
-                                            <h3 className="mb-3" style={{ fontSize: "25px" }}>Servidores</h3>
-                                            <div className="progress mt-5">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "80%" }}>
-                                                    <strong>Amazon EC2, Amazon RDS</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "75%" }}>
-                                                    <strong>Docker</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "50%" }}>
-                                                    <strong>kubernetes</strong>
-                                                </div>
-                                            </div>
-                                            <div className="mt-5">
-                                                <img src=".../img/aws.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/kubernetes.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src=".../img/docker1.png" width="45px" className="ml-2 d-inline-block" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
-                                    <div className="media block-6 services d-flex align-items-start">
-                                        <div className="icon d-flex align-items-center justify-content-center">
                                             <span className="flaticon">
                                                 <FontAwesomeIcon icon={["fal", "laptop-code"]} />
                                             </span>
                                         </div>
-                                        <div className="media-body pl-4">
-                                            <h3 className="mb-3" style={{ fontSize: "25px;" }}>Back End</h3>
-                                            <div className="progress mt-5">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "90%" }}>
-                                                    <strong>Laravel Framework</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "60%" }}>
-                                                    <strong>Arquitectura De Software MVC</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "50%" }}>
-                                                    <strong>Microservicios</strong>
-                                                </div>
-                                            </div>
-                                            <div className="mt-5">
-                                                <img src="oldCv/img/logos/java.png" width="40px" className="ml-2 d-inline-block" />
-                                                <img src=".../img/laravel.png" width="40px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/spring.png" width="40px" className="ml-2 d-inline-block" />
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 col-md-4 d-flex align-self-stretch ftco-animate">
-                                    <div className="media block-6 services d-flex align-items-start">
-                                        <div className="icon d-flex align-items-center justify-content-center">
-                                            <span className="flaticon">
-                                                <i className="fab fa-git-alt"></i>
-                                            </span>
-                                        </div>
-                                        <div className="media-body pl-4">
-                                            <h3 className="mb-3" style={{ fontSize: "25px;" }}>DevOps</h3>
-                                            <div className="progress mt-5">
-                                                <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "95%" }}>
-                                                    <strong>Github</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "60%" }}>
-                                                    <strong>Scrum</strong>
-                                                </div>
-                                            </div>
-                                            <div className="progress mt-3">
-                                                <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
-                                                    role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                    style={{ width: "50%" }}>
-                                                    <strong>CI/CD</strong>
-                                                </div>
-                                            </div>
-                                            <div className="mt-5">
-                                                <img src="oldCv/img/logos/github.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/docker.png" width="45px" className="ml-2 d-inline-block" />
-                                                <img src="oldCv/img/logos/linux.png" width="45px" className="ml-2 d-inline-block" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </section>
@@ -633,40 +723,7 @@ function ResumePage(props) {
                         </div>
                     </section>
                 </div>
-                <h1>
-                    <FormattedMessage
-                        id="about-us"
-                        defaultMessage="About us"
-                    />
-                </h1>
-                <h1>
-                    <FormattedMessage
-                        id="resume"
-                        defaultMessage="Test"
-                    />
-                </h1>
-                <LinkTranslated
-                    className="btn btn-link"
-                    href="/"
-                >
-                    <FormattedMessage
-                        id="homepage"
-                        defaultMessage="Homepage"
-                    />
-                </LinkTranslated>
-
-
-                <div>
-                    <FontAwesomeIcon icon="check-square" />
-                    Your <FontAwesomeIcon icon="coffee" /> is hot and ready!
-                </div>
-                <Link to="/" >
-                    About
-                </Link>
             </div>
-
-
-
         </SimpleLocalize>
     );
 }
