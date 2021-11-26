@@ -1,10 +1,11 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import LinkTranslated from "../LinkTranslated";
+import { StaticImage } from 'gatsby-plugin-image'
 import SimpleLocalize from "../SimpleLocalize";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container, Offcanvas, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import { Navbar, Container, Offcanvas, Nav, NavDropdown, Row, Col, Button } from 'react-bootstrap';
 
 import Header from '../components/header'
 
@@ -14,48 +15,10 @@ function IndexPage(props) {
 
     <SimpleLocalize {...props}>
       <div>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" variant="dark" expand={false}>
           <Container fluid>
-            <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: '100px' }}
-                navbarScroll
-              >
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
-                <NavDropdown title="Link" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link href="#" disabled>
-                  Link
-                </Nav.Link>
-              </Nav>
-              <Form className="d-flex">
-                <FormControl
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </div>
-      <div>
-        <Navbar bg="light" expand={false}>
-          <Container fluid>
-            <Navbar.Brand href="#">norellanac</Navbar.Brand>
-            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+            <Navbar.Brand href="#"><span className="text-light">norellanac</span></Navbar.Brand>
+            <Navbar.Toggle aria-controls="offcanvasNavbar" className="text-light" />
             <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id="offcanvasNavbarLabel">norellanac</Offcanvas.Title>
@@ -67,14 +30,32 @@ function IndexPage(props) {
                     defaultMessage="Hello World!"
                   /></Nav.Link>
                   <Nav.Link href="/resume">
-                    <FormattedMessage
-                      id="resume"
-                      defaultMessage="Resume"
-                    />
+                    <Link
+                      className="nav-link"
+                      href="/resume"
+                    >
+                      <FormattedMessage
+                        id="resume"
+                        defaultMessage="Resume"
+                      />
+                    </Link>
                   </Nav.Link>
                   <NavDropdown title="Lenguage" id="offcanvasNavbarDropdown">
-                    <NavDropdown.Item href="/">English (Default)</NavDropdown.Item>
-                    <NavDropdown.Item href="/es/">Español</NavDropdown.Item>
+                    <NavDropdown.Item >
+                      <Link
+                        className="nav-link"
+                        href="/"
+                      >
+                        English (Default)
+                      </Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/es/">
+                      <Link
+                        className="nav-link"
+                        href="/es/"
+                      >Español
+                      </Link>
+                    </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>
@@ -82,6 +63,65 @@ function IndexPage(props) {
           </Container>
         </Navbar>
       </div>
+      <section >
+        <Container>
+          <Row >
+            <Col xs={6} md={4} lg={4} className="mt-5"><StaticImage
+              src="../img/docker1.png" alt="docker1"
+              placeholder="blurred"
+              layout="fixed"
+              width={140}
+              height={110}
+            />
+            </Col>
+            <Col xs={6} md={4} lg={4} className="mt-5"><StaticImage
+              src="../img/laravel.png"
+              alt="laravel"
+              placeholder="blurred"
+              layout="fixed"
+              width={150}
+              height={110}
+            />
+            </Col>
+            <Col xs={6} md={4} lg={4} className="mt-5">
+              <StaticImage
+                src="../img/react.png" alt="react"
+                placeholder="blurred"
+                layout="fixed"
+                width={110}
+                height={110}
+              />
+            </Col>
+            <Col xs={6} md={4} lg={4} className="mt-5">
+              <StaticImage
+                src="../img/docker.png" alt="docker"
+                placeholder="blurred"
+                layout="fixed"
+                width={130}
+                height={110}
+              />
+            </Col>
+            <Col xs={6} md={4} lg={4} className="mt-5">
+              <StaticImage
+                src="../img/aws.png" alt="aws"
+                placeholder="blurred"
+                layout="fixed"
+                width={120}
+                height={110}
+              />
+            </Col>
+            <Col xs={6} md={4} lg={4} className="mt-5">
+              <StaticImage
+                src="../img/kubernetes.png" alt="kubernetes"
+                placeholder="blurred"
+                layout="fixed"
+                width={140}
+                height={110}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </section>
       <h1>
         <FormattedMessage
           id="hello-world"
@@ -96,32 +136,6 @@ function IndexPage(props) {
         />
       </p>
 
-      <LinkTranslated
-        className="btn btn-link"
-        href="/about"
-      >
-        <FormattedMessage
-          id="learn-more-about-us"
-          defaultMessage="Learn more about us"
-        />
-      </LinkTranslated>
-      <p>hi</p>
-      <LinkTranslated
-        className="btn btn-link"
-        href="/resume"
-      >
-        <FormattedMessage
-          id="learn-more-about-us"
-          defaultMessage="resume"
-        />
-      </LinkTranslated>
-
-
-      <ul>
-        <li><a href="/">English (Default)</a></li>
-        <li><a href="/pl/">Polish</a></li>
-        <li><a href="/es/">Spanish</a></li>
-      </ul>
 
     </SimpleLocalize>
   );
