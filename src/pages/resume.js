@@ -583,9 +583,14 @@ function ResumePage(props) {
                                     <div className="row">
                                         <div className="item col-md-3">
                                             <div className="testimony-wrap p-4 text-center">
-                                                <div className="user-img mb-4"
-                                                    style={{ backgroundImage: "url(../img/ideaCodex.jpeg);", width: "50%", backgroundColor: "black" }}>
-                                                </div>
+
+                                                <StaticImage
+                                                    src="../img/ideaCodex.jpeg" alt="ideaCodex"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={140}
+                                                    height={110}
+                                                />
                                                 <div className="text-light">
                                                     <p className="mb-4">Lider tecnico en proyecto de desarollo de software.
                                                         Analisís, diseño, desarllo, implementacion y mantenimiento de software</p>
@@ -596,8 +601,13 @@ function ResumePage(props) {
                                         </div>
                                         <div className="item col-md-3">
                                             <div className="testimony-wrap p-4 text-center">
-                                                <div className="user-img mb-4" style={{ backgroundImage: "url(.../img/10x.png)" }}>
-                                                </div>
+                                                <StaticImage
+                                                    src="../img/10x.png" alt="10x"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={140}
+                                                    height={110}
+                                                />
                                                 <div className="text-light">
                                                     <p className="mb-4">Análisis, diseño y desarrollo de aplicaciones web, administración de
                                                         software open source, Magento, Moodle y WordPress</p>
@@ -608,6 +618,13 @@ function ResumePage(props) {
                                         </div>
                                         <div className="item col-md-3">
                                             <div className="testimony-wrap p-4 text-center">
+                                                <StaticImage
+                                                    src="../img/bi.jpg" alt="bi"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={140}
+                                                    height={110}
+                                                />
                                                 <div className="user-img mb-4" style={{ backgroundImage: "url(../img/bi.jpg)" }}>
                                                 </div>
                                                 <div className="text-light">
@@ -620,9 +637,14 @@ function ResumePage(props) {
                                         </div>
                                         <div className="item col-md-3">
                                             <div className="testimony-wrap p-4 text-center">
-                                                <div className="user-img mb-4"
-                                                    style={{ backgroundImage: "url(https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU);", width: "150" }}>
-                                                </div>
+                                                <Image src="https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU/171x180" rounded />
+                                                <StaticImage
+                                                    src="https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU" alt="bi"
+                                                    placeholder="blurred"
+                                                    layout="fixed"
+                                                    width={140}
+                                                    height={110}
+                                                />
                                                 <div className="text-light">
                                                     <p className="mb-4">Soporte en configuración de dispositivos
                                                         móviles; Apple IOS, Google Andoid y Windows Phone.</p>
@@ -649,9 +671,16 @@ function ResumePage(props) {
                             <div className="row">
                                 <div className="col-md-4">
                                     <div className="blog-entry">
-                                        <a href="https://app.canjeaton.com/" className="block-20"
-                                            style={{ backgroundImage: "url('../img/canjeaton.png');" }}>
+                                        <a href="https://app.canjeaton.com/" className="block-20">
+                                            <StaticImage
+                                                src="../img/canjeaton.png" alt="canjeaton"
+                                                placeholder="blurred"
+                                                layout="fixed"
+                                                width={140}
+                                                height={110}
+                                            />
                                         </a>
+
                                         <div className="text text-center py-3">
                                             <div className="meta mb-2">
                                                 <div><a href="https://app.canjeaton.com/">Jul 5 2019</a></div>
@@ -670,6 +699,13 @@ function ResumePage(props) {
                                     <div className="blog-entry" data-aos-delay="100">
                                         <a href="http://www.rrhhpayroll.com/" className="block-20" style={{ backgroundImage: "url('http://www.rrhhpayroll.com/storage/banners/1.jpg');" }}>
                                         </a>
+                                        <StaticImage
+                                            src="http://demo.rrhhpayroll.com/storage/banners/1.jpg" alt="canjeaton"
+                                            placeholder="blurred"
+                                            layout="fixed"
+                                            width={140}
+                                            height={110}
+                                        />
                                         <div className="text text-center py-3">
                                             <div className="meta mb-2">
                                                 <div><a href="http://www.rrhhpayroll.com/">Aug, 2020</a></div>
@@ -687,6 +723,13 @@ function ResumePage(props) {
                                     <div className="blog-entry" data-aos-delay="100">
                                         <a href="http://pakal.website/" className="block-20" style={{ backgroundImage: "url('../img/pakal.png');" }}>
                                         </a>
+                                        <StaticImage
+                                            src="../img/pakal.png" alt="pakal"
+                                            placeholder="blurred"
+                                            layout="fixed"
+                                            width={140}
+                                            height={110}
+                                        />
                                         <div className="text text-center py-3">
                                             <div className="meta mb-2">
                                                 <div><a href="http://pakal.website/">Aug, 2020</a></div>

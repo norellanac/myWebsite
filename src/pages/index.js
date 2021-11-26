@@ -11,6 +11,7 @@ import Header from '../components/header'
 
 function IndexPage(props) {
   // const language = props.pageContext.language;
+  console.warn("lenguage: ",  props.location.pathname);
   return (
 
     <SimpleLocalize {...props}>
@@ -31,13 +32,22 @@ function IndexPage(props) {
                   /></Nav.Link>
                   <Link
                     className="nav-link"
-                    to="/resume/"
+                    to={props.location.pathname + "resume/"}
                   >
                     <FormattedMessage
                       id="resume"
                       defaultMessage="Resume"
                     />
                   </Link>
+                  <LinkTranslated
+                    className="btn btn-link"
+                    href="/about"
+                  >
+                    <FormattedMessage
+                      id="learn-more-about-us"
+                      defaultMessage="Learn more about us"
+                    />
+                  </LinkTranslated>
                   <NavDropdown title="Lenguage" id="offcanvasNavbarDropdown">
                     <Link
                       className="pl-4 dropdown-item nav-link "
