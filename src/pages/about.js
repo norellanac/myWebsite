@@ -9,7 +9,7 @@ import { Navbar, Container, Offcanvas, Nav, NavDropdown, Row, Col, Button } from
 
 function AboutPage(props) {
   // const language = props.pageContext.language;
-  console.warn("lenguage : ",  props);
+  console.warn("lenguage : ", props);
   return (<SimpleLocalize {...props}>
     <div>
       <Navbar bg="dark" variant="dark" expand={false}>
@@ -35,19 +35,41 @@ function AboutPage(props) {
                     defaultMessage="Resume"
                   />
                 </Link>
+                <LinkTranslated
+                  className="btn btn-link"
+                  href="/resume"
+                >
+                  <FormattedMessage
+                    id="resume"
+                    defaultMessage="Resume"
+                  />
+                </LinkTranslated>
                 <NavDropdown title="Lenguage " id="offcanvasNavbarDropdown">
-                  <Link
-                    className="pl-4 dropdown-item nav-link "
-                    to="/"
-                  >
-                    English (Default)
-                  </Link>
-                  <Link
-                    className="pl-4 dropdown-item nav-link"
-                    to="/es/"
-                  >Español
-                  </Link>
+                <Link
+                className="pl-4 dropdown-item nav-link "
+                to="/"
+                >
+                English (Default)
+                </Link>
+                <Link
+                className="pl-4 dropdown-item nav-link"
+                to="/es/"
+                >Español
+                </Link>
                 </NavDropdown>
+                <LinkTranslated
+                className="btn btn-link"
+                href="/about"
+                >
+                <FormattedMessage
+                id="learn-more-about-us"
+                defaultMessage="Learn more about us"
+                />
+                </LinkTranslated>
+                <LinkTranslated
+                className="btn btn-link"
+                href="/resume"
+                ></LinkTranslated>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

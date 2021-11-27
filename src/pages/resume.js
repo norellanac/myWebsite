@@ -6,10 +6,12 @@ import LinkTranslated from "../LinkTranslated";
 import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { circle } from '../components/general.module.css'
 import { Row, Container, Col, Card, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
 
 function ResumePage(props) {
     // const language = props.pageContext.language;
+    console.log("resume: ", props);
     return (
 
         <SimpleLocalize {...props}>
@@ -17,11 +19,11 @@ function ResumePage(props) {
                 <div>
 
                     <section className="bg-light">
-                        <Container >
+                        <Container className="mt-5">
                             <Row>
                                 <Col xs={8} lg={8} md={8} className="align-self-stretch ">
-                                    <div className="media block-6 services d-flex align-items-start">
-                                        <div className="icon d-flex align-items-center justify-content-center">
+                                    <div className="bg-light d-flex align-items-start">
+                                        <div className="d-flex align-items-center justify-content-center">
                                             <StaticImage
                                                 src="../img/norellanac1.png" alt="norellanac"
                                                 placeholder="blurred"
@@ -89,6 +91,8 @@ function ResumePage(props) {
                                                 layout="fixed"
                                                 width={100}
                                                 height={100}
+                                                style={{ marginLeft: 70 }}
+                                                className={circle}
                                             />
                                             <h3 className="" style={{ fontSize: "25px;" }}>
                                                 <FormattedMessage
@@ -106,11 +110,11 @@ function ResumePage(props) {
                         </Container>
                     </section>
 
-                    <section className="bg-primary ftco-no-pb">
+                    <section className="bg-primary pb-2">
                         <div className="container-fluid">
                             <div className="row justify-content-center mb-3">
-                                <div className="col-md-7 text-center">
-                                    <h2 className="mb-4 mt-4 text-light">
+                                <div className="text-center">
+                                    <h2 className="mb-2 mt-2 text-light">
                                         <FormattedMessage
                                             id="skills"
                                             defaultMessage="skills"
@@ -159,22 +163,22 @@ function ResumePage(props) {
                                                             placeholder="blurred"
                                                             layout="fixed"
                                                             width={60}
-                                                            height={35}
+                                                            height={30}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
                                                             src="../oldCv/img/logos/oracle.png" alt="oracle"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={45}
-                                                            height={35}
+                                                            width={60}
+                                                            height={30}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
                                                             src="../oldCv/img/logos/postgres.png" alt="postgres"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={45}
+                                                            width={55}
                                                             height={35}
                                                         />
                                                     </div>
@@ -202,7 +206,7 @@ function ResumePage(props) {
                                                         <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
                                                             role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                                             style={{ width: "80%" }}>
-                                                            <strong> React Native</strong>
+                                                            <strong> React</strong>
                                                         </div>
                                                     </div>
                                                     <div className="progress mt-3">
@@ -226,7 +230,7 @@ function ResumePage(props) {
                                                             src="../oldCv/img/logos/bootstrap.png" alt="bootstrap"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={45}
+                                                            width={55}
                                                             height={35}
                                                         />
                                                         <StaticImage
@@ -285,7 +289,7 @@ function ResumePage(props) {
                                                                 src="../oldCv/img/logos/android.png" alt="android"
                                                                 placeholder="blurred"
                                                                 layout="fixed"
-                                                                width={60}
+                                                                width={40}
                                                                 height={35}
                                                             />
                                                             <StaticImage
@@ -320,7 +324,10 @@ function ResumePage(props) {
                                             text="dark"
                                             className="mb-2"
                                         >
-                                            <Card.Header>Servidores</Card.Header>
+                                            <Card.Header><FormattedMessage
+                                                id="servers"
+                                                defaultMessage="servers"
+                                            /></Card.Header>
                                             <Card.Body>
                                                 <div >
                                                     <div className="progress mt-3">
@@ -350,7 +357,7 @@ function ResumePage(props) {
                                                             src="../img/aws.png" alt="aws"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={60}
+                                                            width={40}
                                                             height={35}
                                                         />
                                                         <StaticImage
@@ -358,7 +365,7 @@ function ResumePage(props) {
                                                             src="../oldCv/img/logos/kubernetes.png" alt="kubernetes"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={45}
+                                                            width={35}
                                                             height={35}
                                                         />
                                                         <StaticImage
@@ -366,7 +373,7 @@ function ResumePage(props) {
                                                             src="../img/docker1.png" alt="docker1"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={45}
+                                                            width={50}
                                                             height={35}
                                                         />
                                                     </div>
@@ -410,15 +417,15 @@ function ResumePage(props) {
                                                             src="../img/laravel.png" alt="laravel"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={60}
+                                                            width={40}
                                                             height={35}
                                                         />
                                                         <StaticImage
-                                                            className="ml-2 d-inline-block"
+                                                            className="ml-2 mr-4 d-inline-block"
                                                             src="../oldCv/img/logos/java.png" alt="java"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={45}
+                                                            width={20}
                                                             height={35}
                                                         />
                                                         <StaticImage
@@ -426,7 +433,7 @@ function ResumePage(props) {
                                                             src="../oldCv/img/logos/spring.png" alt="spring"
                                                             placeholder="blurred"
                                                             layout="fixed"
-                                                            width={45}
+                                                            width={35}
                                                             height={35}
                                                         />
                                                     </div>
@@ -471,13 +478,13 @@ function ResumePage(props) {
                                                                     <strong>CI/CD</strong>
                                                                 </div>
                                                             </div>
-                                                            <div className="mt-4">
+                                                            <div className="mt-4 align-items-center justify-content-center">
                                                                 <StaticImage
                                                                     className="ml-2 d-inline-block"
                                                                     src="../oldCv/img/logos/github.png" alt="github"
                                                                     placeholder="blurred"
                                                                     layout="fixed"
-                                                                    width={60}
+                                                                    width={35}
                                                                     height={35}
                                                                 />
                                                                 <StaticImage
@@ -485,7 +492,7 @@ function ResumePage(props) {
                                                                     src="../oldCv/img/logos/docker.png" alt="docker"
                                                                     placeholder="blurred"
                                                                     layout="fixed"
-                                                                    width={45}
+                                                                    width={50}
                                                                     height={35}
                                                                 />
                                                                 <StaticImage
@@ -521,47 +528,47 @@ function ResumePage(props) {
                         </div>
                     </section>
 
-                    <section className="ftco-section ftco-counter bg-light img pt-5" id="section-counter">
+                    <section className="ftco-section ftco-counter bg-light img pt-3" id="section-counter">
                         <div className="container">
                             <div className="row justify-content-center mb-1">
                                 <div className="col-md-10 text-center heading-section ftco-animate">
                                     <h2 className="mb-4">Aplicaciones móviles y proyectos</h2>
                                 </div>
                             </div>
-                            <div className="row justify-content-center">
-                                <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+                            <Row className="justify-content-center">
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
-                                            <strong className="number" data-number="36">5</strong>
-                                            <span>Repositorios en Github</span>
+                                            <h4 className="number text-primary" data-number="36">+35</h4>
+                                            <h5 className="text-secondary">Repositorios en Github</h5>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+                                </Col>
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
-                                            <strong className="number" data-number="5">1</strong>
-                                            <span>Años de experiencia</span>
+                                            <h4 className="number text-primary" data-number="5">+5</h4>
+                                            <h5 className="text-secondary">Años de experiencia</h5>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+                                </Col>
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
-                                            <strong className="number" data-number="10">1</strong>
-                                            <span>Proyectos Administrados</span>
+                                            <h4 className="number text-primary" data-number="10">+10</h4>
+                                            <h5 className="text-secondary">Proyectos Administrados</h5>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+                                </Col>
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
-                                            <strong className="number" data-number="2">0</strong>
-                                            <span>Aplicaciones moviles</span>
+                                            <h4 className="number text-primary" data-number="2">2</h4>
+                                            <h5 className="text-secondary">Aplicaciones moviles</h5>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
                         </div>
                     </section>
 
@@ -580,70 +587,89 @@ function ResumePage(props) {
                             </div>
                             <div className="row ftco-animate">
                                 <div className="col-md-12">
-                                    <div className="row">
-                                        <div className="item col-md-3">
+                                    <Row >
+                                        <Col xs={3} className="item">
                                             <div className="testimony-wrap p-4 text-center">
-
                                                 <StaticImage
                                                     src="../img/ideaCodex.jpeg" alt="ideaCodex"
                                                     placeholder="blurred"
                                                     layout="fixed"
-                                                    width={140}
-                                                    height={110}
+                                                    width={100}
+                                                    height={100}
+                                                    className={circle}
                                                 />
                                                 <div className="text-light">
-                                                    <p className="mb-4">Lider tecnico en proyecto de desarollo de software.
-                                                        Analisís, diseño, desarllo, implementacion y mantenimiento de software</p>
+                                                    <p className="mb-4">
+                                                        <FormattedMessage
+                                                            id="exp-cont-1"
+                                                            defaultMessage="exp-cont-1"
+                                                        />
+                                                    </p>
                                                     <p className="text-light">Idea Codex</p>
-                                                    <span className="text-light h4">Lider de proyectos de&#8211; IT.</span>
+                                                    <span className="text-light h4">
+                                                        <FormattedMessage
+                                                            id="exp-t1"
+                                                            defaultMessage="exp-t1"
+                                                        />
+                                                    </span>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="item col-md-3">
+                                        </Col>
+                                        <Col xs={3} className="item">
                                             <div className="testimony-wrap p-4 text-center">
                                                 <StaticImage
                                                     src="../img/10x.png" alt="10x"
                                                     placeholder="blurred"
                                                     layout="fixed"
-                                                    width={140}
-                                                    height={110}
+                                                    width={100}
+                                                    height={100}
+                                                    className={circle}
                                                 />
                                                 <div className="text-light">
-                                                    <p className="mb-4">Análisis, diseño y desarrollo de aplicaciones web, administración de
-                                                        software open source, Magento, Moodle y WordPress</p>
+                                                    <p className="mb-4">
+                                                        <FormattedMessage
+                                                            id="exp-cont-2"
+                                                            defaultMessage="exp-cont-2"
+                                                        />
+                                                    </p>
                                                     <p className="text-light">10x Informatica</p>
-                                                    <span className="text-light h4">Desarollador Web</span>
+                                                    <span className="text-light h4">
+                                                        <FormattedMessage
+                                                            id="exp-t2"
+                                                            defaultMessage="exp-t2"
+                                                        />
+                                                    </span>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="item col-md-3">
-                                            <div className="testimony-wrap p-4 text-center">
-                                                <StaticImage
-                                                    src="../img/bi.jpg" alt="bi"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={140}
-                                                    height={110}
-                                                />
-                                                <div className="user-img mb-4" style={{ backgroundImage: "url(../img/bi.jpg)" }}>
-                                                </div>
-                                                <div className="text-light">
-                                                    <p className="mb-4">Descripción del Puesto: Operador De Sistemas IBM (AS400, 390).<br />
-                                                        <br /><br /></p>
-                                                    <p className="text-light">Banco Industrial S.A.</p>
-                                                    <span className="text-light h4">Operador De Computo.</span>
-                                                </div>
+                                        </Col>
+                                        <Col xs={3} className="item">                                            <div className="testimony-wrap p-4 text-center">
+                                            <StaticImage
+                                                src="../img/bi.jpg" alt="bi"
+                                                placeholder="blurred"
+                                                layout="fixed"
+                                                width={100}
+                                                height={100}
+                                                className={circle}
+                                            />
+                                            <div className="user-img mb-4" style={{ backgroundImage: "url(../img/bi.jpg)" }}>
+                                            </div>
+                                            <div className="text-light">
+                                                <p className="mb-4">Descripción del Puesto: Operador De Sistemas IBM (AS400, 390).<br />
+                                                    <br /><br /></p>
+                                                <p className="text-light">Banco Industrial S.A.</p>
+                                                <span className="text-light h4">Operador De Computo.</span>
                                             </div>
                                         </div>
-                                        <div className="item col-md-3">
+                                        </Col>
+                                        <Col xs={3} className="item">
                                             <div className="testimony-wrap p-4 text-center">
-                                                <Image src="https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU/171x180" rounded />
                                                 <StaticImage
                                                     src="https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU" alt="bi"
                                                     placeholder="blurred"
                                                     layout="fixed"
-                                                    width={140}
-                                                    height={110}
+                                                    width={100}
+                                                    height={100}
+                                                    className={circle}
                                                 />
                                                 <div className="text-light">
                                                     <p className="mb-4">Soporte en configuración de dispositivos
@@ -652,8 +678,8 @@ function ResumePage(props) {
                                                     <span className="text-light h4">Customer Service Agent &#8211; Help Desk.</span>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </Col>
+                                    </Row>
                                 </div>
                             </div>
                         </div>
@@ -661,11 +687,9 @@ function ResumePage(props) {
 
                     <section className="bg-light pb-0">
                         <div className="container pb-0">
-                            <div className="row justify-content-center mb-3 pb-3 pt-5">
+                            <div className="row justify-content-center mb-3 pb-3 pt-3">
                                 <div className="col-md-7 text-center heading-section ftco-animate">
                                     <h2>Portafolio </h2>
-                                    <p className="d-none">Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts.Separated they live in</p>
                                 </div>
                             </div>
                             <div className="row">
@@ -682,15 +706,15 @@ function ResumePage(props) {
                                         </a>
 
                                         <div className="text text-center py-3">
-                                            <div className="meta mb-2">
+                                            <div className="">
                                                 <div><a href="https://app.canjeaton.com/">Jul 5 2019</a></div>
                                                 <div><a href="https://app.canjeaton.com/">Aplicación Móvil</a></div>
                                                 <div className="d-none"><a href="https://app.canjeaton.com/" className="meta-chat"><span
                                                     className="icon-chat"></span> 3</a></div>
                                             </div>
                                             <div className="desc">
-                                                <h3 className="heading"><a href="https://app.canjeaton.com/">Colaboracion en desarollo de aplicacion web y
-                                                    movil con</a> <a className="text-primary" href="http://tenxprotocol.com/">10x Informatica</a> </h3>
+                                                <h5 ><a href="https://app.canjeaton.com/">Colaboracion en desarollo de aplicacion web y
+                                                    movil con</a> <a className="text-primary" href="http://tenxprotocol.com/">10x Informatica</a> </h5>
                                             </div>
                                         </div>
                                     </div>
@@ -707,14 +731,14 @@ function ResumePage(props) {
                                             height={110}
                                         />
                                         <div className="text text-center py-3">
-                                            <div className="meta mb-2">
+                                            <div className="">
                                                 <div><a href="http://www.rrhhpayroll.com/">Aug, 2020</a></div>
                                                 <div><a href="http://www.rrhhpayroll.com/">Laravel</a></div>
                                                 <div className="d-none"><a href="http://www.rrhhpayroll.com/" className="meta-chat"><span className="icon-chat"></span>
                                                     3</a></div>
                                             </div>
                                             <div className="desc">
-                                                <h3 className="heading"><a href="http://www.rrhhpayroll.com/">Aplicación web utilizando Laravel Framework</a></h3>
+                                                <h5 ><a href="http://www.rrhhpayroll.com/">Aplicación web utilizando Laravel Framework</a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -731,14 +755,14 @@ function ResumePage(props) {
                                             height={110}
                                         />
                                         <div className="text text-center py-3">
-                                            <div className="meta mb-2">
+                                            <div className="">
                                                 <div><a href="http://pakal.website/">Aug, 2020</a></div>
                                                 <div><a href="http://pakal.website/">Laravel</a></div>
                                                 <div className="d-none"><a href="http://pakal.website/" className="meta-chat"><span className="icon-chat"></span>
                                                     3</a></div>
                                             </div>
                                             <div className="desc">
-                                                <h3 className="heading"><a href="http://pakal.website/">Aplicación web utilizando Laravel Framework</a></h3>
+                                                <h5 ><a href="http://pakal.website/">Aplicación web utilizando Laravel Framework</a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -747,17 +771,24 @@ function ResumePage(props) {
                                     <div className="blog-entry" data-aos-delay="200">
                                         <a href="http://tecunapp.com/" className="block-20"
                                             style={{ backgroundImage: "url('../img/grupotecun.png');" }}>
+                                            <StaticImage
+                                                src="../img/grupotecun.png" alt="grupotecun"
+                                                placeholder="blurred"
+                                                layout="fixed"
+                                                width={140}
+                                                height={110}
+                                            />
                                         </a>
                                         <div className="text text-center py-3">
-                                            <div className="meta mb-2">
+                                            <div className="">
                                                 <div><a href="http://tecunapp.com/">Enero, 2018</a></div>
                                                 <div><a href="http://tecunapp.com/">Laravel / React Native</a></div>
                                                 <div className="d-none"><a href="http://tecunapp.com/" className="meta-chat"><span
                                                     className="icon-chat"></span> 3</a></div>
                                             </div>
                                             <div className="desc">
-                                                <h3 className="heading"><a href="http://tecunapp.com/">Aplicación de comunicación interna version Web
-                                                    y móvil, utilizando Laravel Framework y React Native</a></h3>
+                                                <h5 ><a href="http://tecunapp.com/">Aplicación de comunicación interna version Web
+                                                    y móvil | Laravel Framework y React Native</a></h5>
                                             </div>
                                         </div>
                                     </div>
