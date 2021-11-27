@@ -39,22 +39,6 @@ function IndexPage(props) {
                       defaultMessage="Resume"
                     />
                   </Link>
-                  <LinkTranslated
-                    className="btn btn-link"
-                    href={props.location.href+"resume"}
-                  >
-                    <FormattedMessage
-                      id="learn-more-about-us"
-                      defaultMessage="Learn more about us"
-                    />
-                  </LinkTranslated>
-
-                  <LinkTranslated
-                    className="btn btn-link"
-                    href={props.location.href+"resume"}
-                  >
-                    prueba resume href
-                  </LinkTranslated>
                   <NavDropdown title="Lenguage" id="offcanvasNavbarDropdown">
                     <Link
                       className="pl-4 dropdown-item nav-link "
