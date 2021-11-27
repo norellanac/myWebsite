@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-about-js",
     "path": "/about/",
-    "result": {"pageContext":{"language":"en","messages":{"welcome-on-our-website":"Welcome on our multi-language website","hello-world":"Hello World!","about-us":"About us","learn-more-about-us":"Learn more about us","homepage":"Homepage","resume":"Resume","phone":"Phone","email":"E-mail","adress":"Adress","website":"Website","education":"Education","skills":"Skills","servers":"Servers","experience":"Experience","example":"example","rp-":"rp-"}}},
+    "result": {"pageContext":{"language":"en","messages":{"welcome-on-our-website":"Welcome on our multi-language website","hello-world":"Hello World!","about-us":"About us","learn-more-about-us":"Learn more about us","homepage":"Homepage","resume":"Resume","phone":"Phone","email":"E-mail","adress":"Adress","website":"Website","education":"Education","skills":"Skills","servers":"Servers","experience":"Experience","example":"example"}}},
     "staticQueryHashes": []}
