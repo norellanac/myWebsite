@@ -5,6 +5,18 @@ import { FormattedMessage } from "react-intl";
 import LinkTranslated from "../LinkTranslated";
 import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faEnvelopeOpenText,
+    faMobileAlt,
+    faBrows,
+    faAmbulance,
+    faAtom,
+    faBus,
+    faCoins,
+    faDice,
+    faMap,
+} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faChrome, faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { circle } from '../components/general.module.css'
 import { Row, Container, Col, Card, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
@@ -19,10 +31,10 @@ function ResumePage(props) {
                 <div>
 
                     <section className="bg-light">
-                        <Container className="mt-5">
+                        <Container fluid className="mt-5">
                             <Row>
-                                <Col xs={8} lg={8} md={8} className="align-self-stretch ">
-                                    <div className="bg-light d-flex align-items-start">
+                                <Col xs={8} lg={8} md={8} className="">
+                                    <div className=" d-flex align-items-start">
                                         <div className="d-flex align-items-center justify-content-center">
                                             <StaticImage
                                                 src="../img/norellanac1.png" alt="norellanac"
@@ -30,12 +42,14 @@ function ResumePage(props) {
                                                 layout="fixed"
                                                 width={100}
                                                 height={150}
+                                                style={{ marginRight: 30, marginLeft: 30 }}
                                             />
                                         </div>
-                                        <div className="media-body pl-4">
+                                        <div className="media-body pl-4 ml-4">
                                             <h1 className="heading mb-2 text-primary" style={{ fontsize: "35px;" }}>Nery Alexis Orellana Cuy</h1>
                                             <p>
-                                                <span className="ml-4"> <FontAwesomeIcon icon={["fa", "fa-mobile-alt"]} />
+                                                <span className="ml-4">
+                                                    <FontAwesomeIcon style={{ marginRight: 10 }} icon={faMobileAlt} size="1x" />
                                                     <FormattedMessage
                                                         id="phone"
                                                         defaultMessage="phone"
@@ -43,14 +57,17 @@ function ResumePage(props) {
                                                     : <a
                                                         href="tel:50233120413">+502
                                                         33120413</a> </span> <br />
-                                                <span className="ml-4"> <FontAwesomeIcon icon={["fa", "envelope-open-text"]} />
+                                                <span className="ml-4">
+                                                    <FontAwesomeIcon style={{ marginRight: 10 }} icon={faEnvelopeOpenText} />
                                                     <FormattedMessage
                                                         id="email"
                                                         defaultMessage="email"
                                                     />
                                                     : <a
                                                         href="mailto:alexis_oc@yahoo.es">alexis_oc@yahoo.es</a> </span> <br />
-                                                <span className="ml-4"> <FontAwesomeIcon icon={["fal", "envelope-open-text"]} />
+                                                <span className="ml-4">
+
+                                                    <FontAwesomeIcon style={{ marginRight: 10 }} icon={faMap} size="1x" />
                                                     <FormattedMessage
                                                         id="address"
                                                         defaultMessage="address"
@@ -58,25 +75,31 @@ function ResumePage(props) {
                                                     : <a
                                                         href="https://goo.gl/maps/tzokv8QcD8RgRRms9">San José Pinula, Guatemala</a>
                                                 </span> <br />
-                                                <span className="ml-4"> <i className="fab fa-chrome"> </i>
+                                                <span className="ml-4">
+                                                    <FontAwesomeIcon style={{ marginRight: 10 }} icon={faChrome} size="1x" />
                                                     <FormattedMessage
                                                         id="website"
                                                         defaultMessage="website"
                                                     />
                                                     : <a
-                                                        href="https://norellanac.github.io/norellanacBlog/">norellanac</a>
+                                                        href="https://norellanac.github.io/myWebsite">norellanac</a>
                                                 </span> <br />
                                                 <span className=" h1 mt-5 text-center ml-5" style={{ fontsize: "60px;" }}>
-                                                    <a href="https://github.com/norellanac"> <i className="fab fa-github"></i></a>
-                                                    <a href="https://www.linkedin.com/in/nery-alexis-orellana-cuy-3612888b/"> <i
-                                                        className="fab fa-linkedin"></i></a>
-                                                    <a href="https://m.facebook.com/alexis.orellana2"> <i
-                                                        className="fab fa-facebook"></i></a>
-                                                    <a href="https://www.instagram.com/norellanac/"> <i
-                                                        className="fab fa-instagram"></i></a>
-                                                    <a href="https://api.whatsapp.com/send?phone=50233120413"> <i
-                                                        className="fab fa-whatsapp"></i></a>
-                                                    <br /></span>
+                                                    <a href="https://github.com/norellanac">
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faGithub} size="1x" />
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/nery-alexis-orellana-cuy-3612888b/">
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faLinkedin} size="1x" />
+                                                    </a>
+                                                    <a href="https://m.facebook.com/alexis.orellana2">
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faFacebook} size="1x" />
+                                                    </a>
+                                                    <a href="https://www.instagram.com/norellanac/">
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faInstagram} size="1x" />
+                                                    </a>
+                                                    <a href="https://api.whatsapp.com/send?phone=50233120413">
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faWhatsapp} size="1x" />                                                   </a>
+                                                </span>
                                             </p>
                                         </div>
                                     </div>
@@ -100,9 +123,24 @@ function ResumePage(props) {
                                                     defaultMessage="education"
                                                 />
                                             </h3>
-                                            <p className="p-1">Cierre de pénsum <br />
-                                                <strong>Ingeniería en Sistemas de Información</strong>
-                                                <br /> Guatemala /junio 2020</p>
+                                            <p className="p-1">
+                                                <FormattedMessage
+                                                    id="education_description"
+                                                    defaultMessage=""
+                                                />
+                                                <br />
+                                                <strong>
+                                                    <FormattedMessage
+                                                        id="education_title"
+                                                        defaultMessage="education_title"
+                                                    />
+                                                </strong>
+                                                <br />
+                                                <FormattedMessage
+                                                    id="education_date"
+                                                    defaultMessage="education_date"
+                                                />
+                                            </p>
                                         </div>
                                     </div>
                                 </Col>
@@ -131,7 +169,7 @@ function ResumePage(props) {
                                             text="dark"
                                             className="mb-2"
                                         >
-                                            <Card.Header>Bases De Datos</Card.Header>
+                                            <Card.Header>Databases</Card.Header>
                                             <Card.Body>
 
                                                 <div className="media-body">
@@ -146,14 +184,14 @@ function ResumePage(props) {
                                                         <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
                                                             role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                                             style={{ width: "60%" }}>
-                                                            <strong>DDL </strong>
+                                                            <strong>DDL, DML </strong>
                                                         </div>
                                                     </div>
                                                     <div className="progress mt-3">
                                                         <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
                                                             role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
                                                             style={{ width: "50%" }}>
-                                                            <strong>Triggers y cursores</strong>
+                                                            <strong>Triggers, store procedures</strong>
                                                         </div>
                                                     </div>
                                                     <div className="mt-4">
@@ -210,10 +248,10 @@ function ResumePage(props) {
                                                         </div>
                                                     </div>
                                                     <div className="progress mt-3">
-                                                        <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                                                        <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
                                                             role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
                                                             style={{ width: "50%" }}>
-                                                            <strong>UI/UX</strong>
+                                                            <strong>Gatsby</strong>
                                                         </div>
                                                     </div>
                                                     <div className="mt-4">
@@ -401,14 +439,14 @@ function ResumePage(props) {
                                                         <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
                                                             role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                                             style={{ width: "60%" }}>
-                                                            <strong>Arquitectura De Software MVC</strong>
+                                                            <strong>API REST</strong>
                                                         </div>
                                                     </div>
                                                     <div className="progress mt-3">
                                                         <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated"
                                                             role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
                                                             style={{ width: "50%" }}>
-                                                            <strong>Microservicios</strong>
+                                                            <strong>Java Spring Framework</strong>
                                                         </div>
                                                     </div>
                                                     <div className="mt-4">
@@ -461,14 +499,14 @@ function ResumePage(props) {
                                                                 <div className="progress-bar bg-success progress-bar-striped progress-bar-animated"
                                                                     role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
                                                                     style={{ width: "95%" }}>
-                                                                    <strong>Github</strong>
+                                                                    <strong>Git, Github</strong>
                                                                 </div>
                                                             </div>
                                                             <div className="progress mt-3">
                                                                 <div className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
                                                                     role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                                                     style={{ width: "60%" }}>
-                                                                    <strong>Scrum</strong>
+                                                                    <strong>Agile Scrum</strong>
                                                                 </div>
                                                             </div>
                                                             <div className="progress mt-3">
@@ -532,7 +570,12 @@ function ResumePage(props) {
                         <div className="container">
                             <div className="row justify-content-center mb-1">
                                 <div className="col-md-10 text-center heading-section ftco-animate">
-                                    <h2 className="mb-4">Aplicaciones móviles y proyectos</h2>
+                                    <h2 className="mb-4">
+                                        <FormattedMessage
+                                            id="projects_title"
+                                            defaultMessage="projects_title"
+                                        />
+                                    </h2>
                                 </div>
                             </div>
                             <Row className="justify-content-center">
@@ -540,7 +583,12 @@ function ResumePage(props) {
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="36">+35</h4>
-                                            <h5 className="text-secondary">Repositorios en Github</h5>
+                                            <h5 className="text-secondary">
+                                                <FormattedMessage
+                                                    id="github_experience"
+                                                    defaultMessage="github_experience"
+                                                />
+                                            </h5>
                                         </div>
                                     </div>
                                 </Col>
@@ -548,7 +596,12 @@ function ResumePage(props) {
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="5">+5</h4>
-                                            <h5 className="text-secondary">Años de experiencia</h5>
+                                            <h5 className="text-secondary">
+                                                <FormattedMessage
+                                                    id="years_experience"
+                                                    defaultMessage="years_experience"
+                                                />
+                                            </h5>
                                         </div>
                                     </div>
                                 </Col>
@@ -556,7 +609,12 @@ function ResumePage(props) {
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="10">+10</h4>
-                                            <h5 className="text-secondary">Proyectos Administrados</h5>
+                                            <h5 className="text-secondary">
+                                                <FormattedMessage
+                                                    id="managed_projects"
+                                                    defaultMessage="managed_projects"
+                                                />
+                                            </h5>
                                         </div>
                                     </div>
                                 </Col>
@@ -564,7 +622,12 @@ function ResumePage(props) {
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="2">2</h4>
-                                            <h5 className="text-secondary">Aplicaciones moviles</h5>
+                                            <h5 className="text-secondary">
+                                                <FormattedMessage
+                                                    id="mobile_apps"
+                                                    defaultMessage="mobile_apps"
+                                                />
+                                            </h5>
                                         </div>
                                     </div>
                                 </Col>
@@ -654,10 +717,18 @@ function ResumePage(props) {
                                             <div className="user-img mb-4" style={{ backgroundImage: "url(../img/bi.jpg)" }}>
                                             </div>
                                             <div className="text-light">
-                                                <p className="mb-4">Descripción del Puesto: Operador De Sistemas IBM (AS400, 390).<br />
-                                                    <br /><br /></p>
+                                                <p className="mb-4">
+                                                    <FormattedMessage
+                                                        id="exp-cont-3"
+                                                        defaultMessage="exp-cont-3"
+                                                    />
+                                                </p>
                                                 <p className="text-light">Banco Industrial S.A.</p>
-                                                <span className="text-light h4">Operador De Computo.</span>
+                                                <span className="text-light h4">
+                                                    <FormattedMessage
+                                                        id="exp-t3"
+                                                        defaultMessage="exp-t3"
+                                                    /></span>
                                             </div>
                                         </div>
                                         </Col>
@@ -672,10 +743,17 @@ function ResumePage(props) {
                                                     className={circle}
                                                 />
                                                 <div className="text-light">
-                                                    <p className="mb-4">Soporte en configuración de dispositivos
-                                                        móviles; Apple IOS, Google Andoid y Windows Phone.</p>
+                                                    <p className="mb-4">
+                                                        <FormattedMessage
+                                                            id="exp-cont-4"
+                                                            defaultMessage="exp-cont-4"
+                                                        /></p>
                                                     <p className="text-light">Tigo Guatemala</p>
-                                                    <span className="text-light h4">Customer Service Agent &#8211; Help Desk.</span>
+                                                    <span className="text-light h4">
+                                                        <FormattedMessage
+                                                            id="exp-t4"
+                                                            defaultMessage="exp-t4"
+                                                        /></span>
                                                 </div>
                                             </div>
                                         </Col>
@@ -689,7 +767,12 @@ function ResumePage(props) {
                         <div className="container pb-0">
                             <div className="row justify-content-center mb-3 pb-3 pt-3">
                                 <div className="col-md-7 text-center heading-section ftco-animate">
-                                    <h2>Portafolio </h2>
+                                    <h2>
+                                        <FormattedMessage
+                                            id="portfolio"
+                                            defaultMessage="portfolio"
+                                        />
+                                    </h2>
                                 </div>
                             </div>
                             <div className="row">
@@ -707,20 +790,32 @@ function ResumePage(props) {
 
                                         <div className="text text-center py-3">
                                             <div className="">
-                                                <div><a href="https://app.canjeaton.com/">Jul 5 2019</a></div>
-                                                <div><a href="https://app.canjeaton.com/">Aplicación Móvil</a></div>
-                                                <div className="d-none"><a href="https://app.canjeaton.com/" className="meta-chat"><span
-                                                    className="icon-chat"></span> 3</a></div>
+                                                <div><a href="https://app.canjeaton.com/">
+                                                    <FormattedMessage
+                                                        id="post_date1"
+                                                        defaultMessage="post_date1"
+                                                    />
+                                                </a></div>
+                                                <div><a href="https://app.canjeaton.com/">
+                                                    <FormattedMessage
+                                                        id="post_label1"
+                                                        defaultMessage="post_label1"
+                                                    />
+                                                </a></div>
                                             </div>
                                             <div className="desc">
-                                                <h5 ><a href="https://app.canjeaton.com/">Colaboracion en desarollo de aplicacion web y
-                                                    movil con</a> <a className="text-primary" href="http://tenxprotocol.com/">10x Informatica</a> </h5>
+                                                <h5 ><a href="https://app.canjeaton.com/">
+                                                    <FormattedMessage
+                                                        id="post_title1"
+                                                        defaultMessage="post_title1"
+                                                    />
+                                                </a> <a className="text-primary" href="http://tenxprotocol.com/">10x Informatica</a> </h5>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="blog-entry" data-aos-delay="100">
+                                    <div className="blog-entry">
                                         <a href="http://www.rrhhpayroll.com/" className="block-20" style={{ backgroundImage: "url('http://www.rrhhpayroll.com/storage/banners/1.jpg');" }}>
                                         </a>
                                         <StaticImage
@@ -732,10 +827,21 @@ function ResumePage(props) {
                                         />
                                         <div className="text text-center py-3">
                                             <div className="">
-                                                <div><a href="http://www.rrhhpayroll.com/">Aug, 2020</a></div>
-                                                <div><a href="http://www.rrhhpayroll.com/">Laravel</a></div>
-                                                <div className="d-none"><a href="http://www.rrhhpayroll.com/" className="meta-chat"><span className="icon-chat"></span>
-                                                    3</a></div>
+                                                <div><a href="http://www.rrhhpayroll.com/">
+                                                    <FormattedMessage
+                                                        id="post_date2"
+                                                        defaultMessage="post_date2"
+                                                    />
+                                                </a></div>
+                                                <div>
+                                                    <a href="http://www.rrhhpayroll.com/">
+                                                        <FormattedMessage
+                                                            id="post_label2"
+                                                            defaultMessage="post_label2"
+                                                        />
+                                                    </a>
+                                                </div>
+
                                             </div>
                                             <div className="desc">
                                                 <h5 ><a href="http://www.rrhhpayroll.com/">Aplicación web utilizando Laravel Framework</a></h5>
@@ -744,7 +850,7 @@ function ResumePage(props) {
                                     </div>
                                 </div>
                                 <div className="d-none col-md-4">
-                                    <div className="blog-entry" data-aos-delay="100">
+                                    <div className="blog-entry" >
                                         <a href="http://pakal.website/" className="block-20" style={{ backgroundImage: "url('../img/pakal.png');" }}>
                                         </a>
                                         <StaticImage
@@ -756,19 +862,34 @@ function ResumePage(props) {
                                         />
                                         <div className="text text-center py-3">
                                             <div className="">
-                                                <div><a href="http://pakal.website/">Aug, 2020</a></div>
-                                                <div><a href="http://pakal.website/">Laravel</a></div>
+                                                <div><a href="http://pakal.website/">
+                                                    <FormattedMessage
+                                                        id="post_date3"
+                                                        defaultMessage="post_date3"
+                                                    />
+                                                </a></div>
+                                                <div><a href="http://pakal.website/">
+                                                    <FormattedMessage
+                                                        id="post_label3"
+                                                        defaultMessage="post_label3"
+                                                    />
+                                                </a></div>
                                                 <div className="d-none"><a href="http://pakal.website/" className="meta-chat"><span className="icon-chat"></span>
                                                     3</a></div>
                                             </div>
                                             <div className="desc">
-                                                <h5 ><a href="http://pakal.website/">Aplicación web utilizando Laravel Framework</a></h5>
+                                                <h5 ><a href="http://pakal.website/">A
+                                                    <FormattedMessage
+                                                        id="post_title3"
+                                                        defaultMessage="post_title3"
+                                                    />
+                                                </a></h5>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
-                                    <div className="blog-entry" data-aos-delay="200">
+                                    <div className="blog-entry" >
                                         <a href="http://tecunapp.com/" className="block-20"
                                             style={{ backgroundImage: "url('../img/grupotecun.png');" }}>
                                             <StaticImage

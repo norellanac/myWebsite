@@ -6,7 +6,8 @@ import SimpleLocalize from "../SimpleLocalize";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { Navbar, Container, Offcanvas, Nav, NavDropdown, Row, Col, Button } from 'react-bootstrap';
-
+import norellanacEn from "../norellanac-resume.pdf"
+import norellanacEs from "../norellanac-hoja-de-vida.pdf"
 import Header from '../components/header'
 
 function IndexPage(props) {
@@ -51,6 +52,21 @@ function IndexPage(props) {
                       to="/es/"
                     >Español
                     </Link>
+                  </NavDropdown>
+                  <NavDropdown title="Dowload Resume" id="offcanvasNavbarDropdown">
+                    <a
+                      className="pl-4 dropdown-item nav-link "
+                      href={norellanacEn}
+                      target="_blank"
+                    >
+                      Dowload | English (Default)
+                    </a>
+                    <a
+                      className="pl-4 dropdown-item nav-link"
+                      href={norellanacEs}
+                      target="_blank"
+                    >Descargar en Español
+                    </a>
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>
