@@ -8,6 +8,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faEnvelopeOpenText,
     faMobileAlt,
+    faBrows,
+    faAmbulance,
+    faAtom,
+    faBus,
+    faCoins,
+    faDice,
     faMap,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faChrome, faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
@@ -15,7 +21,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { circle } from '../components/general.module.css'
 import { Row, Container, Col, Card, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
 
-function ResumePage(props) {
+function ResumePrintPage(props) {
     // const language = props.pageContext.language;
     console.log("resume: ", props);
     return (
@@ -27,7 +33,7 @@ function ResumePage(props) {
                     <section className="bg-light">
                         <Container fluid className="mt-5">
                             <Row>
-                                <Col xs={12} lg={8} md={8} className="">
+                                <Col xs={8} lg={8} md={8} className="">
                                     <div className=" d-flex align-items-start">
                                         <div className="d-flex align-items-center justify-content-center">
                                             <StaticImage
@@ -81,38 +87,38 @@ function ResumePage(props) {
                                                 </span> <br />
                                                 <span className=" h1 mt-5 text-center ml-5" style={{ fontsize: "60px;" }}>
                                                     <a href="https://github.com/norellanac">
-                                                        <FontAwesomeIcon style={{ marginRight: 20 }} icon={faGithub} size="1x" />
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faGithub} size="1x" />
                                                     </a>
                                                     <a href="https://www.linkedin.com/in/nery-alexis-orellana-cuy-3612888b/">
-                                                        <FontAwesomeIcon style={{ marginRight: 20 }} icon={faLinkedin} size="1x" />
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faLinkedin} size="1x" />
                                                     </a>
                                                     <a href="https://m.facebook.com/alexis.orellana2">
-                                                        <FontAwesomeIcon style={{ marginRight: 20 }} icon={faFacebook} size="1x" />
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faFacebook} size="1x" />
                                                     </a>
                                                     <a href="https://www.instagram.com/norellanac/">
-                                                        <FontAwesomeIcon style={{ marginRight: 20 }} icon={faInstagram} size="1x" />
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faInstagram} size="1x" />
                                                     </a>
                                                     <a href="https://api.whatsapp.com/send?phone=50233120413">
-                                                        <FontAwesomeIcon style={{ marginRight: 20 }} icon={faWhatsapp} size="1x" />                                                   </a>
+                                                        <FontAwesomeIcon style={{ marginRight: 30 }} icon={faWhatsapp} size="1x" />                                                   </a>
                                                 </span>
                                             </p>
                                         </div>
                                     </div>
                                 </Col>
 
-                                <Col xs={12} lg={4} md={4} className="justify-content-center">
-                                    <div className="media block-6 services d-flex text-center justify-content-center">
-                                        <div className="">
+                                <Col xs={4} lg={4} md={4} className="ftco-animate justify-content-center">
+                                    <div className="media block-6 services d-flex text-center">
+                                        <div className="media-body">
                                             <StaticImage
                                                 src="../oldCv/img/umg.png" alt="umg"
                                                 placeholder="blurred"
                                                 layout="fixed"
                                                 width={100}
                                                 height={100}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+                                                style={{ marginLeft: 70 }}
                                                 className={circle}
                                             />
-                                            <div style={{ marginLeft: 0 }}>
+                                            <div style={{ marginLeft: 35 }}>
                                                 <h3 className="" style={{ fontSize: "25px;" }}>
                                                     <FormattedMessage
                                                         id="education"
@@ -160,7 +166,7 @@ function ResumePage(props) {
 
                             <div>
                                 <Row>
-                                    <Col xs={12} md={4}>
+                                    <Col xs={4}>
                                         <Card
                                             bg="light"
                                             text="dark"
@@ -221,7 +227,7 @@ function ResumePage(props) {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col xs={12} md={4}>
+                                    <Col xs={4}>
                                         <Card
                                             bg="light"
                                             text="dark"
@@ -282,7 +288,7 @@ function ResumePage(props) {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col xs={12} md={4}>
+                                    <Col xs={4}>
                                         <Card
                                             bg="light"
                                             text="dark"
@@ -354,7 +360,7 @@ function ResumePage(props) {
                             </div>
                             <div>
                                 <Row>
-                                    <Col xs={12} md={4}>
+                                    <Col xs={4}>
                                         <Card
                                             bg="light"
                                             text="dark"
@@ -420,7 +426,7 @@ function ResumePage(props) {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col xs={12} md={4}>
+                                    <Col xs={4}>
                                         <Card
                                             bg="light"
                                             text="dark"
@@ -483,7 +489,7 @@ function ResumePage(props) {
                                             </Card.Body>
                                         </Card>
                                     </Col>
-                                    <Col xs={12} md={4}>
+                                    <Col xs={4}>
                                         <Card
                                             bg="light"
                                             text="dark"
@@ -586,7 +592,7 @@ function ResumePage(props) {
                                 </div>
                             </div>
                             <Row className="justify-content-center">
-                                <Col xs={12} md={3} className="mt-3 d-flex justify-content-center counter-wrap ftco-animate">
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="36">+35</h4>
@@ -599,7 +605,7 @@ function ResumePage(props) {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={3} className="mt-3 d-flex justify-content-center counter-wrap ftco-animate">
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="5">+5</h4>
@@ -612,7 +618,7 @@ function ResumePage(props) {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={3} className="mt-3 d-flex justify-content-center counter-wrap ftco-animate">
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="10">+10</h4>
@@ -625,7 +631,7 @@ function ResumePage(props) {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={3} className="mt-3 d-flex justify-content-center counter-wrap ftco-animate">
+                                <Col xs={3} className="d-flex justify-content-center counter-wrap ftco-animate">
                                     <div className="block-18 text-center">
                                         <div className="text">
                                             <h4 className="number text-primary" data-number="2">2</h4>
@@ -658,7 +664,7 @@ function ResumePage(props) {
                             <div className="row ftco-animate">
                                 <div className="col-md-12">
                                     <Row >
-                                        <Col xs={12} md={3} className="mt-2 item">
+                                        <Col xs={3} className="item">
                                             <div className="testimony-wrap p-4 text-center">
                                                 <StaticImage
                                                     src="../img/ideaCodex.jpeg" alt="ideaCodex"
@@ -667,8 +673,6 @@ function ResumePage(props) {
                                                     width={100}
                                                     height={100}
                                                     className={circle}
-                                                    style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                                 />
                                                 <div className="text-light">
                                                     <p className="mb-4">
@@ -689,7 +693,7 @@ function ResumePage(props) {
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col xs={12} md={3} className="mt-2 item">
+                                        <Col xs={3} className="item">
                                             <div className="testimony-wrap p-4 text-center">
                                                 <StaticImage
                                                     src="../img/10x.png" alt="10x"
@@ -698,8 +702,6 @@ function ResumePage(props) {
                                                     width={100}
                                                     height={100}
                                                     className={circle}
-                                                    style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                                 />
                                                 <div className="text-light">
                                                     <p className="mb-4">
@@ -718,7 +720,7 @@ function ResumePage(props) {
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col xs={12} md={3} className="mt-2 item">                                            <div className="testimony-wrap p-4 text-center">
+                                        <Col xs={3} className="item">                                            <div className="testimony-wrap p-4 text-center">
                                             <StaticImage
                                                 src="../img/bi.jpg" alt="bi"
                                                 placeholder="blurred"
@@ -726,8 +728,6 @@ function ResumePage(props) {
                                                 width={100}
                                                 height={100}
                                                 className={circle}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                             />
                                             <div className="text-light">
                                                 <p className="mb-4">
@@ -745,7 +745,7 @@ function ResumePage(props) {
                                             </div>
                                         </div>
                                         </Col>
-                                        <Col xs={12} md={3} className="mt-2 item">
+                                        <Col xs={3} className="item">
                                             <div className="testimony-wrap p-4 text-center">
                                                 <StaticImage
                                                     src="https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU" alt="bi"
@@ -754,8 +754,6 @@ function ResumePage(props) {
                                                     width={100}
                                                     height={100}
                                                     className={circle}
-                                                    style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                                 />
                                                 <div className="text-light">
                                                     <p className="mb-4">
@@ -763,7 +761,7 @@ function ResumePage(props) {
                                                             id="exp-cont-4"
                                                             defaultMessage="exp-cont-4"
                                                         /></p>
-                                                    <br></br><br></br>
+                                                        <br></br><br></br>
                                                     <p className="text-light">Tigo Guatemala</p>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
@@ -801,8 +799,6 @@ function ResumePage(props) {
                                                 layout="fixed"
                                                 width={140}
                                                 height={110}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                             />
                                         </a>
 
@@ -841,8 +837,6 @@ function ResumePage(props) {
                                                 layout="fixed"
                                                 width={140}
                                                 height={110}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                             />
                                         </a>
                                         <div className="text text-center py-3">
@@ -883,8 +877,6 @@ function ResumePage(props) {
                                             layout="fixed"
                                             width={140}
                                             height={110}
-                                            style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                         />
                                         <div className="text text-center py-3">
                                             <div className="">
@@ -922,8 +914,6 @@ function ResumePage(props) {
                                                 layout="fixed"
                                                 width={140}
                                                 height={110}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
                                             />
                                         </a>
                                         <div className="text text-center py-3">
@@ -945,9 +935,9 @@ function ResumePage(props) {
                                             </div>
                                             <div className="desc">
                                                 <h5 ><a target="_blank" href="http://tecunapp.com/"><FormattedMessage
-                                                    id="post_title3"
-                                                    defaultMessage="post_title3"
-                                                /></a></h5>
+                                                        id="post_title3"
+                                                        defaultMessage="post_title3"
+                                                    /></a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -961,4 +951,4 @@ function ResumePage(props) {
     );
 }
 
-export default ResumePage;
+export default ResumePrintPage;
