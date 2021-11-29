@@ -37,12 +37,13 @@ function ResumePage(props) {
                                     <div className=" d-flex align-items-start">
                                         <div className="d-flex align-items-center justify-content-center">
                                             <StaticImage
-                                                src="../img/norellanac1.png" alt="norellanac"
+                                                src="../img/norellanac.jpeg" alt="norellanac"
                                                 placeholder="blurred"
                                                 layout="fixed"
-                                                width={100}
+                                                width={150}
                                                 height={150}
-                                                style={{ marginRight: 30, marginLeft: 30 }}
+                                                style={{ marginRight: 30, marginLeft: 30, marginTop: 30 }}
+                                                className={circle}
                                             />
                                         </div>
                                         <div className="media-body pl-4 ml-4">
@@ -117,30 +118,32 @@ function ResumePage(props) {
                                                 style={{ marginLeft: 70 }}
                                                 className={circle}
                                             />
-                                            <h3 className="" style={{ fontSize: "25px;" }}>
-                                                <FormattedMessage
-                                                    id="education"
-                                                    defaultMessage="education"
-                                                />
-                                            </h3>
-                                            <p className="p-1">
-                                                <FormattedMessage
-                                                    id="education_description"
-                                                    defaultMessage=""
-                                                />
-                                                <br />
-                                                <strong>
+                                            <div style={{ marginLeft: 35 }}>
+                                                <h3 className="" style={{ fontSize: "25px;" }}>
                                                     <FormattedMessage
-                                                        id="education_title"
-                                                        defaultMessage="education_title"
+                                                        id="education"
+                                                        defaultMessage="education"
                                                     />
-                                                </strong>
-                                                <br />
-                                                <FormattedMessage
-                                                    id="education_date"
-                                                    defaultMessage="education_date"
-                                                />
-                                            </p>
+                                                </h3>
+                                                <p className="p-1">
+                                                    <FormattedMessage
+                                                        id="education_description"
+                                                        defaultMessage=""
+                                                    />
+                                                    <br />
+                                                    <strong>
+                                                        <FormattedMessage
+                                                            id="education_title"
+                                                            defaultMessage="education_title"
+                                                        />
+                                                    </strong>
+                                                    <br />
+                                                    <FormattedMessage
+                                                        id="education_date"
+                                                        defaultMessage="education_date"
+                                                    />
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </Col>
@@ -329,6 +332,7 @@ function ResumePage(props) {
                                                                 layout="fixed"
                                                                 width={40}
                                                                 height={35}
+                                                                style={{ marginLeft: 30 }}
                                                             />
                                                             <StaticImage
                                                                 className="ml-2 d-inline-block"
@@ -397,6 +401,7 @@ function ResumePage(props) {
                                                             layout="fixed"
                                                             width={40}
                                                             height={35}
+                                                            style={{ marginLeft: 30, marginRight: 10 }}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
@@ -405,6 +410,7 @@ function ResumePage(props) {
                                                             layout="fixed"
                                                             width={35}
                                                             height={35}
+                                                            style={{ marginRight: 10 }}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
@@ -413,6 +419,7 @@ function ResumePage(props) {
                                                             layout="fixed"
                                                             width={50}
                                                             height={35}
+                                                            style={{ marginRight: 10 }}
                                                         />
                                                     </div>
                                                 </div>
@@ -457,6 +464,7 @@ function ResumePage(props) {
                                                             layout="fixed"
                                                             width={40}
                                                             height={35}
+                                                            style={{ marginLeft: 30, marginRight: 10 }}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 mr-4 d-inline-block"
@@ -465,6 +473,7 @@ function ResumePage(props) {
                                                             layout="fixed"
                                                             width={20}
                                                             height={35}
+                                                            style={{ marginLeft: 10, marginRight: 10 }}
                                                         />
                                                         <StaticImage
                                                             className="ml-2 d-inline-block"
@@ -473,6 +482,7 @@ function ResumePage(props) {
                                                             layout="fixed"
                                                             width={35}
                                                             height={35}
+                                                            style={{ marginLeft: 10, marginRight: 10 }}
                                                         />
                                                     </div>
                                                 </div>
@@ -524,6 +534,7 @@ function ResumePage(props) {
                                                                     layout="fixed"
                                                                     width={35}
                                                                     height={35}
+                                                                    style={{ marginLeft: 30, marginRight: 10 }}
                                                                 />
                                                                 <StaticImage
                                                                     className="ml-2 d-inline-block"
@@ -532,6 +543,7 @@ function ResumePage(props) {
                                                                     layout="fixed"
                                                                     width={50}
                                                                     height={35}
+                                                                    style={{ marginLeft: 10, marginRight: 10 }}
                                                                 />
                                                                 <StaticImage
                                                                     className="ml-2 d-inline-block"
@@ -540,6 +552,7 @@ function ResumePage(props) {
                                                                     layout="fixed"
                                                                     width={45}
                                                                     height={35}
+                                                                    style={{ marginLeft: 10, marginRight: 10 }}
                                                                 />
                                                             </div>
                                                         </div>
@@ -668,7 +681,9 @@ function ResumePage(props) {
                                                             defaultMessage="exp-cont-1"
                                                         />
                                                     </p>
-                                                    <p className="text-light">Idea Codex</p>
+                                                    <a href="www.ideacodex.co/" target="_blank">
+                                                        <p className="text-light">Idea Codex</p>
+                                                    </a>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
                                                             id="exp-t1"
@@ -714,8 +729,6 @@ function ResumePage(props) {
                                                 height={100}
                                                 className={circle}
                                             />
-                                            <div className="user-img mb-4" style={{ backgroundImage: "url(../img/bi.jpg)" }}>
-                                            </div>
                                             <div className="text-light">
                                                 <p className="mb-4">
                                                     <FormattedMessage
@@ -724,7 +737,7 @@ function ResumePage(props) {
                                                     />
                                                 </p>
                                                 <p className="text-light">Banco Industrial S.A.</p>
-                                                <span className="text-light h4">
+                                                <span className="text-light h5">
                                                     <FormattedMessage
                                                         id="exp-t3"
                                                         defaultMessage="exp-t3"
@@ -748,6 +761,7 @@ function ResumePage(props) {
                                                             id="exp-cont-4"
                                                             defaultMessage="exp-cont-4"
                                                         /></p>
+                                                        <br></br><br></br>
                                                     <p className="text-light">Tigo Guatemala</p>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
@@ -817,14 +831,14 @@ function ResumePage(props) {
                                 <div className="col-md-4">
                                     <div className="blog-entry">
                                         <a href="http://www.rrhhpayroll.com/" className="block-20" style={{ backgroundImage: "url('http://www.rrhhpayroll.com/storage/banners/1.jpg');" }}>
+                                            <StaticImage
+                                                src="http://demo.rrhhpayroll.com/storage/banners/1.jpg" alt="canjeaton"
+                                                placeholder="blurred"
+                                                layout="fixed"
+                                                width={140}
+                                                height={110}
+                                            />
                                         </a>
-                                        <StaticImage
-                                            src="http://demo.rrhhpayroll.com/storage/banners/1.jpg" alt="canjeaton"
-                                            placeholder="blurred"
-                                            layout="fixed"
-                                            width={140}
-                                            height={110}
-                                        />
                                         <div className="text text-center py-3">
                                             <div className="">
                                                 <div><a href="http://www.rrhhpayroll.com/">
@@ -841,10 +855,14 @@ function ResumePage(props) {
                                                         />
                                                     </a>
                                                 </div>
-
                                             </div>
                                             <div className="desc">
-                                                <h5 ><a href="http://www.rrhhpayroll.com/">Aplicación web utilizando Laravel Framework</a></h5>
+                                                <h5 ><a href="http://www.rrhhpayroll.com/">
+                                                    <FormattedMessage
+                                                        id="post_title2"
+                                                        defaultMessage="post_title2"
+                                                    />
+                                                </a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -874,8 +892,6 @@ function ResumePage(props) {
                                                         defaultMessage="post_label3"
                                                     />
                                                 </a></div>
-                                                <div className="d-none"><a href="http://pakal.website/" className="meta-chat"><span className="icon-chat"></span>
-                                                    3</a></div>
                                             </div>
                                             <div className="desc">
                                                 <h5 ><a href="http://pakal.website/">A
@@ -890,7 +906,7 @@ function ResumePage(props) {
                                 </div>
                                 <div className="col-md-4">
                                     <div className="blog-entry" >
-                                        <a href="http://tecunapp.com/" className="block-20"
+                                        <a target="_blank" href="http://tecunapp.com/" className="block-20"
                                             style={{ backgroundImage: "url('../img/grupotecun.png');" }}>
                                             <StaticImage
                                                 src="../img/grupotecun.png" alt="grupotecun"
@@ -902,14 +918,26 @@ function ResumePage(props) {
                                         </a>
                                         <div className="text text-center py-3">
                                             <div className="">
-                                                <div><a href="http://tecunapp.com/">Enero, 2018</a></div>
-                                                <div><a href="http://tecunapp.com/">Laravel / React Native</a></div>
-                                                <div className="d-none"><a href="http://tecunapp.com/" className="meta-chat"><span
-                                                    className="icon-chat"></span> 3</a></div>
+                                                <div><a target="_blank" href="http://tecunapp.com/">
+                                                    <FormattedMessage
+                                                        id="post_date3"
+                                                        defaultMessage="post_date3"
+                                                    />
+                                                </a></div>
+                                                <div>
+                                                    <a target="_blank" href="http://tecunapp.com/">
+                                                        <FormattedMessage
+                                                            id="post_label3"
+                                                            defaultMessage="post_label3"
+                                                        />
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div className="desc">
-                                                <h5 ><a href="http://tecunapp.com/">Aplicación de comunicación interna version Web
-                                                    y móvil | Laravel Framework y React Native</a></h5>
+                                                <h5 ><a target="_blank" href="http://tecunapp.com/"><FormattedMessage
+                                                        id="post_title3"
+                                                        defaultMessage="post_title3"
+                                                    /></a></h5>
                                             </div>
                                         </div>
                                     </div>
