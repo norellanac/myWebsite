@@ -9,8 +9,9 @@ import {
     faEnvelopeOpenText,
     faMobileAlt,
     faMap,
+    faCalendarAlt,
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faChrome, faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faChrome, faFacebook, faInstagram, faWhatsapp, faAndroid, faReact, faGooglePlay, faLaravel } from '@fortawesome/free-brands-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { circle } from '../components/general.module.css'
 import { Row, Container, Col, Card, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
@@ -25,7 +26,7 @@ function ResumePage(props) {
                 <div>
 
                     <section className="bg-light">
-                        <Container fluid className="mt-5">
+                        <Container fluid className="mt-4">
                             <Row>
                                 <Col xs={12} lg={8} md={8} className="">
                                     <div className=" d-flex align-items-start">
@@ -573,7 +574,7 @@ function ResumePage(props) {
                         </div>
                     </section>
 
-                    <section className="ftco-section ftco-counter bg-light img pt-3" id="section-counter">
+                    <section className="ftco-section ftco-counter bg-light img pt-5" id="section-counter">
                         <div className="container">
                             <div className="row justify-content-center mb-1">
                                 <div className="col-md-10 text-center heading-section ftco-animate">
@@ -638,13 +639,14 @@ function ResumePage(props) {
                                         </div>
                                     </div>
                                 </Col>
+                                <p></p>
                             </Row>
                         </div>
                     </section>
 
                     <section className="bg-primary pb-1">
                         <div className="container-fluid">
-                            <div className="row justify-content-center pt-5">
+                            <div className="row justify-content-center pt-3">
                                 <div className="col-md-7 text-center">
                                     <h2 className="mb-4 text-light">
                                         <FormattedMessage
@@ -652,7 +654,6 @@ function ResumePage(props) {
                                             defaultMessage="experience"
                                         />
                                     </h2>
-                                    <p></p>
                                 </div>
                             </div>
                             <div className="row ftco-animate">
@@ -678,7 +679,7 @@ function ResumePage(props) {
                                                         />
                                                     </p>
                                                     <p className="mb-1">
-                                                    <FormattedMessage
+                                                        <FormattedMessage
                                                             id="exp-date-1"
                                                             defaultMessage="exp-date-1"
                                                         />
@@ -715,7 +716,7 @@ function ResumePage(props) {
                                                         />
                                                     </p>
                                                     <p className="mb-1">
-                                                    <FormattedMessage
+                                                        <FormattedMessage
                                                             id="exp-date-2"
                                                             defaultMessage="exp-date-2"
                                                         />
@@ -782,7 +783,7 @@ function ResumePage(props) {
                                                             defaultMessage="exp-cont-4"
                                                         /></p>
                                                     <p className="mb-1">
-                                                    <FormattedMessage
+                                                        <FormattedMessage
                                                             id="exp-date-4"
                                                             defaultMessage="exp-date-4"
                                                         />
@@ -804,6 +805,153 @@ function ResumePage(props) {
                     </section>
 
                     <section className="bg-light pb-0">
+                        <div className="container-fluid">
+                            <div className="row justify-content-center pt-1">
+                                <div className="col-md-7 text-center">
+                                    <h2 className="mb-1 text-dark">
+                                        <FormattedMessage
+                                            id="portfolio"
+                                            defaultMessage="portfolio"
+                                        />
+                                    </h2>
+                                </div>
+                            </div>
+                            <div className="row ftco-animate">
+                                <div className="col-md-12">
+                                    <Row >
+                                        <Col xs={12} md={4} className="mt-1 item">
+                                            <div className="testimony-wrap p-4 text-center">
+                                                <a href="https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton" target="_blank">
+                                                    <StaticImage
+                                                        src="https://play-lh.googleusercontent.com/Rl1lvI4YXKTEnIuLlFB1aGgdMicZR59yobAnAM1piDWGJ1bszm1vcJKk7pCjleJnAA=s180" alt="ideaCodex"
+                                                        placeholder="blurred"
+                                                        layout="fixed"
+                                                        width={75}
+                                                        height={75}
+                                                        className={circle}
+                                                        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+
+                                                    />
+                                                </a>
+                                                <div className="text-dark">
+                                                    <p className="mb-4">
+                                                        <FormattedMessage
+                                                            id="post_title1"
+                                                            defaultMessage="post_title1"
+                                                        />
+                                                        <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faCalendarAlt} size="1x" className="text-secondary" />
+                                                        <FormattedMessage
+                                                            id="post_date1"
+                                                            defaultMessage="post_date1"
+                                                        />
+                                                    </p>
+                                                    <p className="mb-1">
+                                                        <a href="https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton" target="_blank">
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faAndroid} size="2x" className="text-success" />
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faReact} size="2x" className="text-primary" />
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faGooglePlay} size="2x" className="text-primary" />
+                                                        </a>
+                                                    </p>
+                                                    <span className="text-dark h5">
+                                                        <FormattedMessage
+                                                            id="post_label1"
+                                                            defaultMessage="post_label1"
+                                                        />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4} className="mt-1 item">
+                                            <div className="testimony-wrap p-4 text-center">
+                                                <a href="https://play.google.com/store/apps/details?id=com.grupotecun.gtm.tecunapp" target="_blank">
+                                                    <StaticImage
+                                                        src="https://play-lh.googleusercontent.com/aXCVTpBvCmcpVt6hGKR-IsjYQ5fYQLCa8-CLYfnHeYkkvUVlQVoxsGdFqn2LY5XKEyk=s180" alt="ideaCodex"
+                                                        placeholder="blurred"
+                                                        layout="fixed"
+                                                        width={75}
+                                                        height={75}
+                                                        className={circle}
+                                                        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+
+                                                    />
+                                                </a>
+                                                <div className="text-dark">
+                                                    <p className="mb-4">
+                                                        <FormattedMessage
+                                                            id="post_title2"
+                                                            defaultMessage="post_title2"
+                                                        />
+                                                        <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faCalendarAlt} size="1x" className="text-secondary" />
+                                                        <FormattedMessage
+                                                            id="post_date2"
+                                                            defaultMessage="post_date2"
+                                                        />
+                                                    </p>
+                                                    <p className="mb-1">
+                                                        <a href="https://play.google.com/store/apps/details?id=com.grupotecun.gtm.tecunapp" target="_blank">
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faAndroid} size="2x" className="text-success" />
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faReact} size="2x" className="text-primary" />
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faGooglePlay} size="2x" className="text-primary" />
+                                                        </a>
+                                                    </p>
+                                                    <span className="text-dark h5">
+                                                        <FormattedMessage
+                                                            id="post_label2"
+                                                            defaultMessage="post_label2"
+                                                        />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4} className="mt-1 item">
+                                            <div className="testimony-wrap p-4 text-center">
+                                                <a href="http://www.rrhhpayroll.com" target="_blank">
+                                                    <StaticImage
+                                                        src="http://demo.rrhhpayroll.com/storage/banners/1.jpg" alt="bi"
+                                                        placeholder="blurred"
+                                                        layout="fixed"
+                                                        width={75}
+                                                        height={75}
+                                                        className={circle}
+                                                        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+
+                                                    />
+                                                </a>
+                                                <div className="text-dark">
+                                                    <p className="mb-4">
+                                                        <FormattedMessage
+                                                            id="post_title3"
+                                                            defaultMessage="post_title3"
+                                                        />
+                                                        <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faCalendarAlt} size="1x" className="text-secondary" />
+                                                        <FormattedMessage
+                                                            id="post_date3"
+                                                            defaultMessage="post_date3"
+                                                        />
+                                                    </p>
+                                                    <p className="mb-1">
+                                                        <a href="http://www.rrhhpayroll.com" target="_blank">
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faAndroid} size="2x" className="text-success" />
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faReact} size="2x" className="text-primary" />
+                                                            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faLaravel} size="2x" className="text-primary" />
+                                                        </a>
+                                                    </p>
+                                                    <span className="text-dark h5">
+                                                        <FormattedMessage
+                                                            id="post_label3"
+                                                            defaultMessage="post_label3"
+                                                        />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="bg-light pb-0 d-none">
                         <div className="container pb-0">
                             <div className="row justify-content-center mb-3 pb-3 pt-3">
                                 <div className="col-md-7 text-center heading-section ftco-animate">
