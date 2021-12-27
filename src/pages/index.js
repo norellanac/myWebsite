@@ -20,10 +20,20 @@ import Header from '../components/header'
 
 function IndexPage(props) {
   // const language = props.pageContext.language;
-  console.warn("lenguage: ", props.location.href);
+  console.warn("lenguage: ", props);
+  const data = useStaticQuery(graphql`
+  query {
+  site {
+  siteMetadata {
+  title
+  }
+  }
+  }
+  `)
   return (
 
     <SimpleLocalize {...props}>
+      <title>{data.site.siteMetadata.title}</title>
       <div>
         <Navbar bg="dark" variant="dark" expand={false} fixed="top">
           <Container fluid>
@@ -35,10 +45,6 @@ function IndexPage(props) {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1"><FormattedMessage
-                    id="hello-world"
-                    defaultMessage="Hello World!"
-                  /></Nav.Link>
                   <Link
                     className="nav-link"
                     to={props.location.href + "resume/"}

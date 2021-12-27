@@ -677,6 +677,12 @@ function ResumePage(props) {
                                                             defaultMessage="exp-cont-1"
                                                         />
                                                     </p>
+                                                    <p className="mb-1">
+                                                    <FormattedMessage
+                                                            id="exp-date-1"
+                                                            defaultMessage="exp-date-1"
+                                                        />
+                                                    </p>
                                                     <a href="www.ideacodex.co/" target="_blank">
                                                         <p className="text-light">Idea Codex</p>
                                                     </a>
@@ -708,6 +714,12 @@ function ResumePage(props) {
                                                             defaultMessage="exp-cont-2"
                                                         />
                                                     </p>
+                                                    <p className="mb-1">
+                                                    <FormattedMessage
+                                                            id="exp-date-2"
+                                                            defaultMessage="exp-date-2"
+                                                        />
+                                                    </p>
                                                     <p className="text-light">10x Informatica</p>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
@@ -734,6 +746,12 @@ function ResumePage(props) {
                                                     <FormattedMessage
                                                         id="exp-cont-3"
                                                         defaultMessage="exp-cont-3"
+                                                    />
+                                                </p>
+                                                <p className="mb-1">
+                                                    <FormattedMessage
+                                                        id="exp-date-3"
+                                                        defaultMessage="exp-date-3"
                                                     />
                                                 </p>
                                                 <p className="text-light">Banco Industrial S.A.</p>
@@ -763,7 +781,13 @@ function ResumePage(props) {
                                                             id="exp-cont-4"
                                                             defaultMessage="exp-cont-4"
                                                         /></p>
-                                                    <br></br><br></br>
+                                                    <p className="mb-1">
+                                                    <FormattedMessage
+                                                            id="exp-date-4"
+                                                            defaultMessage="exp-date-4"
+                                                        />
+                                                    </p>
+                                                    <br></br>
                                                     <p className="text-light">Tigo Guatemala</p>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
