@@ -10,6 +10,7 @@ import {
     faMobileAlt,
     faMap,
     faCalendarAlt,
+    faBuilding,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faChrome, faFacebook, faInstagram, faWhatsapp, faAndroid, faReact, faGooglePlay, faLaravel } from '@fortawesome/free-brands-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -661,16 +662,18 @@ function ResumePage(props) {
                                     <Row >
                                         <Col xs={12} md={3} className="mt-2 item">
                                             <div className="testimony-wrap p-4 text-center">
-                                                <StaticImage
-                                                    src="../img/ideaCodex.jpeg" alt="ideaCodex"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={100}
-                                                    height={100}
-                                                    className={circle}
-                                                    style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+                                                <a className="text-primary" target="_blank" href="http://www.ideacodex.co/">
+                                                    <StaticImage
+                                                        src="../img/ideaCodex.jpeg" alt="ideaCodex"
+                                                        placeholder="blurred"
+                                                        layout="fixed"
+                                                        width={100}
+                                                        height={100}
+                                                        className={circle}
+                                                        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
 
-                                                />
+                                                    />
+                                                </a>
                                                 <div className="text-light">
                                                     <p className="mb-4">
                                                         <FormattedMessage
@@ -685,7 +688,7 @@ function ResumePage(props) {
                                                         />
                                                     </p>
                                                     <a href="www.ideacodex.co/" target="_blank">
-                                                        <p className="text-light">Idea Codex</p>
+                                                        <h5 className="text-light">Idea Codex</h5>
                                                     </a>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
@@ -698,16 +701,18 @@ function ResumePage(props) {
                                         </Col>
                                         <Col xs={12} md={3} className="mt-2 item">
                                             <div className="testimony-wrap p-4 text-center">
-                                                <StaticImage
-                                                    src="../img/10x.png" alt="10x"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={100}
-                                                    height={100}
-                                                    className={circle}
-                                                    style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+                                                <a href="http://tenxprotocol.com/" target="_blank">
+                                                    <StaticImage
+                                                        src="../img/10x.png" alt="10x"
+                                                        placeholder="blurred"
+                                                        layout="fixed"
+                                                        width={100}
+                                                        height={100}
+                                                        className={circle}
+                                                        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
 
-                                                />
+                                                    />
+                                                </a>
                                                 <div className="text-light">
                                                     <p className="mb-4">
                                                         <FormattedMessage
@@ -721,7 +726,8 @@ function ResumePage(props) {
                                                             defaultMessage="exp-date-2"
                                                         />
                                                     </p>
-                                                    <p className="text-light">10x Informatica</p>
+                                                    <a href="http://tenxprotocol.com/" target="_blank">
+                                                        <h5 className="text-light">10x Informatica</h5> </a>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
                                                             id="exp-t2"
@@ -731,51 +737,58 @@ function ResumePage(props) {
                                                 </div>
                                             </div>
                                         </Col>
-                                        <Col xs={12} md={3} className="mt-2 item">                                            <div className="testimony-wrap p-4 text-center">
-                                            <StaticImage
-                                                src="../img/bi.jpg" alt="bi"
-                                                placeholder="blurred"
-                                                layout="fixed"
-                                                width={100}
-                                                height={100}
-                                                className={circle}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+                                        <Col xs={12} md={3} className="mt-2 item">
+                                            <div className="testimony-wrap p-4 text-center">
+                                                <a href="https://www.corporacionbi.com/" target="_blank">
+                                                    <StaticImage
+                                                        src="../img/bi.jpg" alt="bi"
+                                                        placeholder="blurred"
+                                                        layout="fixed"
+                                                        width={100}
+                                                        height={100}
+                                                        className={circle}
+                                                        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
 
-                                            />
-                                            <div className="text-light">
-                                                <p className="mb-4">
-                                                    <FormattedMessage
-                                                        id="exp-cont-3"
-                                                        defaultMessage="exp-cont-3"
                                                     />
-                                                </p>
-                                                <p className="mb-1">
-                                                    <FormattedMessage
-                                                        id="exp-date-3"
-                                                        defaultMessage="exp-date-3"
-                                                    />
-                                                </p>
-                                                <p className="text-light">Banco Industrial S.A.</p>
-                                                <span className="text-light h5">
-                                                    <FormattedMessage
-                                                        id="exp-t3"
-                                                        defaultMessage="exp-t3"
-                                                    /></span>
+                                                </a>
+                                                <div className="text-light">
+                                                    <p className="mb-4">
+                                                        <FormattedMessage
+                                                            id="exp-cont-3"
+                                                            defaultMessage="exp-cont-3"
+                                                        />
+                                                    </p>
+                                                    <p className="mb-1">
+                                                        <FormattedMessage
+                                                            id="exp-date-3"
+                                                            defaultMessage="exp-date-3"
+                                                        />
+                                                    </p>
+                                                    <a href="https://www.corporacionbi.com/" target="_blank">
+                                                        <h5 className="text-light">Banco Industrial S.A.</h5>
+                                                    </a>
+                                                    <span className="text-light h5">
+                                                        <FormattedMessage
+                                                            id="exp-t3"
+                                                            defaultMessage="exp-t3"
+                                                        /></span>
+                                                </div>
                                             </div>
-                                        </div>
                                         </Col>
                                         <Col xs={12} md={3} className="mt-2 item">
                                             <div className="testimony-wrap p-4 text-center">
-                                                <StaticImage
-                                                    src="https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU" alt="bi"
-                                                    placeholder="blurred"
-                                                    layout="fixed"
-                                                    width={100}
-                                                    height={100}
-                                                    className={circle}
-                                                    style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
+                                                <a href="https://www.tigo.com.gt/" target="_blank" >
+                                                    <StaticImage
+                                                        src="https://encrypted-tbn0.gstatic.com/./img?q=tbn%3AANd9GcRUTwpWFWHceUTHAx7toKUbZs0NBXn_1ZJqxg&usqp=CAU" alt="bi"
+                                                        placeholder="blurred"
+                                                        layout="fixed"
+                                                        width={100}
+                                                        height={100}
+                                                        className={circle}
+                                                        style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
 
-                                                />
+                                                    />
+                                                </a>
                                                 <div className="text-light">
                                                     <p className="mb-4">
                                                         <FormattedMessage
@@ -789,7 +802,9 @@ function ResumePage(props) {
                                                         />
                                                     </p>
                                                     <br></br>
-                                                    <p className="text-light">Tigo Guatemala</p>
+                                                    <a href="https://www.tigo.com.gt/" target="_blank" >
+                                                        <h5 className="text-light">Tigo Guatemala</h5>
+                                                    </a>
                                                     <span className="text-light h4">
                                                         <FormattedMessage
                                                             id="exp-t4"
@@ -844,6 +859,9 @@ function ResumePage(props) {
                                                             id="post_date1"
                                                             defaultMessage="post_date1"
                                                         />
+                                                        <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faBuilding} size="1x" className="text-secondary" />
+                                                        <a className="text-primary" target="_blank" href="http://tenxprotocol.com/">10x Informatica</a>
+
                                                     </p>
                                                     <p className="mb-1">
                                                         <a href="https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton" target="_blank">
@@ -886,6 +904,9 @@ function ResumePage(props) {
                                                             id="post_date2"
                                                             defaultMessage="post_date2"
                                                         />
+                                                        <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faBuilding} size="1x" className="text-secondary" />
+                                                        <a className="text-primary" target="_blank" href="http://www.ideacodex.co/">IdeaCodex</a>
+
                                                     </p>
                                                     <p className="mb-1">
                                                         <a href="https://play.google.com/store/apps/details?id=com.grupotecun.gtm.tecunapp" target="_blank">
@@ -928,6 +949,8 @@ function ResumePage(props) {
                                                             id="post_date3"
                                                             defaultMessage="post_date3"
                                                         />
+                                                        <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faBuilding} size="1x" className="text-secondary" />
+                                                        <a className="text-primary" target="_blank" href="http://www.ideacodex.co/">IdeaCodex</a>
                                                     </p>
                                                     <p className="mb-1">
                                                         <a href="http://www.rrhhpayroll.com" target="_blank">
@@ -985,6 +1008,9 @@ function ResumePage(props) {
                                                         id="post_date1"
                                                         defaultMessage="post_date1"
                                                     />
+                                                    <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faBuilding} size="1x" className="text-secondary" />
+                                                    <a className="text-primary" target="_blank" href="http://www.ideacodex.co/">IdeaCodex</a>
+
                                                 </a></div>
                                                 <div><a href="https://app.canjeaton.com/">
                                                     <FormattedMessage
@@ -1024,6 +1050,9 @@ function ResumePage(props) {
                                                         id="post_date2"
                                                         defaultMessage="post_date2"
                                                     />
+                                                    <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faBuilding} size="1x" className="text-secondary" />
+                                                    <a className="text-primary" target="_blank" href="http://www.ideacodex.co/">IdeaCodex</a>
+
                                                 </a></div>
                                                 <div>
                                                     <a href="http://www.rrhhpayroll.com/">
