@@ -15,7 +15,7 @@ import {
 import { faGithub, faLinkedin, faChrome, faFacebook, faInstagram, faWhatsapp, faAndroid, faReact, faGooglePlay, faLaravel } from '@fortawesome/free-brands-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { circle } from '../components/general.module.css'
-import { Row, Container, Col, Card, NavDropdown, Form, FormControl, Button, Image } from 'react-bootstrap';
+import { Row, Container, Col, Card, Badge, Form, FormControl, Button, ListGroup } from 'react-bootstrap';
 
 function ResumePage(props) {
     // const language = props.pageContext.language;
@@ -819,7 +819,7 @@ function ResumePage(props) {
                         </div>
                     </section>
 
-                    <section className="bg-light pb-0">
+                    <section className="bg-light pb-0 mt-4 pb-2">
                         <div className="container-fluid">
                             <div className="row justify-content-center pt-1">
                                 <div className="col-md-7 text-center">
@@ -974,190 +974,224 @@ function ResumePage(props) {
                         </div>
                     </section>
 
-                    <section className="bg-light pb-0 d-none">
-                        <div className="container pb-0">
-                            <div className="row justify-content-center mb-3 pb-3 pt-3">
-                                <div className="col-md-7 text-center heading-section ftco-animate">
-                                    <h2>
-                                        <FormattedMessage
-                                            id="portfolio"
-                                            defaultMessage="portfolio"
-                                        />
+
+                    {/* printed resume */}
+                    <section className="pt-2">
+                        <Container fluid className="mt-4">
+                            <Row>
+                                <Col xs={12} lg={12} md={12} className="">
+                                    <div className=" d-flex align-items-start">
+                                        <div className="d-flex align-items-center justify-content-center">
+                                            <StaticImage
+                                                src="../img/norellanac.jpeg" alt="norellanac"
+                                                placeholder="blurred"
+                                                layout="fixed"
+                                                width={160}
+                                                height={160}
+                                                style={{ marginRight: 30, marginLeft: 30, marginTop: 30 }}
+                                                className={circle}
+                                            />
+                                        </div>
+                                        <div className="media-body pl-4 ml-4 mt-3">
+                                            <ListGroup variant="flush">
+                                                <ListGroup.Item ><span className="mb-2 text-primary h1" style={{ fontsize: "35px;" }}>Nery Alexis Orellana</span>
+                                                    <span className="mb-2 text-primary h4"> - React Native Dev <FontAwesomeIcon icon={faReact} size="1x" className="text-primary" /></span></ListGroup.Item>
+                                                <ListGroup.Item><span className="mb-2 text-secondary h3">Technical Profile </span></ListGroup.Item>
+                                            </ListGroup>
+                                            <Container className="container mr-5">
+                                                +5 years developing software, managing some web applications, and a small software development team.  2 mobile Android applications deployed in Google Play, created using react-native.
+                                                Personal website, multi-language developed with  <span style={{ fontWeight: 'bold' }}>Gatsby</span>,
+                                                <a href="https://norellanac.github.io/myWebsite/"> https://norellanac.github.io/myWebsite/</a>
+                                            </Container>
+                                        </div>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </section>
+                    <section className="mt-5 pr-5">
+                        <Row >
+                            <Col xs={3, { offset: 1 }} lg={3, { offset: 1 }} md={3, { offset: 1 }}>
+                                <span style={{ fontWeight: 'bold' }}>Programming Languages :</span>
+                            </Col>
+                            <Col xs={8} lg={8} md={8} className="mr-5 pr-5">
+                                <li>Knowledge and professional experience working with PHP -Laravel, and  <span style={{ fontWeight: 'bold' }}>javascript</span>, general knowledge, and self-learning with Java (Spring Framework)</li>
+                            </Col>
+                        </Row>
+                        <Row >
+                            <Col xs={3, { offset: 1 }} lg={3, { offset: 1 }} md={3, { offset: 1 }}>
+                                <span style={{ fontWeight: 'bold' }}>Testing :</span>
+                            </Col>
+                            <Col xs={8} lg={8} md={8}>
+                                <li>Use of postman to send requests to web services and general knowledge of selenium</li>
+                                <li>PHP Unit</li>
+                            </Col>
+                        </Row>
+                        <Row >
+                            <Col xs={3, { offset: 1 }} lg={3, { offset: 1 }} md={3, { offset: 1 }}>
+                                <span style={{ fontWeight: 'bold' }}>Methodology :</span>
+                            </Col>
+                            <Col xs={8} lg={8} md={8}>
+                                <li>{`Scrum is an agile way to manage a project, usually software development. 
+                                    Agile software development with Scrum is often perceived as a methodology; 
+                                    but rather than viewing Scrum as methodology, think of it as a framework for managing a project.`}</li>
+                            </Col>
+                        </Row>
+                        <Row >
+                            <Col xs={3, { offset: 1 }} lg={3, { offset: 1 }} md={3, { offset: 1 }}>
+                                <span style={{ fontWeight: 'bold' }}>Databases :</span>
+                            </Col>
+                            <Col xs={8} lg={8} md={8}>
+                                <li>MySql, MariaDB, MongoDB, oracle, SQLServer</li>
+                            </Col>
+                        </Row>
+                        <Row >
+                            <Col xs={3, { offset: 1 }} lg={3, { offset: 1 }} md={3, { offset: 1 }}>
+                                <span style={{ fontWeight: 'bold' }}>Application Servers :</span>
+                            </Col>
+                            <Col xs={8} lg={8} md={8}>
+                                <li>Amazon EC2, Azure Virtual Machines, Docker, LAMP, apache2, IIS</li>
+                            </Col>
+                        </Row>
+                        <Row >
+                            <Col xs={3, { offset: 1 }} lg={3, { offset: 1 }} md={3, { offset: 1 }}>
+                                <span style={{ fontWeight: 'bold' }}>Other Skillss :</span>
+                            </Col>
+                            <Col xs={8} lg={8} md={8}>
+                                <li>git, docker, Linux, Windows, Ubuntu, Kubernetes, Bootstrap</li>
+                            </Col>
+                        </Row>
+                    </section>
+
+                    <section>
+                        <Container className="mt-5">
+                            <div className="row justify-content-center mb-1 mt-3">
+                                <div className="text-center text-primary">
+                                    <h2 className="mb-4">
+                                        Professional Experience
                                     </h2>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <div className="blog-entry">
-                                        <a href="https://app.canjeaton.com/" className="block-20">
-                                            <StaticImage
-                                                src="../img/canjeaton.png" alt="canjeaton"
-                                                placeholder="blurred"
-                                                layout="fixed"
-                                                width={140}
-                                                height={110}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
+                            <Card className="mb-4">
+                                <Card.Header>Aug 2020 / Dec 2021 - 1 yr 4 mos | IdeaCodex | IT project leader
+                                </Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Responsibilities and Achievements</Card.Title>
+                                    <Card.Text>
+                                        <p className="container mb-3">
+                                            <FormattedMessage
+                                                id="exp-details-1"
+                                                defaultMessage="exp-details-1"
                                             />
-                                        </a>
+                                        </p>
+                                        <Row >
+                                            <Col xs={11, { offset: 1 }} lg={11, { offset: 1 }} md={11, { offset: 1 }}>
+                                                <li>Assign tasks and responsibilities to the development team.</li>
+                                                <li>Technical leader in software development projects. Analysis, design, development, implementation, and software maintenance.</li>
+                                                <li>Communication Skills,  Teaching, and support to junior developers.</li>
+                                                <li>Products: www.rrhhpayroll.com https://play.google.com/store/apps/details?id=com.grupotecun.gtm.tecunapp </li>
+                                                <p></p>
+                                            </Col>
+                                        </Row>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            <Card className="mt-5">
+                                <Card.Header >Nov 2018 / Aug 2020 - 1 yr 10 mos | 10x informatica | Web developer
+                                </Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Responsibilities and Achievements</Card.Title>
+                                    <Card.Text>
+                                        <p className="container mb-3">
+                                            <FormattedMessage
+                                                id="exp-details-2"
+                                                defaultMessage="exp-details-2"
+                                            /></p>
+                                        <Row >
+                                            <Col xs={11, { offset: 1 }} lg={11, { offset: 1 }} md={11, { offset: 1 }}>
+                                                <li>Analysis, design, and development of web applications, administration of open source software, Magento, Moodle, and WordPress.</li>
+                                                <li>Tools: Linux OS - Ubuntu, git, Github, Laravel, Jira,</li>
+                                                <li>Products: https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton </li>
+                                            </Col>
+                                        </Row>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Container>
 
-                                        <div className="text text-center py-3">
-                                            <div className="">
-                                                <div><a href="https://app.canjeaton.com/">
-                                                    <FormattedMessage
-                                                        id="post_date1"
-                                                        defaultMessage="post_date1"
-                                                    />
-                                                    <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faBuilding} size="1x" className="text-secondary" />
-                                                    <a className="text-primary" target="_blank" href="http://www.ideacodex.co/">IdeaCodex</a>
+                    </section>
 
-                                                </a></div>
-                                                <div><a href="https://app.canjeaton.com/">
-                                                    <FormattedMessage
-                                                        id="post_label1"
-                                                        defaultMessage="post_label1"
-                                                    />
-                                                </a></div>
-                                            </div>
-                                            <div className="desc">
-                                                <h5 ><a href="https://app.canjeaton.com/">
-                                                    <FormattedMessage
-                                                        id="post_title1"
-                                                        defaultMessage="post_title1"
-                                                    />
-                                                </a> <a className="text-primary" href="http://tenxprotocol.com/">10x Informatica</a> </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="blog-entry">
-                                        <a href="http://www.rrhhpayroll.com/" className="block-20" style={{ backgroundImage: "url('http://www.rrhhpayroll.com/storage/banners/1.jpg');" }}>
-                                            <StaticImage
-                                                src="http://demo.rrhhpayroll.com/storage/banners/1.jpg" alt="canjeaton"
-                                                placeholder="blurred"
-                                                layout="fixed"
-                                                width={140}
-                                                height={110}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
 
-                                            />
-                                        </a>
-                                        <div className="text text-center py-3">
-                                            <div className="">
-                                                <div><a href="http://www.rrhhpayroll.com/">
-                                                    <FormattedMessage
-                                                        id="post_date2"
-                                                        defaultMessage="post_date2"
-                                                    />
-                                                    <FontAwesomeIcon style={{ marginRight: 5, marginLeft: 10 }} icon={faBuilding} size="1x" className="text-secondary" />
-                                                    <a className="text-primary" target="_blank" href="http://www.ideacodex.co/">IdeaCodex</a>
-
-                                                </a></div>
-                                                <div>
-                                                    <a href="http://www.rrhhpayroll.com/">
-                                                        <FormattedMessage
-                                                            id="post_label2"
-                                                            defaultMessage="post_label2"
-                                                        />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div className="desc">
-                                                <h5 ><a href="http://www.rrhhpayroll.com/">
-                                                    <FormattedMessage
-                                                        id="post_title2"
-                                                        defaultMessage="post_title2"
-                                                    />
-                                                </a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="d-none col-md-4">
-                                    <div className="blog-entry" >
-                                        <a href="http://pakal.website/" className="block-20" style={{ backgroundImage: "url('../img/pakal.png');" }}>
-                                        </a>
-                                        <StaticImage
-                                            src="../img/pakal.png" alt="pakal"
-                                            placeholder="blurred"
-                                            layout="fixed"
-                                            width={140}
-                                            height={110}
-                                            style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
-                                        />
-                                        <div className="text text-center py-3">
-                                            <div className="">
-                                                <div><a href="http://pakal.website/">
-                                                    <FormattedMessage
-                                                        id="post_date3"
-                                                        defaultMessage="post_date3"
-                                                    />
-                                                </a></div>
-                                                <div><a href="http://pakal.website/">
-                                                    <FormattedMessage
-                                                        id="post_label3"
-                                                        defaultMessage="post_label3"
-                                                    />
-                                                </a></div>
-                                            </div>
-                                            <div className="desc">
-                                                <h5 ><a href="http://pakal.website/">A
-                                                    <FormattedMessage
-                                                        id="post_title3"
-                                                        defaultMessage="post_title3"
-                                                    />
-                                                </a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="blog-entry" >
-                                        <a target="_blank" href="http://tecunapp.com/" className="block-20"
-                                            style={{ backgroundImage: "url('../img/grupotecun.png');" }}>
-                                            <StaticImage
-                                                src="../img/grupotecun.png" alt="grupotecun"
-                                                placeholder="blurred"
-                                                layout="fixed"
-                                                width={140}
-                                                height={110}
-                                                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
-
-                                            />
-                                        </a>
-                                        <div className="text text-center py-3">
-                                            <div className="">
-                                                <div><a target="_blank" href="http://tecunapp.com/">
-                                                    <FormattedMessage
-                                                        id="post_date3"
-                                                        defaultMessage="post_date3"
-                                                    />
-                                                </a></div>
-                                                <div>
-                                                    <a target="_blank" href="http://tecunapp.com/">
-                                                        <FormattedMessage
-                                                            id="post_label3"
-                                                            defaultMessage="post_label3"
-                                                        />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div className="desc">
-                                                <h5 ><a target="_blank" href="http://tecunapp.com/"><FormattedMessage
-                                                    id="post_title3"
-                                                    defaultMessage="post_title3"
-                                                /></a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <section>
+                        <Container className="mt-5">
+                            <div className="row justify-content-center mb-1 mt-3">
+                                <div className="text-center text-primary">
+                                    <h2 className="mb-4">
+                                        Education
+                                    </h2>
                                 </div>
                             </div>
-                        </div>
+                            <Card className="">
+                                <Card.Header>Current
+                                </Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Bachelor of Pedagogy and Educational Administration</Card.Title>
+                                    <Card.Text>
+                                        <Row >
+                                            <Col xs={11, { offset: 1 }} lg={11, { offset: 1 }} md={11, { offset: 1 }}>
+                                                <li>University: Universidad San Carlos De Guatemala.</li>
+                                                <li>Dates: 2022, Current.</li>
+                                            </Col>
+                                        </Row>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            <Card className="">
+                                <Card.Header>Completed
+                                </Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Software engineer</Card.Title>
+                                    <Card.Text>
+                                        <Row >
+                                            <Col xs={11, { offset: 1 }} lg={11, { offset: 1 }} md={11, { offset: 1 }}>
+                                                <li>University: Universidad Mariano Gálvez.</li>
+                                                <li>Dates: 2012 - 2020</li>
+                                            </Col>
+                                        </Row>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Container>
+                    </section>
+
+                    <section>
+                        <Container className="mt-5">
+                            <div className="row justify-content-center mb-1 mt-3">
+                                <div className="text-center text-primary">
+                                    <h2 className="mb-1">
+                                        Languages
+                                    </h2>
+                                </div>
+                            </div>
+                            <div >
+                                <p>
+                                    <Badge pill bg="info">
+                                        English / B2
+                                    </Badge>
+                                </p>
+                                <p>
+                                    <Badge pill bg="primary">
+                                        Spanish / Native
+                                    </Badge>
+                                </p>
+                            </div>
+                        </Container>
                     </section>
                 </div>
             </div>
+            {/* https://www.hireitpeople.com/resume-database/64-java-developers-architects-resumes/143437-react-native-developer-resume-lowell-ar
+            https://www.cakeresume.com/resources/react-developer-resume?locale=es
+            */}
         </SimpleLocalize>
     );
 }
