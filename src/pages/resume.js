@@ -1339,7 +1339,7 @@ function ResumePage(props) {
                           </span>
                           <span className="mb-2 text-primary h4">
                             {" "}
-                            - React Native Dev{" "}
+                            - PHP Laravel Dev{" "}
                             <FontAwesomeIcon
                               icon={faReact}
                               size="1x"
@@ -1356,7 +1356,8 @@ function ResumePage(props) {
                                 size="1x"
                               />
                               <a href="tel:50233120413">+502 33120413</a>{" "}
-                            </span>{" | "}
+                            </span>
+                            {" | "}
                             <span className="ml-5 pl-5">
                               <FontAwesomeIcon
                                 style={{ marginRight: 5 }}
@@ -1365,7 +1366,8 @@ function ResumePage(props) {
                               <a href="mailto:alexis_oc@yahoo.es">
                                 alexis_oc@yahoo.es
                               </a>{" "}
-                            </span>{" | "} 
+                            </span>
+                            {" | "}
                             <span
                               className=" mt-5 text-center ml-5"
                               style={{ fontsize: "30px;" }}
@@ -1440,7 +1442,7 @@ function ResumePage(props) {
                 md={(3, { offset: 1 })}
               >
                 <span style={{ fontWeight: "bold" }}>
-                  Programming Languages :
+                  Programming Languages
                 </span>
               </Col>
               <Col xs={8} lg={8} md={8} className="mr-5 pr-5">
@@ -1555,22 +1557,16 @@ function ResumePage(props) {
                         md={(11, { offset: 1 })}
                       >
                         <li>
-                          React Hooks Lifecycle, Push Notifications with Expo's
-                          Push API
+                          5+ years of Hands-on experience with LAMP stack
+                          (Linux, Apache, MySQL, PHP).
                         </li>
-                        <li>
-                          React: Implemented EcmaScript6 (ES6) arrow functions,
-                          constants, block-scope variables
-                        </li>
-                        <li>
-                          Took initiative in learning react native and went on
-                          to successfully develop various features under minimal
-                          supervision.
-                        </li>
+                        <li>4 years of experience coding PHP.</li>
+                        <li>Laravel, Composer</li>
                         <li>
                           Assign tasks and responsibilities to the development
                           team.
                         </li>
+                        <li>Prestashop</li>
                         <li>
                           Technical leader in software development projects.
                           Analysis, design, development, implementation, and
@@ -1614,14 +1610,9 @@ function ResumePage(props) {
                         lg={(11, { offset: 1 })}
                         md={(11, { offset: 1 })}
                       >
-                        <li>
-                          React: Good understanding and usage of states and
-                          props
-                        </li>
+                        <li>Magento Ecommerce | Moodle.</li>
                         <li>Understanding to navigate in React Native apps</li>
-                        <li>
-                          Used Redux to store state of app in a singular source.
-                        </li>
+                        <li>GIT experience | OOP experience.</li>
                         <li>
                           Experience with Restful Services and APIs. A full user
                           authentication flow
@@ -1632,7 +1623,8 @@ function ResumePage(props) {
                           Moodle, and WordPress.
                         </li>
                         <li>
-                          Tools: Linux OS - Ubuntu, git, Github, Laravel, Jira,
+                          Tools: Linux OS - Ubuntu, Docker, git, Github,
+                          Laravel, Jira
                         </li>
                         <li>
                           Products:{" "}
