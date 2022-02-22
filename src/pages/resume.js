@@ -1348,7 +1348,68 @@ function ResumePage(props) {
                           </span>
                         </ListGroup.Item>
                         <ListGroup.Item>
-                          <span className="mb-2 text-secondary h3">
+                          <span className="mr-5 pr-5 text-secondary h5">
+                            <span className="ml-4">
+                              <FontAwesomeIcon
+                                style={{ marginRight: 5 }}
+                                icon={faMobileAlt}
+                                size="1x"
+                              />
+                              <a href="tel:50233120413">+502 33120413</a>{" "}
+                            </span>{" | "}
+                            <span className="ml-5 pl-5">
+                              <FontAwesomeIcon
+                                style={{ marginRight: 5 }}
+                                icon={faEnvelopeOpenText}
+                              />
+                              <a href="mailto:alexis_oc@yahoo.es">
+                                alexis_oc@yahoo.es
+                              </a>{" "}
+                            </span>{" | "} 
+                            <span
+                              className=" mt-5 text-center ml-5"
+                              style={{ fontsize: "30px;" }}
+                            >
+                              <a href="https://github.com/norellanac">
+                                <FontAwesomeIcon
+                                  style={{ marginRight: 5 }}
+                                  icon={faGithub}
+                                  size="1x"
+                                />
+                              </a>
+                              <a href="https://www.linkedin.com/in/nery-alexis-orellana-cuy-3612888b/">
+                                <FontAwesomeIcon
+                                  style={{ marginRight: 5 }}
+                                  icon={faLinkedin}
+                                  size="1x"
+                                />
+                              </a>
+                              <a href="https://m.facebook.com/alexis.orellana2">
+                                <FontAwesomeIcon
+                                  style={{ marginRight: 5 }}
+                                  icon={faFacebook}
+                                  size="1x"
+                                />
+                              </a>
+                              <a href="https://www.instagram.com/norellanac/">
+                                <FontAwesomeIcon
+                                  style={{ marginRight: 5 }}
+                                  icon={faInstagram}
+                                  size="1x"
+                                />
+                              </a>
+                              <a href="https://api.whatsapp.com/send?phone=50233120413">
+                                <FontAwesomeIcon
+                                  style={{ marginRight: 5 }}
+                                  icon={faWhatsapp}
+                                  size="1x"
+                                />{" "}
+                              </a>
+                            </span>
+                          </span>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <span className="text-secondary h5">
                             Technical Profile{" "}
                           </span>
                         </ListGroup.Item>
