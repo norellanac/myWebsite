@@ -26,6 +26,10 @@
     "exp-cont-2": "Analysis, design and development of web applications, administration of open source software, Magento, Moodle and WordPress",
     "exp-cont-3": "IBM systems (AS400, 390), execution and review of processes and transactions in testing projects, including logs and reports.",
     "exp-cont-4": "Technical support in configuration of mobile devices; Apple IOS, Google Andoid and Windows Phone.",
+    "exp-details-1": "We build an app for our customers, using react native, following the whole software process, requirements, analysis, design and development. We coding the mobile app and deploy on google play store. Today there is more than 500 users in the app enjoying our product experience.",
+    "exp-details-2": "We build a React Native application for a customer, this application helped the company to share internal communication and information. We implemented the application using expo for a fast development process.  The application uses push notifications, local storage and secure storage to keep the user authentication token, we implemented Redux and ReactNativeNavigation to manage the application screens and data.",
+    "exp-details-3": "Sistemas IBM (AS400, 390), ejecución  de procesos y proyectos de pruebas, bitácoras y reportes.",
+    "exp-details-4": "Soporte técnico en configuración de dispositivos móviles; Apple IOS, Google Andoid y Windows Phone.",
     "projects_title": "Projects And Mobile Android Apps",
     "github_experience": "Github Repositories",
     "years_experience": "Years of development experience",
@@ -44,6 +48,7 @@
     "education_title" : "Software Engineer",
     "education_date" : "JUN 2020",
     "education_description" : "College",
+    "specific-experience": "React Native Experience",
     "example": "example"
   },
   "es" : {
@@ -73,6 +78,10 @@
     "exp-cont-2": "Análisis, diseño y desarrollo de aplicaciones web, administración de software open source, Magento, Moodle y WordPress",
     "exp-cont-3": "Sistemas IBM (AS400, 390), ejecución  de procesos y proyectos de pruebas, bitácoras y reportes.",
     "exp-cont-4": "Soporte técnico en configuración de dispositivos móviles; Apple IOS, Google Andoid y Windows Phone.",
+    "exp-details-1": "Creamos una aplicación para nuestros clientes, utilizando react native, siguiendo todo el proceso de software, requisitos, análisis, diseño y desarrollo. Codificamos la aplicación móvil y la implementamos en Google Play Store. Hoy existe más de 500 usuarios en la aplicación disfrutando de nuestra experiencia con el producto. ",
+    "exp-details-2": "Creamos una aplicación React Native para un cliente, esta aplicación ayudó a la empresa a compartir información y comunicación interna. Implementamos la aplicación usando expo para un proceso de desarrollo rápido. La aplicación usa notificaciones push, locales almacenamiento y almacenamiento seguro para mantener el token de autenticación del usuario, implementamos Redux y ReactNativeNavigation para administrar las pantallas y los datos de la aplicación. ",
+    "exp-details-3": "Sistemas IBM (AS400, 390), ejecución de procesos y proyectos de pruebas, bitácoras y reportes.",
+    "exp-details-4": "Soporte técnico en configuración de dispositivos móviles; Apple IOS, Google Andoid y Windows Phone.", 
     "projects_title": "Aplicaciones móviles y proyectos",
     "github_experience": "Repositorios en Github",
     "years_experience": "Años de experiencia",
@@ -91,6 +100,7 @@
     "education_title" : "Ingeniería en Sistemas de Información",
     "education_date" : "JUN - 2020",
     "education_description" : "Cierre de pénsum",
+    "specific-experience": "Expereiencia con React Native",
     "example": "example"
     
   }
