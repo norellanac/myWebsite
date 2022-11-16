@@ -1447,9 +1447,7 @@ function ResumePage(props) {
                 <li>
                   Knowledge and professional experience working with PHP
                   -Laravel, and{" "}
-                  <span style={{ fontWeight: "bold" }}>javascript</span>,
-                  general knowledge, and self-learning with Java (Spring
-                  Framework)
+                  <span style={{ fontWeight: "bold" }}>javascript</span>
                 </li>
               </Col>
             </Row>
@@ -1478,8 +1476,8 @@ function ResumePage(props) {
                 <span style={{ fontWeight: "bold" }}>Methodology :</span>
               </Col>
               <Col xs={8} lg={8} md={8}>
-                <li>{`Scrum is an agile way to manage a project, usually software development. 
-                                    Agile software development with Scrum is often perceived as a methodology; 
+                <li>{`Scrum is an agile way to manage a project, usually software development.
+                                    Agile software development with Scrum is often perceived as a methodology;
                                     but rather than viewing Scrum as methodology, think of it as a framework for managing a project.`}</li>
               </Col>
             </Row>
@@ -1536,7 +1534,7 @@ function ResumePage(props) {
               </div>
               <Card className="mb-4">
                 <Card.Header>
-                  Mar 2022 / Present  -  3  mos | AlphaPoint | React Native
+                  Mar 2022 / Present  -  9  mos | AlphaPoint | React Native
                   Software Engineer
                 </Card.Header>
                 <Card.Body>
@@ -1561,7 +1559,7 @@ function ResumePage(props) {
                           Diagnose and resolve software issues
                         </li>
                         <li>
-                          Communication Skills
+                          Production Deployment on AppStores (Hauwei, Google, Apple) and OTA Updates.
                         </li>
                         <li>
                           Products:{" "}
@@ -1606,10 +1604,6 @@ function ResumePage(props) {
                           constants, block-scope variables
                         </li>
                         <li>
-                          Assign tasks and responsibilities to the development
-                          team.
-                        </li>
-                        <li>
                           Technical leader in software development projects.
                           Analysis, design, development, implementation, and
                           software maintenance.
@@ -1638,7 +1632,6 @@ function ResumePage(props) {
                   developer
                 </Card.Header>
                 <Card.Body>
-                  <Card.Title>Responsibilities and Achievements</Card.Title>
                   <Card.Text>
                     <p className="container mb-3">
                       <FormattedMessage
@@ -1694,9 +1687,8 @@ function ResumePage(props) {
                 </div>
               </div>
               <Card className="">
-                <Card.Header>Completed</Card.Header>
+                <Card.Header>Software engineer</Card.Header>
                 <Card.Body>
-                  <Card.Title>Software engineer</Card.Title>
                   <Card.Text>
                     <Row>
                       <Col
@@ -1704,8 +1696,7 @@ function ResumePage(props) {
                         lg={(11, { offset: 1 })}
                         md={(11, { offset: 1 })}
                       >
-                        <li>University: Universidad Mariano Gálvez.</li>
-                        <li>Dates: 2012 - 2020</li>
+                        <li>2012 - 2020 - Universidad Mariano Gálvez. | Software engineer</li>
                       </Col>
                     </Row>
                   </Card.Text>
