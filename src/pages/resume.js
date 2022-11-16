@@ -1365,7 +1365,7 @@ function ResumePage(props) {
                               <a href="mailto:alexis_oc@yahoo.es">
                                 alexis_oc@yahoo.es
                               </a>{" "}
-                            </span>{" | "} 
+                            </span>{" | "}
                             <span
                               className=" mt-5 text-center ml-5"
                               style={{ fontsize: "30px;" }}
@@ -1536,8 +1536,8 @@ function ResumePage(props) {
               </div>
               <Card className="mb-4">
                 <Card.Header>
-                  Aug 2020 / Dec 2021 - 1 yr 4 mos | IdeaCodex | IT project
-                  leader
+                  Mar 2022 / Present  -  3  mos | AlphaPoint | React Native
+                  Software Engineer
                 </Card.Header>
                 <Card.Body>
                   <Card.Title>Responsibilities and Achievements</Card.Title>
@@ -1555,17 +1555,55 @@ function ResumePage(props) {
                         md={(11, { offset: 1 })}
                       >
                         <li>
+                          Develop new features and maintain existing features
+                        </li>
+                        <li>
+                          Diagnose and resolve software issues
+                        </li>
+                        <li>
+                          Communication Skills
+                        </li>
+                        <li>
+                          Products:{" "}
+                          <a href="https://chivowallet.com/">www.chivowallet.com</a>{" "}
+                          <br />
+                          <a href="https://play.google.com/store/apps/details?id=com.chivo.wallet">
+                            https://play.google.com/store/apps/details?id=com.chivo.wallet
+                          </a>{" "}
+                        </li>
+                        <p></p>
+                      </Col>
+                    </Row>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card className="mb-4">
+                <Card.Header>
+                  Aug 2020 / Feb 2022 - 1 yr 7 mos | IdeaCodex | IT project
+                  leader
+                </Card.Header>
+                <Card.Body>
+                  <Card.Title>Responsibilities and Achievements</Card.Title>
+                  <Card.Text>
+                    <p className="container mb-3">
+                      <FormattedMessage
+                        id="exp-details-2"
+                        defaultMessage="exp-details-1"
+                      />
+                    </p>
+                    <Row>
+                      <Col
+                        xs={(11, { offset: 1 })}
+                        lg={(11, { offset: 1 })}
+                        md={(11, { offset: 1 })}
+                      >
+                        <li>
                           React Hooks Lifecycle, Push Notifications with Expo's
                           Push API
                         </li>
                         <li>
                           React: Implemented EcmaScript6 (ES6) arrow functions,
                           constants, block-scope variables
-                        </li>
-                        <li>
-                          Took initiative in learning react native and went on
-                          to successfully develop various features under minimal
-                          supervision.
                         </li>
                         <li>
                           Assign tasks and responsibilities to the development
@@ -1649,34 +1687,12 @@ function ResumePage(props) {
           </section>
 
           <section>
-            <Container className="mt-5">
+            <Container className="mt-3">
               <div className="row justify-content-center mb-1 mt-3">
                 <div className="text-center text-primary">
                   <h2 className="mb-1">Education</h2>
                 </div>
               </div>
-              <Card className="">
-                <Card.Header>Current</Card.Header>
-                <Card.Body>
-                  <Card.Title>
-                    Bachelor of Pedagogy and Educational Administration
-                  </Card.Title>
-                  <Card.Text>
-                    <Row>
-                      <Col
-                        xs={(11, { offset: 1 })}
-                        lg={(11, { offset: 1 })}
-                        md={(11, { offset: 1 })}
-                      >
-                        <li>
-                          University: Universidad San Carlos De Guatemala.
-                        </li>
-                        <li>Dates: 2022, Current.</li>
-                      </Col>
-                    </Row>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
               <Card className="">
                 <Card.Header>Completed</Card.Header>
                 <Card.Body>
@@ -1699,7 +1715,7 @@ function ResumePage(props) {
           </section>
 
           <section>
-            <Container className="mt-3">
+            <Container className="mt-2">
               <div className="row justify-content-center mb-1 mt-3">
                 <div className="text-center text-primary">
                   <h2 className="mb-1">Languages</h2>
