@@ -1,22 +1,15 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
-import LinkTranslated from "../LinkTranslated";
 import { StaticImage } from 'gatsby-plugin-image'
 import SimpleLocalize from "../SimpleLocalize";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faEnvelopeOpenText,
-  faMobileAlt,
-  faMap,
-} from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faChrome, faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { Navbar, Container, Offcanvas, Nav, NavDropdown, Row, Col, Button } from 'react-bootstrap';
+import { Navbar, Container, Offcanvas, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 import norellanacEn from "../norellanac-resume.pdf"
 import norellanacEs from "../norellanac-hoja-de-vida.pdf"
-import Header from '../components/header'
 
 function IndexPage(props) {
   // const language = props.pageContext.language;
@@ -71,14 +64,12 @@ function IndexPage(props) {
                     <a
                       className="pl-4 dropdown-item nav-link "
                       href={norellanacEn}
-                      target="_blank"
                     >
                       Dowload | English (Default)
                     </a>
                     <a
                       className="pl-4 dropdown-item nav-link"
                       href={norellanacEs}
-                      target="_blank"
                     >Descargar en Español
                     </a>
                   </NavDropdown>
@@ -424,7 +415,7 @@ function IndexPage(props) {
                     <a href="https://github.com/norellanac">
                       <FontAwesomeIcon style={{ marginRight: 20 }} icon={faGithub} size="1x" />
                     </a>
-                    <a href="https://www.linkedin.com/in/nery-alexis-orellana-cuy-3612888b/">
+                    <a href="https://www.linkedin.com/in/alexis-orellana-3612888b/">
                       <FontAwesomeIcon style={{ marginRight: 20 }} icon={faLinkedin} size="1x" />
                     </a>
                     <a href="https://m.facebook.com/alexis.orellana2">

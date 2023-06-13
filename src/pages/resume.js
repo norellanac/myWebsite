@@ -9,12 +9,13 @@ import {
     Container,
     Col,
     Stack,
-    ProgressBar,
 } from "react-bootstrap";
+import { format, intervalToDuration, formatDuration, parseISO } from 'date-fns'
 
 function ResumePage(props) {
 
     const resume = props.pageContext.messages.data;
+    console.error("resume update: ", resume);
 
     const stars = (num) => {
         let renderStars = "";
@@ -25,14 +26,12 @@ function ResumePage(props) {
     };
 
     const workHistory = resume?.work_history?.map((work) => (
-        console.error("work: ", work),
         <>
             <Stack direction="horizontal" gap={3}>
-                <div className="">
-                    <p>{work.start_date}</p>
-                    <p>{work.end_date}</p>
+                <div className=""> <p>{format(parseISO(work.start_date, "yyyy-mm-dd"), 'MMM, yy', 'pp')} - {format(work.end_date? parseISO(work.end_date, "yyyy-mm-dd") : new Date(), 'MMM,yy', 'pp')} </p>
+                        {formatDuration (intervalToDuration({start: (parseISO(work.start_date, "yyyy-mm-dd")), end: work.end_date? parseISO(work.end_date, "yyyy-mm-dd") : new Date() }), { format: ['years', 'months'] })}
                 </div>
-                <div className="mx-5">
+                <div className="mx-4">
                     <p className="h3">{work.position}</p>
                     <p className="h5">{work.company}</p>
                 </div>
@@ -64,6 +63,8 @@ function ResumePage(props) {
             </Stack>
         </>)
     );
+
+
 
     return (
         <SimpleLocalize {...props}>

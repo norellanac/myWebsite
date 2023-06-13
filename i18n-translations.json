@@ -25,12 +25,12 @@
           ]
         },
         {
-          "start_date": "20202-08-01",
-          "end_date": "2022-01-30",
+          "start_date": "2020-08-01",
+          "end_date": "2022-02-20",
           "is_current": false,
           "company": "IdeaCodex",
           "position": "IT project leader.",
-          "description": "We build an app for our customers, using react native, following the whole software process, requirements, analysis, design and development. We coding the mobile app and deploy on google play store. Today there is more than 500 users in the app enjoying our product experience.",
+          "description": "In addition to technical responsibilities, I excel at coaching and supporting junior developers, ensuring their growth and success within the team. I am adept at communicating with customers and providing support throughout the software development project lifecycle.",
           "tasks": [
             "Implement React Hooks Lifecycle, Push Notifications with Expo's Push API",
             "Implement EcmaScript6 (ES6) arrow functions, constants, block-scope variables",
@@ -248,7 +248,7 @@
           "is_current": true,
           "company": "AlphaPoint",
           "position": "Ingeniero de Software React Native",
-          "description": "El gobierno de El Salvador se asoció con AlphaPoint para desarrollar la infraestructura frontend y backend que alimenta la billetera de bitcoin Chivo, la primera billetera criptográfica nacional del mundo.",
+          "description": "El gobierno de El Salvador se asoció con AlphaPoint para desarrollar la infraestructura frontend y backend que alimenta la billetera de bitcoin Chivo, la primera billetera de cryptomonedas nacional del mundo.",
           "tasks": [
             "Desarrollar nuevas características y mantener las características existentes",
             "Diagnosticar y resolver problemas de software",
@@ -258,18 +258,18 @@
           "achievements": [
             {
               "title": "Chivo Wallet",
-              "description": "Billetera criptográfica",
+              "description": "Billetera de cryptomonedas",
               "url": "www.chivowallet.com"
             }
           ]
         },
         {
           "start_date": "2020-08-01",
-          "end_date": "2022-01-30",
+          "end_date": "2022-02-20",
           "is_current": false,
           "company": "IdeaCodex",
           "position": "Líder de Proyecto de TI",
-          "description": "Creamos una aplicación para nuestros clientes, utilizando React Native, siguiendo todo el proceso de software, desde los requisitos, el análisis, el diseño y el desarrollo. Codificamos la aplicación móvil y la implementamos en Google Play Store. Hoy en día, hay más de 500 usuarios en la aplicación disfrutando de nuestra experiencia de producto.",
+          "description": "Como líder técnico, tengo experiencia en diversas áreas del desarrollo de software. Destaco en brindar capacitación y apoyo a desarrolladores junior, asegurando su crecimiento y éxito dentro del equipo. Tengo habilidades para comunicarme con los clientes y brindar soporte durante todo el ciclo de vida del proyecto de desarrollo de software.",
           "tasks": [
             "Implementar el ciclo de vida de los React Hooks, notificaciones push con la API Push de Expo",
             "Implementar funciones de flecha EcmaScript6 (ES6), constantes, variables de ámbito de bloque",
