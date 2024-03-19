@@ -1,6 +1,5 @@
 import React from "react";
 import {FormattedMessage} from "react-intl";
-import LinkTranslated from "../LinkTranslated";
 import SimpleLocalize from "../SimpleLocalize";
 
 function Header(props) {

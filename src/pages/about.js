@@ -4,8 +4,8 @@ import LinkTranslated from "../LinkTranslated";
 import { StaticImage } from 'gatsby-plugin-image'
 import SimpleLocalize from "../SimpleLocalize";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { Navbar, Container, Offcanvas, Nav, NavDropdown, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'gatsby'
+import { Navbar, Container, Offcanvas, Nav, NavDropdown, Row, Col } from 'react-bootstrap';
 
 function AboutPage(props) {
   // const language = props.pageContext.language;
@@ -45,30 +45,30 @@ function AboutPage(props) {
                   />
                 </LinkTranslated>
                 <NavDropdown title="Lenguage " id="offcanvasNavbarDropdown">
-                <Link
-                className="pl-4 dropdown-item nav-link "
-                to="/"
-                >
-                English (Default)
-                </Link>
-                <Link
-                className="pl-4 dropdown-item nav-link"
-                to="/es/"
-                >Español
-                </Link>
+                  <Link
+                    className="pl-4 dropdown-item nav-link "
+                    to="/"
+                  >
+                    English (Default)
+                  </Link>
+                  <Link
+                    className="pl-4 dropdown-item nav-link"
+                    to="/es/"
+                  >Español
+                  </Link>
                 </NavDropdown>
                 <LinkTranslated
-                className="btn btn-link"
-                href="/about"
+                  className="btn btn-link"
+                  href="/about"
                 >
-                <FormattedMessage
-                id="learn-more-about-us"
-                defaultMessage="Learn more about us"
-                />
+                  <FormattedMessage
+                    id="learn-more-about-us"
+                    defaultMessage="Learn more about us"
+                  />
                 </LinkTranslated>
                 <LinkTranslated
-                className="btn btn-link"
-                href="/resume"
+                  className="btn btn-link"
+                  href="/resume"
                 ></LinkTranslated>
               </Nav>
             </Offcanvas.Body>

@@ -52,7 +52,7 @@
                     <img src="img/logos/instagram.png" width="30" height="30" alt="">
                   </span>
                 </li></a>
-                <a href="https://www.linkedin.com/in/nery-alexis-orellana-cuy-3612888b/" target="_blank"><li class="list-group-item justify-content-between align-items-center">
+                <a href="https://www.linkedin.com/in/alexis-orellana-3612888b/" target="_blank"><li class="list-group-item justify-content-between align-items-center">
                   Linkedin
                   <span class="navbar-brand">
                     <img src="img/logos/linkedin.png" width="30" height="30" alt="">
