@@ -81,7 +81,7 @@ function PrintPage(props) {
                                 </div>
                                 <div className="d-flex align-items-center justify-content-center m-2">
                                     <StaticImage
-                                        src="../img/norellanac.jpeg"
+                                        src="../img/norellanac.JPG"
                                         alt="norellanac"
                                         placeholder="blurred"
                                         layout="fixed"

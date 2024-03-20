@@ -1,4 +1,4 @@
-const messages = require("./i18n-translations.json")
+const messages = require("./public/i18n-translations.json")
 const {languages} = require("./src/i18n");
 const {defaultLanguage} = require("./src/i18n");
 
