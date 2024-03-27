@@ -1,8 +1,8 @@
 
 import { I18n } from 'i18n-js';
 
-import en from "../assets/translations/en.json";
-import es from "../assets/translations/es.json";
+import en from "../../public/translations//en.json";
+import es from "../../public/translations/es.json";
 
 const i18n = new I18n();
 
