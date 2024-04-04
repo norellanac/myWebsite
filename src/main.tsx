@@ -7,6 +7,8 @@ import {
 import './index.css'
 import HomePage from './components/pages/HomePage.tsx';
 import ResumePage from './components/pages/ResumePage.tsx';
+import { LanguageProvider } from './context/LanguageContext.tsx';
+import { MainTemplate } from './components/templates/index.tsx';
 //import App from './App.tsx';
 
 const router = createBrowserRouter([
@@ -19,30 +21,29 @@ const router = createBrowserRouter([
     element: <ResumePage />,
   },
   {
-    path: "/portfolio",
-    element: <div>Contact us</div>,
-  },
-  {
     path: "/terms",
-    element: <div>Terms and conditions</div>,
+    element: <MainTemplate> <div>Terms and conditions</div></MainTemplate>,
   },
   {
     path: "/privacy",
-    element: <div>Privacy policy</div>,
+    element: <MainTemplate> <div>Privacy policy</div></MainTemplate>,
   },
   {
     path: "/404",
-    element: <div>Not found</div>,
+    element: <MainTemplate> <div>Not found</div></MainTemplate>,
   },
   {
     path: "*",
-    element: <div>Not found</div>,
+    element: <MainTemplate> <div>Not found</div></MainTemplate>,
   },
 ]);
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <LanguageProvider>
     <RouterProvider router={router} />
+    </LanguageProvider>
     {/* <App /> */}
   </React.StrictMode>,
 )

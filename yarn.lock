@@ -4605,7 +4605,7 @@ human-signals@^5.0.0:
 
 i18n-js@^4.4.3:
   version "4.4.3"
-  resolved "https://registry.npmjs.org/i18n-js/-/i18n-js-4.4.3.tgz"
+  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-4.4.3.tgz#09744ddd377261f614502cc5622ce6981026ea4a"
   integrity sha512-QIIyvJ+wOKdigL4BlgwiFFrpoXeGdlC8EYgori64YSWm1mnhNYYjIfRu5wETFrmiNP2fyD6xIjVG8dlzaiQr/A==
   dependencies:
     bignumber.js "*"

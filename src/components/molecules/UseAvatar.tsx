@@ -1,11 +1,11 @@
-import { Avatar, IconButton, Typography } from '@mui/material';
+import { Avatar, Button, Typography } from '@mui/material';
 import { publicPath } from '../../constants/gloabals';
 import { LinkItem } from '../atoms';
 export const UserAvatar = () => {
   return (
-    <IconButton sx={{ p: 0 }}>
+    <Button sx={{ p: 0, textTransform: 'none' }} color='inherit'>
       <Avatar sx={{ display: 'flex', mr: 1, flexGrow: 1 }} alt="A" src={`${publicPath}/images/norellanac.jpg`} />
-      <LinkItem to={`/`} color="inherit" relative="path">
+      <LinkItem to={`/`} color="inherit" relative="path" >
         <Typography
           noWrap
           component="a"
@@ -14,13 +14,12 @@ export const UserAvatar = () => {
             display: 'flex',
             fontFamily: 'monospace',
             fontWeight: 700,
-            color: 'inherit',
             textDecoration: 'none',
           }}
         >
           It's me
         </Typography>
       </LinkItem>
-    </IconButton>
+    </Button>
   );
 };

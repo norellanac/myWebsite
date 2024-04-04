@@ -15,9 +15,10 @@ import { Box } from '@mui/material';
 import { Project, TechStack } from '../../types/types';
 import { Theme as MuiTheme } from '@mui/material';
 import { LinkItem } from '../atoms';
+import i18n from '../../utils/i18n';
 
 interface RecipeReviewCardProps {
-  data: Project;
+  key_id: number;
 }
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -35,8 +36,8 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-export const CardItem: React.FC<RecipeReviewCardProps> = ({ data }) => {
-  const { title, description, image, url, tech_stack } = data;
+export const CardItem: React.FC<RecipeReviewCardProps> = ({ key_id }) => {
+  const { title, description, image, url, tech_stack } = i18n.t("portfolio.projects")[key_id] as unknown as  Project;;
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -65,10 +66,12 @@ export const CardItem: React.FC<RecipeReviewCardProps> = ({ data }) => {
       }} />
       <CardContent>
         <Typography variant="h5" component="div">
-          <LinkItem to={url} target="_blank" rel="noopener noreferrer" > {title} </LinkItem>
+          <LinkItem to={url} target="_blank" rel="noopener noreferrer" >
+            {title}
+          </LinkItem>
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {description}
+        {description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -89,7 +92,6 @@ export const CardItem: React.FC<RecipeReviewCardProps> = ({ data }) => {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
           <Typography paragraph>
             {description}
           </Typography>
