@@ -7,6 +7,7 @@ import {
 import './index.css'
 import HomePage from './components/pages/HomePage.tsx';
 import ResumePage from './components/pages/ResumePage.tsx';
+//import App from './App.tsx';
 
 const router = createBrowserRouter([
   {
@@ -42,5 +43,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    {/* <App /> */}
   </React.StrictMode>,
 )
