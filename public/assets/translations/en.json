@@ -192,7 +192,7 @@
             "Expo",
             "React Navigation",
             "React Hooks",
-            "NativeBase UI Library"
+            "ReactNative UI Libraries"
           ],
           "stars": 5
         },
@@ -271,6 +271,14 @@
       ],
       "contact_url": [
         {
+          "title": "alexis_oc@yahoo.es",
+          "url": "mailto:alexis_oc@yahoo.es"
+        },
+        {
+          "title": "+50233120413",
+          "url": "tel:50233120413"
+        },
+        {
           "title": "LinkedIn",
           "url": "https://www.linkedin.com/in/alexis-orellana-3612888b/"
         },
@@ -283,11 +291,11 @@
         },
         {
           "title": "Facebook",
-          "url": "https://m.facebook.com/alexis.orellana2"
+          "url": "https://www.facebook.com/alexis.orellana2"
         },
         {
           "title": "Whatsapp",
-          "url": "https://api.whatsapp.com/send?phone=50233120413"
+          "url": "https://wa.me/50233120413"
         }
       ]
     }

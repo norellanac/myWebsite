@@ -1,14 +1,136 @@
-import { useLanguage } from "../../context/LanguageContext";
-import i18n from "../../utils/i18n";
-import { MainTemplate } from "../templates";
+import { Stack, Typography, Grid, Paper, Box, ListItem, ListItemAvatar, Avatar, ListItemText } from "@mui/material";
+import { format, intervalToDuration, formatDuration, parseISO } from 'date-fns'
+import { publicPath, translationsData } from './../../constants/gloabals';
+import { LinkItem } from "../atoms";
+function ResumePage() {
 
 
-export default function ResumePage() {
-    useLanguage();
+    const resume = translationsData.en.resume;
+    console.error("resume update: ", resume);
+
+    const stars = (num: number) => {
+        let renderStars = "";
+        for (let i = 0; i < num; i++) {
+            renderStars += "★";
+        }
+        return <span> {renderStars} </span>;
+    };
+
+    const workHistory = resume?.work_history?.map((work) => (
+        <Paper key={work.position} elevation={0} style={{ padding: '20px', marginBottom: '20px' }}>
+            <Stack direction="row" spacing={3} sx={{ flexGrow: 1 }}>
+                <div>
+                    <Typography variant="subtitle1">
+                        {format(parseISO(work.start_date), 'MMM, yy')} - {format(work.end_date ? parseISO(work.end_date) : new Date(), 'MMM,yy', {})}
+                    </Typography>
+                    <Typography variant="subtitle1">
+                        {formatDuration(intervalToDuration({ start: parseISO(work.start_date), end: work.end_date ? parseISO(work.end_date) : new Date() }), { format: ['years', 'months'] })}
+                    </Typography>
+                </div>
+                <div>
+                    <Typography variant="h5">{work.position}</Typography>
+                    <Typography variant="h6">{work.company}</Typography>
+                </div>
+            </Stack>
+            <div style={{ marginLeft: "140px" }}>
+                <div>
+                    <Typography>{work.description}</Typography>
+                    <ul>
+                        {work?.tasks?.map((task, index) => (
+                            <li key={index}>{task}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div>
+                    {work.achievements?.map((achievement, index) => (
+                        <Typography key={index} paragraph>
+                            <a href={achievement.url} className="h5">{achievement?.title}</a> | {achievement.description}
+                        </Typography>
+                    ))}
+                </div>
+            </div>
+        </Paper>
+    ));
+
     return (
-        <MainTemplate>
-            <h1>Resume Page</h1>
-            <h1>{i18n.t("portfolio.projects[0].title")}</h1>
-        </MainTemplate>
-    )
+        <Box sx={{ padding: 0, margin: 0 }}>
+            <Grid container spacing={3}>
+                <Grid item xs={12} sx={{ backgroundColor: '#343a40' }}>
+                    <ListItem>
+                        <ListItemAvatar>
+                            <Avatar sx={{ display: 'flex', mr: 5, flexGrow: 1, width: 90, height: 90 }} alt="A" src={`${publicPath}/images/norellanac.jpg`} />
+                        </ListItemAvatar>
+                        <ListItemText children={
+                            <div style={{ flex: 1 }}>
+                                <Typography variant="h4" color="lightgrey">Alexis Orellana</Typography>
+                                <Typography variant="h6" color="lightgrey">React Native Developer</Typography>
+                            </div>
+                        } />
+                    </ListItem>
+                </Grid>
+                <Grid item xs={9}>
+                    <section>
+                        <Typography paragraph>{resume.summary}</Typography>
+                    </section>
+                    <section>
+                        <Typography variant="h5">Experience</Typography>
+                        <hr />
+                        {workHistory}
+                    </section>
+                    <section>
+                        <Typography variant="h5">Education</Typography>
+                        <hr />
+                        <Stack direction="row" spacing={3}>
+                            <div>
+                                <Typography>{resume.education.start_date}</Typography>
+                                <Typography>{resume.education.end_date}</Typography>
+                            </div>
+                            <div>
+                                <Typography variant="h5">{resume.education.title}</Typography>
+                                <Typography variant="h6">{resume.education.school}</Typography>
+                            </div>
+                        </Stack>
+                    </section>
+                </Grid>
+                <Grid item xs={3}>
+                    <section style={{ marginBottom: '5em' }}>
+                        <Typography variant="h5">Contact Info</Typography>
+                        <hr />
+                        <Stack direction="column" spacing={1}>
+                            {resume.contact_url.map((item, index) => (
+                                <ListItem key={index} component="div" disablePadding>
+                                    <LinkItem to={item.url} >{item.title}</LinkItem>
+                                </ListItem>
+                            ))}
+                        </Stack>
+                    </section>
+                    <section style={{ marginBottom: '5em' }}>
+                        <Typography variant="h5">Languages</Typography>
+                        <hr />
+                        <Stack direction="column" spacing={1}>
+                            {resume.languages.map((item, index) => (
+                                <Typography key={index} variant="h6">{item.language} | {item.level}</Typography>
+                            ))}
+                        </Stack>
+                    </section>
+                    <section style={{ marginBottom: '5em' }}>
+                        <Typography variant="h5">Skills</Typography>
+                        <hr />
+                        {resume.tech_skills.map((item, index) => (
+                            <section key={index} style={{marginBottom: 30}}>
+                                <Typography variant="h6">{item.title}{stars(item.stars)}</Typography>
+                                <Stack display="inline" spacing={1}>
+                                    {item.tools.map((tool, index) => (
+                                        <Typography key={index} variant="body2" display="inline-block">{tool} |</Typography>
+                                    ))}
+                                </Stack>
+                            </section>
+                        ))}
+                    </section>
+                </Grid>
+            </Grid>
+        </Box>
+    );
 }
+
+export default ResumePage;
