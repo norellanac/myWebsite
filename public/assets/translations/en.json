@@ -1,12 +1,12 @@
 {
-  "hello": "Hello",
+  "hello": "Hi there!",
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "Check out some of my projects",
+    "subtitle": "Take a look at some of my projects",
     "projects": [
       {
         "title": "Chivo Wallet",
-        "description": "Mobile application with React Native, Redux, push notifications, atomic design, internationalization",
+        "description": "An advanced mobile app developed using React Native and Redux, featuring push notifications, atomic design, and internationalization.",
         "image": "chivo2.png",
         "url": "https://www.chivowallet.com",
         "date": "2022-03-01",
@@ -34,8 +34,8 @@
         ]
       },
       {
-        "title": "Canjeaton App",
-        "description": "Mobile application with React Native, available on Google Play, using Redux, class components, backend with Laravel",
+        "title": "Canjeaton Application",
+        "description": "An innovative mobile app developed with React Native, Redux, and Laravel, available on Google Play Store.",
         "image": "canjeaton.png",
         "url": "https://app.canjeaton.com",
         "date": "2019-07-01",
@@ -63,14 +63,14 @@
         ]
       },
       {
-        "title": "RRHH Payroll",
-        "description": "Web and responsive application for Human Resources System magnament, coded with Laravel Framework, MySQL, and deployed on AWS EC2",
+        "title": "HR Payroll",
+        "description": "A web and mobile-friendly app for Human Resources Management, built with Laravel, MySQL, and hosted on AWS EC2.",
         "image": "payroll2.jpg",
         "url": "https://www.facebook.com/rrhh.payrollgt",
         "date": "2019-07-01",
         "tech_stack": [
           {
-            "name": "Javascript",
+            "name": "JavaScript",
             "icon": "javascript.svg"
           },
           {
@@ -100,31 +100,31 @@
   "resume": {
     "name": "Alexis",
     "full_name": "Alexis Orellana",
-    "position": "React Native Software Engineer",
+    "position": "Senior Developer - React Native",
     "experience": "Experience",
     "education": "Education",
     "languages_title": "Languages",
     "skills": "Skills",
     "contact": "Contact",
-    "summary": "I possess a diverse skill set encompassing the analysis, design, and development of robust software applications. My current area of specialization revolves around creating innovative and high-performing mobile applications using React Native. With over five years of experience in software development, I have accumulated extensive knowledge in various technologies, including the Laravel Framework, Git, Linux, PHP, Docker, MySQL, AWS (EC2), OAuth, Redux, and TypeScript. This breadth of expertise enables me to tackle complex challenges and deliver tailored solutions that exceed client expectations. In addition to my technical prowess, I am highly proficient in problem-solving and possess a keen eye for detail.",
+    "summary": "With over 5 years of experience in software development, I've focused on React Native for the last 2 years. I'm skilled in analysis, design, and robust software development, with expertise in technologies like React Native, Redux, Laravel, Git, Docker, and AWS. My problem-solving approach and ability to deliver tailored solutions have been key to project success.",
     "work_history": [
       {
         "start_date": "2022-03-28",
         "end_date": "",
         "is_current": true,
         "company": "AlphaPoint",
-        "position": "React Native Software Engineer",
-        "description": "The El Salvadoran government partnered with AlphaPoint to develop the frontend and backend infrastructure that powers the Chivo bitcoin wallet, the world’s first national crypto wallet.",
+        "position": "Senior Developer - React Native",
+        "description": "I collaborated with the government of El Salvador to develop the frontend for the Bitcoin Chivo wallet, the world's first national cryptocurrency wallet.",
         "tasks": [
-          "Develop new features and maintain existing features",
-          "Diagnose and resolve software issues",
-          "Production Deployment on AppStores (Hauwei, Google, Apple) and OTA Updates.",
-          "Team code reviews and merge requests proccess"
+          "Developing new features and maintaining existing ones",
+          "Diagnosing and resolving software issues",
+          "Production deployment on AppStores (Hauwei, Google, Apple) and OTA updates",
+          "Team code reviews and merge requests"
         ],
         "achievements": [
           {
             "title": "Chivo Wallet",
-            "description": "Crypto Wallet",
+            "description": "Bitcoin wallet",
             "url": "www.chivowallet.com"
           }
         ]
@@ -134,23 +134,23 @@
         "end_date": "2022-02-20",
         "is_current": false,
         "company": "IdeaCodex",
-        "position": "IT project leader.",
-        "description": "In addition to technical responsibilities, I excel at coaching and supporting junior developers, ensuring their growth and success within the team. I am adept at communicating with customers and providing support throughout the software development project lifecycle.",
+        "position": "IT Project Lead",
+        "description": "I led technical teams and supported junior developers in software development projects. I excel in client communication and ensure successful project delivery.",
         "tasks": [
-          "Implement React Hooks Lifecycle, Push Notifications with Expo's Push API",
-          "Implement EcmaScript6 (ES6) arrow functions, constants, block-scope variables",
-          "Couching and support to junior developers",
-          "Comunication with customers and support to the team on software development projects life cycle"
+          "Implementing React Hooks Lifecycle, Push Notifications with Expo's Push API",
+          "Implementing EcmaScript6 (ES6) arrow functions, constants, block scope variables",
+          "Coaching and supporting junior developers",
+          "Client communication and team support throughout software development project lifecycle"
         ],
         "achievements": [
           {
-            "title": "Web Human Resources System magnament",
-            "description": "Web and responsive application for Human Resources System magnament, coded with Laravel Framework, MySQL, and deployed on AWS EC2",
+            "title": "HR Web System",
+            "description": "Web and mobile-friendly app for Human Resources Management, coded with Laravel, MySQL, and hosted on AWS EC2",
             "url": "www.rrhhpayroll.com"
           },
           {
             "title": "Tecun App",
-            "description": "Mobile application for Tecun Human Resources System magnament, coded with React Native, Redux, and deployed on Google Play Store",
+            "description": "Mobile app for Tecun Human Resources Management System, coded with React Native, Redux, and hosted on Google Play Store",
             "url": "https://play.google.com/store/apps/details?id=com.grupotecun.gtm.tecunapp"
           }
         ]
@@ -161,17 +161,17 @@
         "is_current": false,
         "company": "10x informatica",
         "position": "Full Stack Developer",
-        "description": "We build an app for our customers, using react native, following the whole software process, requirements, analysis, design and development. We coding the mobile app and deploy on google play store. Today there is more than 500 users in the app enjoying our product experience.",
+        "description": "I participated in the full software development cycle, from analysis to deployment of mobile apps using React Native. Contributed to the success of an app with over 1,000 users on Google Play Store.",
         "tasks": [
-          "React: Good understanding and usage of states and props",
-          "Implement React Native Navigation flows, validating user permissions and roles",
-          "Develop Restful Services and APIs. A full user authentication flow",
-          "Analysis, design, and development of web applications, administration of open source software, Magento, Moodle, and WordPress."
+          "React: Good understanding and use of states and props",
+          "Implementing React Native navigation flows, validating user permissions and roles",
+          "Developing RESTful services and APIs. A complete user authentication flow",
+          "Analysis, design, and development of web apps, open-source software management, Magento, Moodle, and WordPress."
         ],
         "achievements": [
           {
-            "title": "Canjeaton App",
-            "description": "Mobile application and web administration for Canjeaton, coded with Laravel,  React Native, Redux, and deployed on production and staging servers",
+            "title": "Canjeaton Application",
+            "description": "Mobile and web admin app for Canjeaton, coded with Laravel, React Native, Redux, and hosted on production and staging servers",
             "url": "https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton"
           }
         ]
@@ -192,7 +192,7 @@
           "Expo",
           "React Navigation",
           "React Hooks",
-          "ReactNative UI Libraries"
+          "ReactNative UI libraries"
         ],
         "stars": 5
       },
@@ -247,12 +247,12 @@
         "stars": 4
       },
       {
-        "title": "OS",
+        "title": "Operating Systems",
         "description": "",
         "tools": [
           "Linux",
           "Windows",
-          "MacOS"
+          "macOS"
         ],
         "stars": 4
       }
@@ -276,7 +276,7 @@
       {
         "title": "+50233120413",
         "icon": "phone.svg",
-        "url": "tel:50233120413"
+        "url": "tel:+50233120413"
       },
       {
         "title": "LinkedIn",
@@ -299,7 +299,7 @@
         "url": "https://www.facebook.com/alexis.orellana2"
       },
       {
-        "title": "Whatsapp",
+        "title": "WhatsApp",
         "icon": "whatsapp.svg",
         "url": "https://wa.me/50233120413"
       }

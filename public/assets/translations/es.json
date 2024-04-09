@@ -1,12 +1,12 @@
 {
-  "hello": "Hola",
+  "hello": "¡Hola!",
   "portfolio": {
     "title": "Portafolio",
     "subtitle": "Echa un vistazo a algunos de mis proyectos",
     "projects": [
       {
         "title": "Chivo Wallet",
-        "description": "Aplicación móvil con React Native, Redux, notificaciones push, diseño atómico, internacionalización",
+        "description": "Una aplicación móvil avanzada desarrollada con React Native y Redux, incluyendo notificaciones push, diseño atómico e internacionalización.",
         "image": "chivo2.png",
         "url": "https://www.chivowallet.com",
         "date": "2022-03-01",
@@ -35,7 +35,7 @@
       },
       {
         "title": "Aplicación Canjeaton",
-        "description": "Aplicación móvil con React Native, disponible en Google Play, utilizando Redux, componentes de clase, backend con Laravel",
+        "description": "Una aplicación móvil innovadora desarrollada con React Native, Redux y Laravel, disponible en Google Play Store.",
         "image": "canjeaton.png",
         "url": "https://app.canjeaton.com",
         "date": "2019-07-01",
@@ -64,13 +64,13 @@
       },
       {
         "title": "Nómina de RRHH",
-        "description": "Aplicación web y responsive para la gestión del Sistema de Recursos Humanos, codificado con el Framework Laravel, MySQL, y desplegado en AWS EC2",
+        "description": "Una aplicación web y responsive para la gestión del Sistema de Recursos Humanos, construida con Laravel, MySQL y desplegada en AWS EC2.",
         "image": "payroll2.jpg",
         "url": "https://www.facebook.com/rrhh.payrollgt",
         "date": "2019-07-01",
         "tech_stack": [
           {
-            "name": "Javascript",
+            "name": "JavaScript",
             "icon": "javascript.svg"
           },
           {
@@ -100,21 +100,21 @@
   "resume": {
     "name": "Alexis",
     "full_name": "Alexis Orellana",
-    "position": "Ingeniero de Software React Native",
+    "position": "Senior Developer - React Native",
     "experience": "Experiencia",
     "education": "Educación",
     "languages_title": "Idiomas",
     "skills": "Habilidades",
     "contact": "Contacto",
-    "summary": "Poseo un conjunto diverso de habilidades que abarcan el análisis, diseño y desarrollo de aplicaciones de software robustas. Mi área actual de especialización gira en torno a la creación de aplicaciones móviles innovadoras y de alto rendimiento utilizando React Native. Con más de cinco años de experiencia en desarrollo de software, he acumulado amplios conocimientos en diversas tecnologías, incluyendo el Framework Laravel, Git, Linux, PHP, Docker, MySQL, AWS (EC2), OAuth, Redux y TypeScript. Esta amplitud de experiencia me permite abordar desafíos complejos y ofrecer soluciones personalizadas que superan las expectativas del cliente. Además de mi destreza técnica, soy altamente competente en la resolución de problemas y tengo un ojo agudo para el detalle.",
+    "summary": "Con más de 5 años de experiencia en desarrollo de software, he dedicado los últimos 2 años de mi carrera especializándome en React Native para la creación de aplicaciones móviles de vanguardia. Soy un profesional altamente competente con habilidades en análisis, diseño y desarrollo de software robusto. Mi experiencia abarca diversas tecnologías incluyendo React Native, Redux, Laravel, Git, Docker, AWS (EC2), entre otros. Mi enfoque en la resolución de problemas y mi capacidad para ofrecer soluciones personalizadas han sido clave en la entrega exitosa de proyectos.",
     "work_history": [
       {
         "start_date": "2022-03-28",
         "end_date": "",
         "is_current": true,
         "company": "AlphaPoint",
-        "position": "Ingeniero de Software React Native",
-        "description": "El gobierno de El Salvador se asoció con AlphaPoint para desarrollar la infraestructura frontend y backend que alimenta la billetera de bitcoin Chivo, la primera billetera de criptomoneda nacional del mundo.",
+        "position": "Senior Developer - React Native",
+        "description": "En colaboración con el gobierno de El Salvador, trabaje en el desarrollo frontend  para la billetera de Bitcoin Chivo, la primera billetera de criptomoneda nacional del mundo.",
         "tasks": [
           "Desarrollar nuevas funcionalidades y mantener las existentes",
           "Diagnosticar y resolver problemas de software",
@@ -124,7 +124,7 @@
         "achievements": [
           {
             "title": "Chivo Wallet",
-            "description": "Billetera criptográfica",
+            "description": "Billetera Bitcoin",
             "url": "www.chivowallet.com"
           }
         ]
@@ -135,7 +135,7 @@
         "is_current": false,
         "company": "IdeaCodex",
         "position": "Líder de Proyecto de IT",
-        "description": "Además de las responsabilidades técnicas, sobresalgo en el coaching y apoyo a desarrolladores junior, asegurando su crecimiento y éxito dentro del equipo. Soy experto en la comunicación con los clientes y proporciono soporte a lo largo del ciclo de vida del proyecto de desarrollo de software.",
+        "description": "Dirigí equipos técnicos y brindé soporte a desarrolladores junior en proyectos de desarrollo de software. Me destaco en la comunicación con los clientes y aseguro la entrega exitosa de los proyectos.",
         "tasks": [
           "Implementar React Hooks Lifecycle, Push Notifications con Expo's Push API",
           "Implementar EcmaScript6 (ES6) arrow functions, constantes, variables de bloque de alcance",
@@ -161,7 +161,7 @@
         "is_current": false,
         "company": "10x informatica",
         "position": "Desarrollador Full Stack",
-        "description": "Construimos una aplicación para nuestros clientes, utilizando React Native, siguiendo todo el proceso de software, requisitos, análisis, diseño y desarrollo. Codificamos la aplicación móvil y la desplegamos en Google Play Store. Hoy en día hay más de 500 usuarios en la aplicación disfrutando de nuestra experiencia de producto.",
+        "description": "Participé en el ciclo completo de desarrollo de software, desde el análisis hasta el despliegue de aplicaciones móviles utilizando React Native. Contribuí al éxito de una aplicación con más de 1,000 usuarios en Google Play Store.",
         "tasks": [
           "React: Buen entendimiento y uso de estados y props",
           "Implementar flujos de navegación de React Native, validando permisos y roles de usuario",
