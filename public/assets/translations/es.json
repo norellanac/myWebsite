@@ -1,13 +1,5 @@
 {
   "hello": "Hola",
-  "home": "Inicio",
-  "pokemon": "Pokémon",
-  "greeting": "¡Hola, soy [Tu Nombre]. ¡Bienvenido a mi sitio web personal!",
-  "about": "Sobre Mí",
-  "experience": "Experiencia",
-  "education": "Educación",
-  "skills": "Habilidades",
-  "contact": "Contacto",
   "portfolio": {
     "title": "Portafolio",
     "subtitle": "Echa un vistazo a algunos de mis proyectos",
@@ -42,8 +34,8 @@
         ]
       },
       {
-        "title": "Canjeaton App",
-        "description": "Aplicación móvil con React Native, disponible en Google Play, usando Redux, componentes de clase, backend con Laravel",
+        "title": "Aplicación Canjeaton",
+        "description": "Aplicación móvil con React Native, disponible en Google Play, utilizando Redux, componentes de clase, backend con Laravel",
         "image": "canjeaton.png",
         "url": "https://app.canjeaton.com",
         "date": "2019-07-01",
@@ -71,8 +63,8 @@
         ]
       },
       {
-        "title": "RRHH Payroll",
-        "description": "Aplicación web y responsive para el Sistema de Gestión de Recursos Humanos, codificado con Laravel Framework, MySQL, y desplegado en AWS EC2",
+        "title": "Nómina de RRHH",
+        "description": "Aplicación web y responsive para la gestión del Sistema de Recursos Humanos, codificado con el Framework Laravel, MySQL, y desplegado en AWS EC2",
         "image": "payroll2.jpg",
         "url": "https://www.facebook.com/rrhh.payrollgt",
         "date": "2019-07-01",
@@ -90,7 +82,7 @@
             "icon": "git.svg"
           },
           {
-            "name": "Base de Datos",
+            "name": "Base de datos",
             "icon": "mysql-database.svg"
           },
           {
@@ -104,10 +96,17 @@
         ]
       }
     ]
-
   },
   "resume": {
-    "summary": "Poseo un conjunto diverso de habilidades que abarcan el análisis, diseño y desarrollo de aplicaciones de software robustas. Mi área actual de especialización gira en torno a la creación de aplicaciones móviles innovadoras y de alto rendimiento utilizando React Native. Con más de cinco años de experiencia en desarrollo de software, he acumulado un amplio conocimiento en varias tecnologías, incluyendo el Framework Laravel, Git, Linux, PHP, Docker, MySQL, AWS (EC2), OAuth, Redux y TypeScript. Esta amplitud de experiencia me permite abordar desafíos complejos y ofrecer soluciones a medida que superan las expectativas del cliente. Además de mi destreza técnica, soy altamente competente en resolución de problemas y poseo un ojo agudo para el detalle.",
+    "name": "Alexis",
+    "full_name": "Alexis Orellana",
+    "position": "Ingeniero de Software React Native",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "languages_title": "Idiomas",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "summary": "Poseo un conjunto diverso de habilidades que abarcan el análisis, diseño y desarrollo de aplicaciones de software robustas. Mi área actual de especialización gira en torno a la creación de aplicaciones móviles innovadoras y de alto rendimiento utilizando React Native. Con más de cinco años de experiencia en desarrollo de software, he acumulado amplios conocimientos en diversas tecnologías, incluyendo el Framework Laravel, Git, Linux, PHP, Docker, MySQL, AWS (EC2), OAuth, Redux y TypeScript. Esta amplitud de experiencia me permite abordar desafíos complejos y ofrecer soluciones personalizadas que superan las expectativas del cliente. Además de mi destreza técnica, soy altamente competente en la resolución de problemas y tengo un ojo agudo para el detalle.",
     "work_history": [
       {
         "start_date": "2022-03-28",
@@ -115,17 +114,17 @@
         "is_current": true,
         "company": "AlphaPoint",
         "position": "Ingeniero de Software React Native",
-        "description": "El gobierno de El Salvador se asoció con AlphaPoint para desarrollar la infraestructura frontend y backend que alimenta la billetera de bitcoins Chivo, la primera billetera nacional de criptomonedas del mundo.",
+        "description": "El gobierno de El Salvador se asoció con AlphaPoint para desarrollar la infraestructura frontend y backend que alimenta la billetera de bitcoin Chivo, la primera billetera de criptomoneda nacional del mundo.",
         "tasks": [
-          "Desarrollar nuevas características y mantener características existentes",
+          "Desarrollar nuevas funcionalidades y mantener las existentes",
           "Diagnosticar y resolver problemas de software",
-          "Despliegue en producción en AppStores (Hauwei, Google, Apple) y actualizaciones OTA.",
-          "Revisiones de código de equipo y proceso de solicitudes de combinación"
+          "Despliegue de producción en AppStores (Hauwei, Google, Apple) y actualizaciones OTA.",
+          "Revisiones de código en equipo y solicitudes de merge"
         ],
         "achievements": [
           {
             "title": "Chivo Wallet",
-            "description": "Billetera de criptomonedas",
+            "description": "Billetera criptográfica",
             "url": "www.chivowallet.com"
           }
         ]
@@ -135,22 +134,23 @@
         "end_date": "2022-02-20",
         "is_current": false,
         "company": "IdeaCodex",
-        "position": "Líder de proyecto de TI.",
-        "description": "Además de las responsabilidades técnicas, sobresalgo en el entrenamiento y apoyo a desarrolladores junior, asegurando su crecimiento y éxito dentro del equipo. Soy hábil en la comunicación con los clientes y proporciono apoyo durante todo el ciclo de vida del proyecto de desarrollo de software.",
+        "position": "Líder de Proyecto de IT",
+        "description": "Además de las responsabilidades técnicas, sobresalgo en el coaching y apoyo a desarrolladores junior, asegurando su crecimiento y éxito dentro del equipo. Soy experto en la comunicación con los clientes y proporciono soporte a lo largo del ciclo de vida del proyecto de desarrollo de software.",
         "tasks": [
-          "Implementar Ciclo de Vida de React Hooks, Notificaciones Push con la API de Push de Expo",
-          "Implementar funciones de flecha EcmaScript6 (ES6), constantes, variables de ámbito de bloque",
-          "Entrenamiento y apoyo a desarrolladores junior",
+          "Implementar React Hooks Lifecycle, Push Notifications con Expo's Push API",
+          "Implementar EcmaScript6 (ES6) arrow functions, constantes, variables de bloque de alcance",
+          "Coaching y apoyo a desarrolladores junior",
           "Comunicación con clientes y apoyo al equipo en el ciclo de vida de los proyectos de desarrollo de software"
         ],
         "achievements": [
           {
-            "title": "Sistema de Gestión de Recursos Humanos web",
-            "description": "Aplicación web y responsive para el Sistema de Gestión de Recursos Humanos, codificado con Laravel Framework, MySQL, y desplegado en AWS EC2",
+            "title": "Sistema Web de Recursos Humanos",
+            "description": "Aplicación web y responsive para la gestión del Sistema de Recursos Humanos, codificado con el Framework Laravel, MySQL, y desplegado en AWS EC2",
             "url": "www.rrhhpayroll.com"
-          }, {
+          },
+          {
             "title": "Aplicación Tecun",
-            "description": "Aplicación móvil para el Sistema de Gestión de Recursos Humanos Tecun, codificado con React Native, Redux, y desplegado en Google Play Store",
+            "description": "Aplicación móvil para la gestión del Sistema de Recursos Humanos Tecun, codificada con React Native, Redux, y desplegada en Google Play Store",
             "url": "https://play.google.com/store/apps/details?id=com.grupotecun.gtm.tecunapp"
           }
         ]
@@ -161,23 +161,23 @@
         "is_current": false,
         "company": "10x informatica",
         "position": "Desarrollador Full Stack",
-        "description": "Construimos una aplicación para nuestros clientes, utilizando react native, siguiendo todo el proceso de software, requisitos, análisis, diseño y desarrollo. Codificamos la aplicación móvil y la implementamos en Google Play Store. Hoy en día hay más de 500 usuarios en la aplicación disfrutando de nuestra experiencia de producto.",
+        "description": "Construimos una aplicación para nuestros clientes, utilizando React Native, siguiendo todo el proceso de software, requisitos, análisis, diseño y desarrollo. Codificamos la aplicación móvil y la desplegamos en Google Play Store. Hoy en día hay más de 500 usuarios en la aplicación disfrutando de nuestra experiencia de producto.",
         "tasks": [
-           "React: Buen entendimiento y uso de estados y props",
+          "React: Buen entendimiento y uso de estados y props",
           "Implementar flujos de navegación de React Native, validando permisos y roles de usuario",
-           "Desarrollar servicios y APIs Restful. Un flujo completo de autenticación de usuario",
-           "Análisis, diseño y desarrollo de aplicaciones web, administración de software de código abierto, Magento, Moodle y WordPress."
+          "Desarrollar servicios y APIs RESTful. Un flujo completo de autenticación de usuario",
+          "Análisis, diseño y desarrollo de aplicaciones web, administración de software de código abierto, Magento, Moodle y WordPress."
         ],
         "achievements": [
           {
             "title": "Aplicación Canjeaton",
-            "description": "Aplicación móvil y administración web para Canjeaton, codificada con Laravel, React Native, Redux, y desplegada en servidores de producción y puesta en escena",
+            "description": "Aplicación móvil y administración web para Canjeaton, codificada con Laravel, React Native, Redux, y desplegada en servidores de producción y staging",
             "url": "https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton"
           }
         ]
       }
     ],
-    "education": {
+    "university": {
       "start_date": "2012-02-01",
       "end_date": "2020-06-30",
       "title": "Ingeniero de Software",
@@ -192,7 +192,7 @@
           "Expo",
           "React Navigation",
           "React Hooks",
-          "Biblioteca de UI NativeBase"
+          "Bibliotecas de UI de ReactNative"
         ],
         "stars": 5
       },
@@ -247,18 +247,16 @@
         "stars": 4
       },
       {
-        "title": "SO",
+        "title": "Sistemas Operativos",
         "description": "",
         "tools": [
           "Linux",
           "Windows",
-          "MacOS"
+          "macOS"
         ],
         "stars": 4
       }
     ],
-    "phone": "50233120413",
-    "email": "alexis_oc@yahoo.es",
     "languages": [
       {
         "language": "Español",
@@ -269,25 +267,41 @@
         "level": "B2"
       }
     ],
-    "contact_url": [
+    "contact_info": [
+      {
+        "title": "alexis_oc@yahoo.es",
+        "icon": "email.svg",
+        "url": "mailto:alexis_oc@yahoo.es"
+      },
+      {
+        "title": "+50233120413",
+        "icon": "phone.svg",
+        "url": "tel:+50233120413"
+      },
       {
         "title": "LinkedIn",
+        "icon": "linkedin.svg",
         "url": "https://www.linkedin.com/in/alexis-orellana-3612888b/"
       },
       {
         "title": "GitHub",
+        "icon": "github.svg",
         "url": "https://github.com/norellanac"
       },
-      {"title": "Instagram",
+      {
+        "title": "Instagram",
+        "icon": "instagram.svg",
         "url": "https://www.instagram.com/norellanac/"
       },
       {
         "title": "Facebook",
-        "url": "https://m.facebook.com/alexis.orellana2"
+        "icon": "facebook.svg",
+        "url": "https://www.facebook.com/alexis.orellana2"
       },
       {
-        "title": "Whatsapp",
-        "url": "https://api.whatsapp.com/send?phone=50233120413"
+        "title": "WhatsApp",
+        "icon": "whatsapp.svg",
+        "url": "https://wa.me/50233120413"
       }
     ]
   }

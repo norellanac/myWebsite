@@ -1,12 +1,18 @@
-import { Stack, Typography, Grid, Paper, Box, ListItem, ListItemAvatar, Avatar, ListItemText } from "@mui/material";
+import { Stack, Typography, Grid, Paper, Box, ListItem, ListItemAvatar, Avatar, ListItemText, Button } from "@mui/material";
 import { format, intervalToDuration, formatDuration, parseISO } from 'date-fns'
-import { publicPath, translationsData } from './../../constants/gloabals';
+import { publicPath } from './../../constants/gloabals';
 import { LinkItem } from "../atoms";
 import i18n from "../../utils/i18n";
+import { useLanguage } from "../../context/LanguageContext";
+import { Resume } from "../../types/";
 
 export function ResumePrintPage() {
-    const resume = translationsData.en.resume;
-    console.error("resume update: ", resume);
+    const { setLanguage, language } = useLanguage();
+    const resume = i18n.t("resume") as  Resume;
+
+    const handleLanguageChange = (newLanguage: string) => {
+        setLanguage(newLanguage);
+    }
 
     const stars = (num: number) => {
         let renderStars = "";
@@ -94,10 +100,10 @@ export function ResumePrintPage() {
                 </Grid>
                 <Grid item xs={3}>
                     <section style={{ marginBottom: '5em' }}>
-                        <Typography variant="h5">{i18n.t('contact')}</Typography>
+                        <Typography variant="h5">{i18n.t('resume.contact')}</Typography>
                         <hr />
                         <Stack direction="column" spacing={1}>
-                            {resume.contact_url.map((item, index) => (
+                            {resume.contact_info.map((item, index) => (
                                 <ListItem key={index} component="div" disablePadding>
                                     <LinkItem to={item.url} >{item.title}</LinkItem>
                                 </ListItem>
@@ -129,6 +135,11 @@ export function ResumePrintPage() {
                     </section>
                 </Grid>
             </Grid>
+            <Stack direction={{ xs: 'row', md: 'column' }} sx={{ position: 'fixed', bottom: '10px', right: '10px', zIndex: 1000, display: {print: 'none'} }}>
+                    <Button onClick={() => handleLanguageChange(language === 'en' ? 'es': 'en' )} sx={{display: {print: 'none'}}}>
+                        <Avatar sx={{ display: {print: 'none'}, mr: 1, height: 30, width: 30 }} alt="A" src={`${publicPath}/images/icons/${'locale.svg'}`} />
+                    </Button>
+            </Stack>
         </Box>
     );
 }

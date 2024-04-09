@@ -12,7 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ImageIcons } from './ImageIcons';
 import { publicPath } from '../../constants/gloabals';
 import { Box } from '@mui/material';
-import { Project, TechStack } from '../../types/types';
+import { Project } from '../../types/types';
 import { Theme as MuiTheme } from '@mui/material';
 import { LinkItem } from '../atoms';
 import i18n from '../../utils/i18n';
@@ -37,7 +37,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
 }));
 
 export const CardItem: React.FC<RecipeReviewCardProps> = ({ key_id }) => {
-  const { title, description, image, url, tech_stack } = i18n.t("portfolio.projects")[key_id] as unknown as  Project;;
+  const { title, description, image, url, tech_stack } = i18n.t("portfolio.projects")[key_id] as unknown as  Project;
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -45,7 +45,7 @@ export const CardItem: React.FC<RecipeReviewCardProps> = ({ key_id }) => {
   };
 
   const renderActionIcons = () => {
-    return tech_stack.map((item: TechStack) => {
+    return tech_stack.map((item) => {
       return (
         <IconButton sx={{ backgroundColor: '#ffffffad', borderRadius: '8px', margin: 1 }} key={item.name}
         >

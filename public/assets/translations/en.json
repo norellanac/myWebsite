@@ -105,6 +105,7 @@
     "education": "Education",
     "languages_title": "Languages",
     "skills": "Skills",
+    "contact": "Contact",
     "summary": "I possess a diverse skill set encompassing the analysis, design, and development of robust software applications. My current area of specialization revolves around creating innovative and high-performing mobile applications using React Native. With over five years of experience in software development, I have accumulated extensive knowledge in various technologies, including the Laravel Framework, Git, Linux, PHP, Docker, MySQL, AWS (EC2), OAuth, Redux, and TypeScript. This breadth of expertise enables me to tackle complex challenges and deliver tailored solutions that exceed client expectations. In addition to my technical prowess, I am highly proficient in problem-solving and possess a keen eye for detail.",
     "work_history": [
       {
@@ -266,7 +267,7 @@
         "level": "B2"
       }
     ],
-    "contact_url": [
+    "contact_info": [
       {
         "title": "alexis_oc@yahoo.es",
         "icon": "email.svg",

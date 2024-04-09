@@ -6,10 +6,9 @@ import {
 } from "react-router-dom";
 import './index.css'
 import HomePage from './components/pages/HomePage.tsx';
-import ResumePage from './components/pages/ResumePage.tsx';
 import { LanguageProvider } from './context/LanguageContext.tsx';
 import { MainTemplate } from './components/templates/index.tsx';
-import { ResumePrintPage } from './components/pages';
+import { ResumePage, ResumePrintPage } from './components/pages';
 //import App from './App.tsx';
 
 const router = createBrowserRouter([
