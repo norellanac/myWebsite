@@ -13,7 +13,7 @@ import { publicPath } from '../../constants/gloabals';
 import { LinkItem } from '../atoms';
 import { useLanguage } from '../../context/LanguageContext';
 
-const pages = ['resume', 'contact'];
+const pages = ['resume'];
 
 export const DrawerAppBar = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);

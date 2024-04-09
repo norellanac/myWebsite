@@ -1,13 +1,5 @@
 {
   "hello": "Hello",
-  "home": "Home",
-  "pokemon": "Pokémon",
-  "greeting": "Hello, I'm [Your Name]. Welcome to my personal website!",
-  "about": "About Me",
-  "experience": "Experience",
-  "education": "Education",
-  "skills": "Skills",
-  "contact": "Contact",
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "Check out some of my projects",
@@ -106,8 +98,13 @@
     ]
   },
   "resume": {
-    "name": "Alexis Orellana",
+    "name": "Alexis",
+    "full_name": "Alexis Orellana",
     "position": "React Native Software Engineer",
+    "experience": "Experience",
+    "education": "Education",
+    "languages_title": "Languages",
+    "skills": "Skills",
     "summary": "I possess a diverse skill set encompassing the analysis, design, and development of robust software applications. My current area of specialization revolves around creating innovative and high-performing mobile applications using React Native. With over five years of experience in software development, I have accumulated extensive knowledge in various technologies, including the Laravel Framework, Git, Linux, PHP, Docker, MySQL, AWS (EC2), OAuth, Redux, and TypeScript. This breadth of expertise enables me to tackle complex challenges and deliver tailored solutions that exceed client expectations. In addition to my technical prowess, I am highly proficient in problem-solving and possess a keen eye for detail.",
     "work_history": [
       {
@@ -179,7 +176,7 @@
         ]
       }
     ],
-    "education": {
+    "university": {
       "start_date": "2012-02-01",
       "end_date": "2020-06-30",
       "title": "Software Engineer",

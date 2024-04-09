@@ -1,6 +1,7 @@
 import { Avatar, Button, Typography } from '@mui/material';
 import { publicPath } from '../../constants/gloabals';
 import { LinkItem } from '../atoms';
+import i18n from '../../utils/i18n';
 export const UserAvatar = () => {
   return (
     <Button sx={{ p: 0, textTransform: 'none' }} color='inherit'>
@@ -17,7 +18,7 @@ export const UserAvatar = () => {
             textDecoration: 'none',
           }}
         >
-          It's me
+          {i18n.t('resume.name')}
         </Typography>
       </LinkItem>
     </Button>
