@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <MainTemplate>
       <Grid container spacing={3}>
-        {projects.map((_item: Project, index) => (
+                {projects.map((_item: Project, index) => (
           <Grid item xs={12} md={6} lg={4} key={index} >
             <CardItem key_id={index} />
           </Grid>

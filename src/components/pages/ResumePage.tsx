@@ -2,6 +2,7 @@ import { Stack, Typography, Grid, Paper, Box, ListItem, ListItemAvatar, Avatar, 
 import { format, intervalToDuration, formatDuration, parseISO } from 'date-fns'
 import { publicPath, translationsData } from './../../constants/gloabals';
 import { LinkItem } from "../atoms";
+import i18n from "../../utils/i18n";
 function ResumePage() {
 
 
@@ -62,8 +63,8 @@ function ResumePage() {
                         </ListItemAvatar>
                         <ListItemText children={
                             <div style={{ flex: 1 }}>
-                                <Typography variant="h4" color="lightgrey">Alexis Orellana</Typography>
-                                <Typography variant="h6" color="lightgrey">React Native Developer</Typography>
+                                <Typography variant="h4" color="lightgrey">{ i18n.t('resume.name')}</Typography>
+                                <Typography variant="h6" color="lightgrey">{ i18n.t('resume.name') }</Typography>
                             </div>
                         } />
                     </ListItem>
@@ -78,7 +79,7 @@ function ResumePage() {
                         {workHistory}
                     </section>
                     <section>
-                        <Typography variant="h5">Education</Typography>
+                        <Typography variant="h5">{ i18n.t('education') }</Typography>
                         <hr />
                         <Stack direction="row" spacing={3}>
                             <div>

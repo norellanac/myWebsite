@@ -11,3 +11,9 @@ export type TechStack = {
     name: string;
     icon: string;
 }
+
+export type ContactIcons = {
+    title: string;
+    icon:  string;
+    url:   string;
+  }
