@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
 import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ImageIcons } from './ImageIcons';
 import { publicPath } from '../../constants/gloabals';
-import { Box } from '@mui/material';
 import { Project } from '../../types/types';
-import { Theme as MuiTheme } from '@mui/material';
+import { Box, Card, CardActions, CardContent, Collapse, Theme as MuiTheme, Typography } from '@mui/material';
 import { LinkItem } from '../atoms';
-import i18n from '../../utils/i18n';
 
 interface RecipeReviewCardProps {
-  key_id: number;
+  data: Project;
 }
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -36,8 +29,8 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-export const CardItem: React.FC<RecipeReviewCardProps> = ({ key_id }) => {
-  const { title, description, image, url, tech_stack } = i18n.t("portfolio.projects")[key_id] as unknown as  Project;
+export const CardItem: React.FC<RecipeReviewCardProps> = ({ data }) => {
+  const { title, description, image, url, tech_stack } = data;
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {

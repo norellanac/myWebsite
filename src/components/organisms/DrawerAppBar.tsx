@@ -1,17 +1,12 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import { Avatar, Drawer, List, ListItem, ListItemButton, ListItemText, Menu, MenuItem } from '@mui/material';
+import { AppBar, Avatar, Box, Container, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Menu, MenuItem, Toolbar, Button } from '@mui/material';
 
 import { UserAvatar } from '../molecules';
 import { publicPath } from '../../constants/gloabals';
 import { LinkItem } from '../atoms';
 import { useLanguage } from '../../context/LanguageContext';
+import i18n from '../../utils/i18n';
 
 const pages = ['resume'];
 
@@ -21,7 +16,7 @@ export const DrawerAppBar = () => {
     React.useState<null | HTMLElement>(null);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  const { setLanguage } = useLanguage();
+  const { setLanguage, language } = useLanguage();
 
   const handleLanguageChange = (newLanguage: string) => {
     handleMobileMenuClose();
@@ -71,16 +66,16 @@ export const DrawerAppBar = () => {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', marginTop: 5 }}>
       <UserAvatar />
       <List>
-        {pages.map((item) => (
-          <LinkItem key={item} to={`/${item}`} color="inherit" relative="path">
-            <ListItem key={item} disablePadding>
+        {pages.map((page) => (
+          <LinkItem key={page} to={`/${page}`} color="inherit" relative="path">
+            <ListItem key={page} disablePadding>
               <ListItemButton sx={{ textAlign: 'center' }}>
-                <ListItemText primary={item} />
+                <ListItemText primary={i18n.t(page + '.title')} />
               </ListItemButton>
             </ListItem>
           </LinkItem>
         ))}
-        <Button variant="outlined" color='secondary' sx={{ textTransform: 'none', marginTop: 1.5 }} size='small' href={`${publicPath}/files/resume-alexis-orellana.pdf`}>Download CV</Button>
+        <Button variant="outlined" color='secondary' sx={{ textTransform: 'none', marginTop: 1.5 }} size='small' href={`${publicPath}/files/resume-alexis-orellana-${language}.pdf`}>{i18n.t('download')}</Button>
       </List>
     </Box>
   );
@@ -94,14 +89,14 @@ export const DrawerAppBar = () => {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <LinkItem key={page} to={`/${page}`} color="inherit" relative="path">
-                  <Button key={page} color="inherit" style={{ textTransform: 'none' }} >{page}</Button>
+                  <Button key={page} color="inherit" style={{ textTransform: 'none' }} >{i18n.t(page + '.title')}</Button>
                 </LinkItem>
               ))}
             </Box>
 
             <Box sx={{ flexGrow: 0, display: 'flex', marginLeft: { xs: 15 } }}>
               <IconButton >
-                <Button variant="outlined" color='secondary' sx={{ display: { xs: 'none', md: 'flex' }, textTransform: 'none' }} size='small' href={`${publicPath}/files/resume-alexis-orellana.pdf`}>Download CV</Button>
+                <Button variant="outlined" color='secondary' sx={{ display: { xs: 'none', md: 'flex' }, textTransform: 'none' }} size='small' href={`${publicPath}/files/resume-alexis-orellana-${language}.pdf`}>{i18n.t('download')}</Button>
               </IconButton>
 
               <IconButton

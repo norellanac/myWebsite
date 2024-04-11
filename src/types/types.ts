@@ -66,14 +66,9 @@ export type WorkHistory = {
     end_date:     string;
     is_current:   boolean;
     company:      string;
+    company_image: string;
     position:     string;
     description:  string;
     tasks:        string[];
-    achievements: Achievement[];
-}
-
-export type Achievement = {
-    title:       string;
-    description: string;
-    url:         string;
+    achievements: Project[];
 }
