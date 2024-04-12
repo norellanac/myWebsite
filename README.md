@@ -1,8 +1,30 @@
-# GatsbyJS: Multi-Language Website Example
+# React + TypeScript + Vite
 
-Building websites with GatsbyJS is super easy, but generating translations for them is a huge pain. This example GitHub repository shows how to quickly to create a multi-language website without any complex setup.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-[Read my blog post](https://simplelocalize.io/blog/posts/gatsby-i18n/) where I'm explaining every part of the code.
+Currently, two official plugins are available:
 
-![multi-language-gatsby-website-example](https://simplelocalize.io/blog/gatsby-multi-language.jpg)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

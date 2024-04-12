@@ -1,0 +1,266 @@
+{
+  "hello": "Hi there!",
+  "download": "Download CV",
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Take a look at some of my projects"
+  },
+  "resume": {
+    "title": "Resume",
+    "name": "Alexis",
+    "full_name": "Alexis Orellana",
+    "position": "Senior Developer - React Native",
+    "experience": "Experience",
+    "education": "Education",
+    "languages_title": "Languages",
+    "skills": "Skills",
+    "contact": "Contact",
+    "summary": "With over 5 years of experience in software development, I've focused on React Native for the last 2 years. I'm skilled in analysis, design, and robust software development, with expertise in technologies like React Native, Redux, Laravel, Git, Docker, and AWS. My problem-solving approach and ability to deliver tailored solutions have been key to project success.",
+    "work_history": [
+      {
+        "start_date": "2022-03-28",
+        "end_date": "",
+        "is_current": true,
+        "company": "AlphaPoint",
+        "company_image": "alphapoint.png",
+        "position": "Senior Developer - React Native",
+        "description": "I collaborated with the government of El Salvador to develop the frontend for the Bitcoin Chivo wallet, the world's first national cryptocurrency wallet.",
+        "tasks": [
+          "Developing new features and maintaining existing ones",
+          "Diagnosing and resolving software issues",
+          "Production deployment on AppStores (Hauwei, Google, Apple) and OTA updates",
+          "Team code reviews and merge requests"
+        ],
+        "achievements": [
+          {
+            "title": "Chivo Wallet",
+            "description": "An advanced mobile app developed using React Native and Redux, featuring push notifications, atomic design, and internationalization.",
+            "image": "chivo2.png",
+            "url": "https://www.chivowallet.com",
+            "date": "2022-03-01",
+            "tech_stack": [
+              {
+                "name": "Expo",
+                "icon": "expo.svg"
+              },
+              {
+                "name": "React Native",
+                "icon": "react.svg"
+              },
+              {
+                "name": "Bitcoin",
+                "icon": "bitcoin.svg"
+              },
+              {
+                "name": "TestFlight",
+                "icon": "apple-appstore.svg"
+              },
+              {
+                "name": "Google Play",
+                "icon": "googleplay.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start_date": "2020-08-01",
+        "end_date": "2022-02-20",
+        "is_current": false,
+        "company": "IdeaCodex",
+        "company_image": "ideacodex.jpeg",
+        "position": "IT Project Lead",
+        "description": "I led technical teams and supported junior developers in software development projects. I excel in client communication and ensure successful project delivery.",
+        "tasks": [
+          "Implementing React Hooks Lifecycle, Push Notifications with Expo's Push API",
+          "Implementing EcmaScript6 (ES6) arrow functions, constants, block scope variables",
+          "Coaching and supporting junior developers",
+          "Client communication and team support throughout software development project lifecycle"
+        ],
+        "achievements": [
+          {
+            "title": "HR Payroll",
+            "description": "A web and mobile-friendly app for Human Resources Management, built with Laravel, MySQL, and hosted on AWS EC2.",
+            "image": "payroll2.jpg",
+            "url": "https://www.facebook.com/rrhh.payrollgt",
+            "date": "2019-07-01",
+            "tech_stack": [
+              {
+                "name": "JavaScript",
+                "icon": "javascript.svg"
+              },
+              {
+                "name": "Docker",
+                "icon": "docker.svg"
+              },
+              {
+                "name": "Git",
+                "icon": "git.svg"
+              },
+              {
+                "name": "Database",
+                "icon": "mysql-database.svg"
+              },
+              {
+                "name": "Laravel",
+                "icon": "laravel.svg"
+              },
+              {
+                "name": "AWS",
+                "icon": "aws.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start_date": "2018-11-01",
+        "end_date": "2020-08-01",
+        "is_current": false,
+        "company": "10x informatica",
+        "company_image": "10x.png",
+        "position": "Full Stack Developer",
+        "description": "I participated in the full software development cycle, from analysis to deployment of mobile apps using React Native. Contributed to the success of an app with over 1,000 users on Google Play Store.",
+        "tasks": [
+          "React: Good understanding and use of states and props",
+          "Implementing React Native navigation flows, validating user permissions and roles",
+          "Developing RESTful services and APIs. A complete user authentication flow",
+          "Analysis, design, and development of web apps, open-source software management, Magento, Moodle, and WordPress."
+        ],
+        "achievements": [
+          {
+            "title": "Canjeaton Application",
+            "description": "An innovative mobile app developed with React Native, Redux, and Laravel, available on Google Play Store.",
+            "image": "canjeaton.png",
+            "url": "https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton",
+            "date": "2019-07-01",
+            "tech_stack": [
+              {
+                "name": "React Native",
+                "icon": "react.svg"
+              },
+              {
+                "name": "Android",
+                "icon": "android-color.svg"
+              },
+              {
+                "name": "iOS",
+                "icon": "apple.svg"
+              },
+              {
+                "name": "Laravel",
+                "icon": "laravel.svg"
+              },
+              {
+                "name": "Redux",
+                "icon": "redux.svg"
+              },
+              {
+                "name": "Kubernetes",
+                "icon": "kubernetes.svg"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "university": {
+      "start_date": "2012-02-01",
+      "end_date": "2020-06-30",
+      "title": "Software Engineer",
+      "school": "Universidad Mariano Gálvez | Guatemala"
+    },
+    "tech_skills": [
+      {
+        "title": "Mobile Development",
+        "tools": [
+          "React Native",
+          "Redux",
+          "Expo",
+          "React Navigation",
+          "React Hooks",
+          "ReactNative UI libraries"
+        ],
+        "stars": 5
+      },
+      {
+        "title": "Web Development",
+        "tools": ["PHP", "Laravel", "MySQL", "JavaScript"],
+        "stars": 4
+      },
+      {
+        "title": "Programming Languages",
+        "tools": ["JavaScript", "PHP", "Java"],
+        "stars": 4
+      },
+      {
+        "title": "Version Control",
+        "tools": ["Git", "GitHub", "GitLab", "Bitbucket"],
+        "stars": 4
+      },
+      {
+        "title": "Tools",
+        "tools": ["Docker", "Postman", "Xcode"],
+        "stars": 4
+      },
+      {
+        "title": "Testing",
+        "tools": ["Jest", "PHPUnit", "Appium", "jest", "webdriverio", "detox"],
+        "stars": 4
+      },
+      {
+        "title": "Operating Systems",
+        "description": "",
+        "tools": ["Linux", "Windows", "macOS"],
+        "stars": 4
+      }
+    ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "B2"
+      }
+    ],
+    "contact_info": [
+      {
+        "title": "alexis_oc@yahoo.es",
+        "icon": "email.svg",
+        "url": "mailto:alexis_oc@yahoo.es"
+      },
+      {
+        "title": "+50233120413",
+        "icon": "phone.svg",
+        "url": "tel:+50233120413"
+      },
+      {
+        "title": "LinkedIn",
+        "icon": "linkedin.svg",
+        "url": "https://www.linkedin.com/in/alexis-orellana-3612888b/"
+      },
+      {
+        "title": "GitHub",
+        "icon": "github.svg",
+        "url": "https://github.com/norellanac"
+      },
+      {
+        "title": "Instagram",
+        "icon": "instagram.svg",
+        "url": "https://www.instagram.com/norellanac/"
+      },
+      {
+        "title": "Facebook",
+        "icon": "facebook.svg",
+        "url": "https://www.facebook.com/alexis.orellana2"
+      },
+      {
+        "title": "WhatsApp",
+        "icon": "whatsapp.svg",
+        "url": "https://wa.me/50233120413"
+      }
+    ]
+  }
+}
