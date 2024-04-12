@@ -67,7 +67,7 @@ export const DrawerAppBar = () => {
       <UserAvatar />
       <List>
         {pages.map((page) => (
-          <LinkItem key={page} to={`/${page}`} color="inherit" relative="path">
+          <LinkItem key={page} to={`/myWebsite/${page}`} color="inherit" relative="path">
             <ListItem key={page} disablePadding>
               <ListItemButton sx={{ textAlign: 'center' }}>
                 <ListItemText primary={i18n.t(page + '.title')} />
@@ -88,7 +88,7 @@ export const DrawerAppBar = () => {
             <UserAvatar />
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <LinkItem key={page} to={`/${page}`} color="inherit" relative="path">
+                <LinkItem key={page} to={`/myWebsite/${page}`} color="inherit" relative="path">
                   <Button key={page} color="inherit" style={{ textTransform: 'none' }} >{i18n.t(page + '.title')}</Button>
                 </LinkItem>
               ))}
