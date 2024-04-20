@@ -9,7 +9,7 @@
     "https://chivostg-lgw.cdnhop.net"
     ],
     "AppRefreshRateSec": 2.5,
-    "MaintenanceMode": false,
+    "MaintenanceMode": true,
     "MaintenanceMessage": "Nos encontramos en mantenimiento",
     "BitgoAccountProviderID": 1,
     "RiverAccountProviderID": 2,
