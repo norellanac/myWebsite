@@ -28,6 +28,6 @@
     2,
     51
     ],
-    "RNPNMaintenanceMode": true,
+    "RNPNMaintenanceMode": false,
     "RNPNMaintenanceMessage": "Esta función no está disponible temporalmente. Para más información comuníquese con el Telecentro."
     }
