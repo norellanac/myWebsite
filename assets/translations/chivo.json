@@ -1,0 +1,33 @@
+{
+    "APEXRestGateway": "https://chivostg-gw.cdnhop.net",
+    "APEXRestGatewayList": [
+    "https://chivostg-gw.cdnhop.net"
+    ],
+    "UseLightGateway": true,
+    "LightGatewayRestURL": "https://chivostg-lgw.cdnhop.net",
+    "LightGatewayRestURLList": [
+    "https://chivostg-lgw.cdnhop.net"
+    ],
+    "AppRefreshRateSec": 2.5,
+    "MaintenanceMode": false,
+    "MaintenanceMessage": "Nos encontramos en mantenimiento",
+    "BitgoAccountProviderID": 1,
+    "RiverAccountProviderID": 2,
+    "SerfinsaAccountID": 2657032,
+    "BillPayAccountID": 63,
+    "BancoHipotecarioAccountProviderID": 3,
+    "BancoAgricolaAccountProviderID": 5,
+    "LightGatewayAccTxInfoItemsCount": 16,
+    "BancoAgricolaMessageStartTime": 900,
+    "BancoAgricolaMessageEndTime": 1400,
+    "BancoAgricolaServiceMessage": "Las solicitudes de pago de servicios realizadas en este momento se pagaran el día habil siguiente. ¿Desea continuar?",
+    "LoanConfigJson": "https://chivolgconfig.cdnhop.net/firstloan.json",
+    "UseAsyncPasscodeRecovery240": true,
+    "AllowedVerificationLevelsForLoanAcceptance": [
+    1,
+    2,
+    51
+    ],
+    "RNPNMaintenanceMode": false,
+    "RNPNMaintenanceMessage": "Esta función no está disponible temporalmente. Para más información comuníquese con el Telecentro."
+    }
