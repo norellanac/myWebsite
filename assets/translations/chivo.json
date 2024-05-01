@@ -20,6 +20,6 @@
 "LoanConfigJson": "https://chivolgconfig.cdnhop.net/firstloan.json",
 "UseAsyncPasscodeRecovery240": true,
 "AllowedVerificationLevelsForLoanAcceptance": [1,2,51],
-"RNPNMaintenanceMode": false,
+"RNPNMaintenanceMode": true,
 "RNPNMaintenanceMessage": "Esta función no está disponible temporalmente. Para más información comuníquese con el Telecentro."
 }
