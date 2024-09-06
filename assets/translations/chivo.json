@@ -21,5 +21,6 @@
 "UseAsyncPasscodeRecovery240": true,
 "AllowedVerificationLevelsForLoanAcceptance": [1,2,51],
 "RNPNMaintenanceMode": false,
-"RNPNMaintenanceMessage": "Esta función no está disponible temporalmente. Para más información comuníquese con el Telecentro."
+"RNPNMaintenanceMessage": "Esta función no está disponible temporalmente. Para más información comuníquese con el Telecentro.",
+"TermsAndConditionsEnabled": true
 }
