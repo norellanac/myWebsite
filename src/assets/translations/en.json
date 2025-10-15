@@ -24,9 +24,52 @@
     "summary": "Senior React Native Developer with 5+ years of software development expertise, specializing in mobile applications for the past 3+ years. Successfully delivered high-impact solutions including El Salvador's national cryptocurrency wallet serving 4+ million users. Expert in React Native, TypeScript, Redux, and cloud services (AWS). Proven track record of leading cross-functional teams, architecting scalable applications, and implementing performance optimizations that reduce load times by 40%. Passionate about clean code practices, automated testing, and delivering solutions that solve complex business challenges.",
     "work_history": [
       {
-        "start_date": "2024-04-01",
+        "start_date": "2024-10-01",
         "end_date": "",
         "is_current": true,
+        "company": "ByteCode LATAM",
+        "company_image": "bytecode.jpeg",
+        "position": "Tech Lead & Senior Consultant",
+        "description": "Lead technical consulting and mentoring for startups and SMEs across Latin America. Architect MVP solutions and provide strategic technology guidance for scaling businesses. Focus on React Native mobile development and full-stack web solutions.",
+        "tasks": [
+          "Lead technical architecture and development strategy for startup MVP projects",
+          "Mentor development teams on React Native, React, and modern JavaScript technologies",
+          "Provide technical consulting for scaling mobile and web applications",
+          "Design and implement full-stack solutions using React, Node.js, and cloud services",
+          "Guide startups through technical decision-making and technology stack selection"
+        ],
+        "achievements": [
+          {
+            "title": "Reco Platform MVP",
+            "description": "Led the development of Reco, a comprehensive platform connecting users with verified local professionals (plumbers, electricians, mechanics, etc.). Features real-time matching, user reviews, secure payments, and community-driven recommendations. Built as both web platform and mobile application for cross-platform reach.",
+            "image": "reco.jpg",
+            "url": "https://recolatam.com/",
+            "date": "2024-10-01",
+            "tech_stack": [
+              {
+                "name": "React",
+                "icon": "react.svg"
+              },
+              {
+                "name": "React Native",
+                "icon": "react.svg"
+              },
+              {
+                "name": "Node.js",
+                "icon": "nodejs.svg"
+              },
+              {
+                "name": "AWS",
+                "icon": "aws.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start_date": "2024-04-01",
+        "end_date": "",
+        "is_current": false,
         "company": "Tractics",
         "company_image": "tractics.png",
         "position": "Senior React Native Engineer",

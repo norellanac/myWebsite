@@ -24,9 +24,52 @@
     "summary": "Desarrollador Senior React Native con más de 5 años de experiencia en desarrollo de software, especializado en aplicaciones móviles durante los últimos 3+ años. He entregado exitosamente soluciones de alto impacto incluyendo la billetera nacional de criptomonedas de El Salvador que sirve a más de 4 millones de usuarios. Experto en React Native, TypeScript, Redux y servicios en la nube (AWS). Historial comprobado liderando equipos multifuncionales, arquitectando aplicaciones escalables e implementando optimizaciones de rendimiento que reducen los tiempos de carga en un 40%. Apasionado por las prácticas de código limpio, pruebas automatizadas y la entrega de soluciones que resuelven desafíos empresariales complejos.",
     "work_history": [
       {
-        "start_date": "2024-04-01",
+        "start_date": "2024-10-01",
         "end_date": "",
         "is_current": true,
+        "company": "ByteCode LATAM",
+        "company_image": "bytecode.jpeg",
+        "position": "Líder Técnico y Consultor Senior",
+        "description": "Lidero consultoría técnica y mentoría para startups y PYMEs en América Latina. Arquitecto soluciones MVP y proporciono orientación tecnológica estratégica para empresas en crecimiento. Enfoque en desarrollo móvil React Native y soluciones web full-stack.",
+        "tasks": [
+          "Liderar arquitectura técnica y estrategia de desarrollo para proyectos MVP de startups",
+          "Mentoría a equipos de desarrollo en React Native, React y tecnologías JavaScript modernas",
+          "Proporcionar consultoría técnica para escalar aplicaciones móviles y web",
+          "Diseñar e implementar soluciones full-stack usando React, Node.js y servicios en la nube",
+          "Guiar a startups en la toma de decisiones técnicas y selección de stack tecnológico"
+        ],
+        "achievements": [
+          {
+            "title": "Plataforma MVP Reco",
+            "description": "Lideré el desarrollo de Reco, una plataforma integral que conecta usuarios con profesionales locales verificados (plomeros, electricistas, mecánicos, etc.). Incluye matching en tiempo real, reseñas de usuarios, pagos seguros y recomendaciones impulsadas por la comunidad. Construida como plataforma web y aplicación móvil para alcance multiplataforma.",
+            "image": "reco.jpg",
+            "url": "https://recolatam.com/",
+            "date": "2024-10-01",
+            "tech_stack": [
+              {
+                "name": "React",
+                "icon": "react.svg"
+              },
+              {
+                "name": "React Native",
+                "icon": "react.svg"
+              },
+              {
+                "name": "Node.js",
+                "icon": "nodejs.svg"
+              },
+              {
+                "name": "AWS",
+                "icon": "aws.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start_date": "2024-04-01",
+        "end_date": "",
+        "is_current": false,
         "company": "Tractics",
         "company_image": "tractics.png",
         "position": "Ingeniero Senior React Native",
