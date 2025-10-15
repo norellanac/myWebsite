@@ -79,7 +79,26 @@ export function ResumePrintPage() {
                         <Typography paragraph>{resume.summary}</Typography>
                     </section>
                     <section>
-                        <Typography variant="h5">{i18n.t('resume.experience')}</Typography>
+                        <Typography variant="h5">
+                            {i18n.t('resume.experience')} ({(() => {
+                                const duration = intervalToDuration({ 
+                                    start: parseISO('2018-11-01'), 
+                                    end: new Date() 
+                                });
+                                const years = duration.years || 0;
+                                const months = duration.months || 0;
+                                const yearText = years === 1 ? i18n.t('common.year') : i18n.t('common.years');
+                                const monthText = months === 1 ? i18n.t('common.month') : i18n.t('common.months');
+                                
+                                if (years > 0 && months > 0) {
+                                    return `${years} ${yearText} ${months} ${monthText}`;
+                                } else if (years > 0) {
+                                    return `${years} ${yearText}`;
+                                } else {
+                                    return `${months} ${monthText}`;
+                                }
+                            })()})
+                        </Typography>
                         <hr />
                         {workHistory}
                     </section>

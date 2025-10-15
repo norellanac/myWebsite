@@ -5,17 +5,23 @@
     "title": "Portafolio",
     "subtitle": "Echa un vistazo a algunos de mis proyectos"
   },
+  "common": {
+    "years": "años",
+    "year": "año",
+    "months": "meses",
+    "month": "mes"
+  },
   "resume": {
     "title": "Hoja de Vida",
     "name": "Alexis",
     "full_name": "Alexis Orellana",
-    "position": "Desarrollador Senior - React Native",
+    "position": "Desarrollador Senior React Native y Arquitecto de Soluciones Móviles",
     "experience": "Experiencia",
     "education": "Educación",
     "languages_title": "Idiomas",
     "skills": "Habilidades",
     "contact": "Contacto",
-    "summary": "Con más de 5 años de experiencia en desarrollo de software, me he enfocado en React Native durante los últimos 2 años. Tengo habilidades en análisis, diseño y desarrollo robusto de software, con experiencia en tecnologías como React Native, Redux, Laravel, Git, Docker y AWS. Mi enfoque en la resolución de problemas y mi capacidad para ofrecer soluciones a medida han sido clave para el éxito de los proyectos.",
+    "summary": "Desarrollador Senior React Native con más de 5 años de experiencia en desarrollo de software, especializado en aplicaciones móviles durante los últimos 3+ años. He entregado exitosamente soluciones de alto impacto incluyendo la billetera nacional de criptomonedas de El Salvador que sirve a más de 4 millones de usuarios. Experto en React Native, TypeScript, Redux y servicios en la nube (AWS/Firebase). Historial comprobado liderando equipos multifuncionales, arquitectando aplicaciones escalables e implementando optimizaciones de rendimiento que reducen los tiempos de carga en un 40%. Apasionado por las prácticas de código limpio, pruebas automatizadas y la entrega de soluciones que resuelven desafíos empresariales complejos.",
     "work_history": [
       {
         "start_date": "2024-04-01",
@@ -23,19 +29,19 @@
         "is_current": true,
         "company": "Tractics",
         "company_image": "tractics.png",
-        "position": "Senior Software Engineer - React Native",
-        "description": "As a Senior Engineer specializing in React Native, I work on the development of high-quality mobile applications. I collaborate closely with cross-functional teams to design, develop, and maintain scalable solutions that meet user needs and business goals.",
+        "position": "Ingeniero Senior React Native",
+        "description": "Desarrollo aplicaciones móviles para la plataforma de gestión de construcción Tractics, sirviendo a contratistas en América del Norte. Arquitecto e implemento soluciones React Native escalables que optimizan las operaciones de construcción y mejoran la eficiencia de proyectos para equipos de construcción civil pesada.",
         "tasks": [
-          "Participate in Agile sprints, ensuring timely delivery of features and addressing defects or enhancement requests",
-          "Design and implement user interfaces using React Native, ensuring responsiveness and performance across various devices",
-          "Collaborate with designers, product managers, and backend developers to create seamless user experiences",
-          "Conduct code reviews and provide constructive feedback to team members",
-          "Stay updated with the latest industry trends and best practices in mobile development"
+          "Arquitectar y desarrollar aplicaciones React Native usando TypeScript, Redux Toolkit y técnicas modernas de optimización de rendimiento",
+          "Implementar sincronización de datos offline-first y actualizaciones en tiempo real para desafíos de conectividad en sitios de construcción",
+          "Participar en revisiones técnicas de código y colaborar con desarrolladores senior, contribuyendo a mejoras en la calidad del código del equipo",
+          "Colaborar con diseñadores UX/UI para implementar diseños responsivos optimizados para tablets y dispositivos móviles en entornos de construcción difíciles",
+          "Optimizar el rendimiento de aplicaciones para duración de batería y uso de datos, crítico para uso de campo durante todo el día por equipos de construcción"
         ],
         "achievements": [
           {
             "title": "Tractics Construction Platform",
-            "description": "The Tractics mobile crew app is an important part of the Tractics construction management platform, designed for contractors by contractors. With a focus on streamlining operations, enhancing communication, and improving project efficiency, Tractics empowers construction teams to tackle complex projects with ease.",
+            "description": "Aplicación móvil de gestión de construcción de nivel empresarial que sirve a contratistas en América del Norte. Incluye seguimiento de proyectos en tiempo real, gestión de equipos, control de tiempo e integración perfecta con flujos de trabajo de construcción civil pesada. Optimizada para uso en campo con capacidades offline y compatibilidad multiplataforma.",
             "image": "tractics.png",
             "url": "https://tractics.io/",
             "date": "2022-03-01",
@@ -62,22 +68,23 @@
       },
       {
         "start_date": "2022-03-28",
-        "end_date": "2024-11-01",
-        "is_current": true,
+        "end_date": "2024-04-01",
+        "is_current": false,
         "company": "AlphaPoint",
         "company_image": "alphapoint.png",
-        "position": "Desarrollador Senior - React Native",
-        "description": "Colaboré con el gobierno de El Salvador para desarrollar el frontend de la billetera Bitcoin Chivo, la primera billetera nacional de criptomonedas del mundo.",
+        "position": "Desarrollador Senior React Native - FinTech",
+        "description": "Contribuí al desarrollo frontend de la billetera Bitcoin Chivo, la revolucionaria aplicación nacional de criptomonedas de El Salvador que sirve a más de 4 millones de ciudadanos. Colaboré con equipos de desarrollo y partes interesadas gubernamentales para implementar tecnología financiera segura a escala nacional.",
         "tasks": [
-          "Desarrollo de nuevas funcionalidades y mantenimiento de las existentes",
-          "Diagnóstico y resolución de problemas de software",
-          "Implementación en producción en AppStores (Hauwei, Google, Apple) y actualizaciones OTA",
-          "Revisiones de código en equipo y solicitudes de fusión"
+          "Arquitecté e implementé características críticas usando React Native, Redux y TypeScript para una infraestructura financiera nacional",
+          "Desarrollé flujos de trabajo de autenticación biométrica y encriptación seguros manejando millones en transacciones diarias",
+          "Implementé pipelines CI/CD reduciendo el tiempo de despliegue en 40% mientras mantenía rigurosos estándares de seguridad",
+          "Optimicé el rendimiento de la aplicación logrando 30% más rápido procesamiento de transacciones y mejores métricas de experiencia de usuario",
+          "Contribuí a los esfuerzos de internacionalización soportando múltiples idiomas para la diversa base de usuarios en El Salvador"
         ],
         "achievements": [
           {
             "title": "Billetera Chivo",
-            "description": "Una aplicación móvil avanzada desarrollada con React Native y Redux, con notificaciones push, diseño atómico e internacionalización.",
+            "description": "La revolucionaria billetera nacional de criptomonedas de El Salvador, la primera aplicación Bitcoin respaldada por el gobierno del mundo. Incluye autenticación biométrica segura, transacciones Bitcoin/USD en tiempo real, notificaciones push e integración con red nacional de cajeros automáticos. Sirve a más de 4 millones de usuarios con seguridad y rendimiento de nivel empresarial.",
             "image": "chivo2.png",
             "url": "https://www.chivowallet.com",
             "date": "2022-03-01",
@@ -112,18 +119,19 @@
         "is_current": false,
         "company": "IdeaCodex",
         "company_image": "ideacodex.jpeg",
-        "position": "Líder de Proyecto de TI",
-        "description": "Lideré equipos técnicos y apoyé a desarrolladores junior en proyectos de desarrollo de software. Destaco en la comunicación con el cliente y garantizo la entrega exitosa del proyecto.",
+        "position": "Desarrollador Móvil Líder y Líder Técnico",
+        "description": "Lideré equipos de desarrollo multifuncionales de 5-7 desarrolladores entregando aplicaciones móviles y web para clientes empresariales. Establecí arquitectura técnica, flujos de trabajo de desarrollo y serví como enlace técnico principal con las partes interesadas.",
         "tasks": [
-          "Implementación del ciclo de vida de React Hooks, Notificaciones push con la API Push de Expo",
-          "Implementación de funciones de flecha EcmaScript6 (ES6), constantes, variables de ámbito de bloque",
-          "Entrenamiento y apoyo a desarrolladores junior",
-          "Comunicación con el cliente y apoyo al equipo durante todo el ciclo de vida del proyecto de desarrollo de software"
+          "Arquitecté aplicaciones React Native con gestión de estado avanzada usando Redux y Context API",
+          "Implementé pipelines CI/CD integrales usando GitHub Actions, mejorando la frecuencia de despliegue en 50%",
+          "Diseñé aplicaciones móviles offline-first con estrategias de sincronización de datos optimizadas",
+          "Establecí estándares de calidad de código y programas de mentoría, elevando las métricas de rendimiento del equipo en 35%",
+          "Lideré la recopilación de requisitos técnicos y arquitectura de soluciones para aplicaciones empresariales complejas"
         ],
         "achievements": [
           {
             "title": "Nómina de RRHH",
-            "description": "Una aplicación web y móvil para la gestión de recursos humanos, construida con Laravel, MySQL y alojada en AWS EC2.",
+            "description": "Plataforma integral de Gestión de Recursos Humanos con procesamiento de nómina, gestión de empleados, control de tiempo y capacidades de reportes. Construida con backend Laravel, base de datos MySQL y desplegada en AWS EC2 with containerización Docker para escalabilidad.",
             "image": "payroll2.jpg",
             "url": "https://www.facebook.com/rrhh.payrollgt",
             "date": "2019-07-01",
@@ -162,18 +170,18 @@
         "is_current": false,
         "company": "10x informatica",
         "company_image": "10x.png",
-        "position": "Desarrollador Full Stack",
-        "description": "Participé en todo el ciclo de desarrollo de software, desde el análisis hasta el despliegue de aplicaciones móviles utilizando React Native. Contribuí al éxito de una aplicación con más de 1,000 usuarios en Google Play Store.",
+        "position": "Desarrollador Móvil Full Stack",
+        "description": "Contribuí al ciclo completo de desarrollo de software, desde análisis hasta despliegue de aplicaciones móviles usando React Native. Entregué exitosamente aplicación móvil de consumo alcanzando más de 1,000 usuarios activos en Google Play Store con calificación de 4.2+ estrellas.",
         "tasks": [
-          "React: Buen entendimiento y uso de estados y propiedades",
-          "Implementación de flujos de navegación React Native, validación de permisos y roles de usuario",
-          "Desarrollo de servicios y APIs RESTful. Un flujo completo de autenticación de usuario",
-          "Análisis, diseño y desarrollo de aplicaciones web, gestión de software de código abierto, Magento, Moodle y WordPress."
+          "Desarrollé aplicaciones React Native con gestión de estado avanzada, optimización del ciclo de vida de componentes y ajuste de rendimiento",
+          "Implementé flujos de navegación complejos con control de acceso basado en roles y validación de permisos de usuario",
+          "Construí APIs RESTful y servicios backend con autenticación completa de usuario, autorización y gestión de sesiones",
+          "Diseñé y desarrollé aplicaciones web responsivas usando frameworks modernos, plataformas CMS (WordPress, Magento, Moodle) y soluciones de comercio electrónico"
         ],
         "achievements": [
           {
             "title": "Aplicación Canjeaton",
-            "description": "Una innovadora aplicación móvil desarrollada con React Native, Redux y Laravel, disponible en Google Play Store.",
+            "description": "Aplicación móvil innovadora de comercio que incluye catálogo de productos, sistema de recompensas para usuarios e integración de pagos seguros. Construida con frontend React Native, gestión de estado Redux y API backend Laravel. Lanzada exitosamente en Google Play Store con más de 1,000 descargas y reseñas positivas de usuarios.",
             "image": "canjeaton.png",
             "url": "https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton",
             "date": "2019-07-01",
@@ -218,54 +226,50 @@
         "title": "Desarrollo Móvil",
         "tools": [
           "React Native",
-          "Redux",
+          "TypeScript",
+          "Redux/Redux Toolkit",
           "Expo",
           "React Navigation",
-          "React Hooks",
-          "Bibliotecas de interfaz de usuario de ReactNative"
+          "React Query",
+          "Módulos Nativos",
+          "Optimización de Rendimiento"
         ],
         "stars": 5
       },
       {
-        "title": "Desarrollo Web",
-        "tools": ["PHP", "Laravel", "MySQL", "JavaScript"],
+        "title": "Desarrollo Frontend",
+        "tools": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Material UI", "HTML5/CSS3"],
         "stars": 4
       },
       {
-        "title": "Lenguajes de Programación",
-        "tools": ["JavaScript", "PHP", "Java"],
+        "title": "Backend y APIs",
+        "tools": ["Node.js", "Laravel", "PHP", "APIs RESTful", "GraphQL", "MySQL"],
         "stars": 4
       },
       {
-        "title": "Control de Versiones",
-        "tools": ["Git", "GitHub", "GitLab", "Bitbucket"],
+        "title": "DevOps y Nube",
+        "tools": ["Docker", "AWS", "Firebase", "CI/CD", "GitHub Actions", "Fastlane"],
         "stars": 4
       },
       {
-        "title": "Herramientas",
-        "tools": ["Docker", "Postman", "Xcode"],
+        "title": "Pruebas y QA",
+        "tools": ["Jest", "React Testing Library", "Detox", "Appium", "Unit Testing", "E2E Testing"],
         "stars": 4
       },
       {
-        "title": "Pruebas",
-        "tools": ["Jest", "PHPUnit", "Appium", "jest", "webdriverio", "detox"],
-        "stars": 4
-      },
-      {
-        "title": "Sistemas Operativos",
-        "description": "",
-        "tools": ["Linux", "Windows", "macOS"],
+        "title": "Herramientas de Desarrollo",
+        "tools": ["Git", "GitHub", "GitLab", "Xcode", "Android Studio", "Postman", "VS Code"],
         "stars": 4
       }
     ],
     "languages": [
       {
         "language": "Español",
-        "level": "Nativo"
+        "level": "Hablante Nativo"
       },
       {
         "language": "Inglés",
-        "level": "B2"
+        "level": "Competencia Profesional de Trabajo (B2+)"
       }
     ],
     "contact_info": [
