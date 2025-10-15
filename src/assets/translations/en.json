@@ -21,7 +21,7 @@
     "languages_title": "Languages",
     "skills": "Skills",
     "contact": "Contact",
-    "summary": "Senior React Native Developer with 5+ years of software development expertise, specializing in mobile applications for the past 3+ years. Successfully delivered high-impact solutions including El Salvador's national cryptocurrency wallet serving 4+ million users. Expert in React Native, TypeScript, Redux, and cloud services (AWS/Firebase). Proven track record of leading cross-functional teams, architecting scalable applications, and implementing performance optimizations that reduce load times by 40%. Passionate about clean code practices, automated testing, and delivering solutions that solve complex business challenges.",
+    "summary": "Senior React Native Developer with 5+ years of software development expertise, specializing in mobile applications for the past 3+ years. Successfully delivered high-impact solutions including El Salvador's national cryptocurrency wallet serving 4+ million users. Expert in React Native, TypeScript, Redux, and cloud services (AWS). Proven track record of leading cross-functional teams, architecting scalable applications, and implementing performance optimizations that reduce load times by 40%. Passionate about clean code practices, automated testing, and delivering solutions that solve complex business challenges.",
     "work_history": [
       {
         "start_date": "2024-04-01",
@@ -33,7 +33,6 @@
         "description": "Develop mobile applications for Tractics construction management platform, serving contractors across North America. Architect and implement scalable React Native solutions that streamline construction operations and enhance project efficiency for heavy civil construction teams.",
         "tasks": [
           "Architect and develop React Native applications using TypeScript, Redux Toolkit, and modern performance optimization techniques",
-          "Implement offline-first data synchronization and real-time updates for construction site connectivity challenges",
           "Participate in technical code reviews and collaborate with senior developers, contributing to team code quality improvements",
           "Collaborate with UX/UI designers to implement responsive designs optimized for tablets and mobile devices in harsh construction environments",
           "Optimize app performance for battery life and data usage, critical for all-day field usage by construction crews"
@@ -78,7 +77,7 @@
           "Architected and implemented critical features using React Native, Redux, and TypeScript for a national financial infrastructure",
           "Developed secure biometric authentication and encryption workflows handling millions in daily transactions", 
           "Implemented CI/CD pipelines reducing deployment time by 40% while maintaining rigorous security standards",
-          "Optimized app performance achieving 30% faster transaction processing and improved user experience metrics",
+          "Optimized app performance and improved user experience metrics",
           "Contributed to internationalization efforts supporting multiple languages for diverse user base across El Salvador"
         ],
         "achievements": [
@@ -123,7 +122,7 @@
         "description": "Led cross-functional development teams of 5-7 developers delivering mobile and web applications for enterprise clients. Established technical architecture, development workflows, and served as primary technical liaison with stakeholders.",
         "tasks": [
           "Architected React Native applications with advanced state management using Redux and Context API",
-          "Implemented comprehensive CI/CD pipelines using GitHub Actions, improving deployment frequency by 50%", 
+          "Implemented comprehensive CI/CD pipelines improving deployment frequency by 50%", 
           "Designed offline-first mobile applications with optimized data synchronization strategies",
           "Established code quality standards and mentoring programs, raising team performance metrics by 35%",
           "Led technical requirement gathering and solution architecture for complex enterprise applications"
@@ -243,12 +242,12 @@
       },
       {
         "title": "Backend & APIs",
-        "tools": ["Node.js", "Laravel", "PHP", "RESTful APIs", "GraphQL", "MySQL"],
+        "tools": ["Node.js", "Laravel", "PHP", "RESTful APIs", "MySQL"],
         "stars": 4
       },
       {
         "title": "DevOps & Cloud",
-        "tools": ["Docker", "AWS", "Firebase", "CI/CD", "GitHub Actions", "Fastlane"],
+        "tools": ["Docker", "AWS", "CI/CD"],
         "stars": 4
       },
       {

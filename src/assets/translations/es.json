@@ -21,7 +21,7 @@
     "languages_title": "Idiomas",
     "skills": "Habilidades",
     "contact": "Contacto",
-    "summary": "Desarrollador Senior React Native con más de 5 años de experiencia en desarrollo de software, especializado en aplicaciones móviles durante los últimos 3+ años. He entregado exitosamente soluciones de alto impacto incluyendo la billetera nacional de criptomonedas de El Salvador que sirve a más de 4 millones de usuarios. Experto en React Native, TypeScript, Redux y servicios en la nube (AWS/Firebase). Historial comprobado liderando equipos multifuncionales, arquitectando aplicaciones escalables e implementando optimizaciones de rendimiento que reducen los tiempos de carga en un 40%. Apasionado por las prácticas de código limpio, pruebas automatizadas y la entrega de soluciones que resuelven desafíos empresariales complejos.",
+    "summary": "Desarrollador Senior React Native con más de 5 años de experiencia en desarrollo de software, especializado en aplicaciones móviles durante los últimos 3+ años. He entregado exitosamente soluciones de alto impacto incluyendo la billetera nacional de criptomonedas de El Salvador que sirve a más de 4 millones de usuarios. Experto en React Native, TypeScript, Redux y servicios en la nube (AWS). Historial comprobado liderando equipos multifuncionales, arquitectando aplicaciones escalables e implementando optimizaciones de rendimiento que reducen los tiempos de carga en un 40%. Apasionado por las prácticas de código limpio, pruebas automatizadas y la entrega de soluciones que resuelven desafíos empresariales complejos.",
     "work_history": [
       {
         "start_date": "2024-04-01",
@@ -33,7 +33,6 @@
         "description": "Desarrollo aplicaciones móviles para la plataforma de gestión de construcción Tractics, sirviendo a contratistas en América del Norte. Arquitecto e implemento soluciones React Native escalables que optimizan las operaciones de construcción y mejoran la eficiencia de proyectos para equipos de construcción civil pesada.",
         "tasks": [
           "Arquitectar y desarrollar aplicaciones React Native usando TypeScript, Redux Toolkit y técnicas modernas de optimización de rendimiento",
-          "Implementar sincronización de datos offline-first y actualizaciones en tiempo real para desafíos de conectividad en sitios de construcción",
           "Participar en revisiones técnicas de código y colaborar con desarrolladores senior, contribuyendo a mejoras en la calidad del código del equipo",
           "Colaborar con diseñadores UX/UI para implementar diseños responsivos optimizados para tablets y dispositivos móviles en entornos de construcción difíciles",
           "Optimizar el rendimiento de aplicaciones para duración de batería y uso de datos, crítico para uso de campo durante todo el día por equipos de construcción"
@@ -77,8 +76,8 @@
         "tasks": [
           "Arquitecté e implementé características críticas usando React Native, Redux y TypeScript para una infraestructura financiera nacional",
           "Desarrollé flujos de trabajo de autenticación biométrica y encriptación seguros manejando millones en transacciones diarias",
-          "Implementé pipelines CI/CD reduciendo el tiempo de despliegue en 40% mientras mantenía rigurosos estándares de seguridad",
-          "Optimicé el rendimiento de la aplicación logrando 30% más rápido procesamiento de transacciones y mejores métricas de experiencia de usuario",
+          "Implementé pipelines CI/CD reduciendo el tiempo de despliegue en 40%",
+          "Optimicé el rendimiento y mejores en las métricas de experiencia de usuario",
           "Contribuí a los esfuerzos de internacionalización soportando múltiples idiomas para la diversa base de usuarios en El Salvador"
         ],
         "achievements": [
@@ -123,7 +122,7 @@
         "description": "Lideré equipos de desarrollo multifuncionales de 5-7 desarrolladores entregando aplicaciones móviles y web para clientes empresariales. Establecí arquitectura técnica, flujos de trabajo de desarrollo y serví como enlace técnico principal con las partes interesadas.",
         "tasks": [
           "Arquitecté aplicaciones React Native con gestión de estado avanzada usando Redux y Context API",
-          "Implementé pipelines CI/CD integrales usando GitHub Actions, mejorando la frecuencia de despliegue en 50%",
+          "Implementé pipelines CI/CD integrales mejorando la frecuencia de despliegue en 50%",
           "Diseñé aplicaciones móviles offline-first con estrategias de sincronización de datos optimizadas",
           "Establecí estándares de calidad de código y programas de mentoría, elevando las métricas de rendimiento del equipo en 35%",
           "Lideré la recopilación de requisitos técnicos y arquitectura de soluciones para aplicaciones empresariales complejas"
@@ -243,12 +242,12 @@
       },
       {
         "title": "Backend y APIs",
-        "tools": ["Node.js", "Laravel", "PHP", "APIs RESTful", "GraphQL", "MySQL"],
+        "tools": ["Node.js", "Laravel", "PHP", "APIs RESTful", "MySQL"],
         "stars": 4
       },
       {
         "title": "DevOps y Nube",
-        "tools": ["Docker", "AWS", "Firebase", "CI/CD", "GitHub Actions", "Fastlane"],
+        "tools": ["Docker", "AWS", "CI/CD"],
         "stars": 4
       },
       {
