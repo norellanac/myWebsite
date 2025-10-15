@@ -18,9 +18,52 @@
     "summary": "With over 5 years of experience in software development, I've focused on React Native for the last 2 years. I'm skilled in analysis, design, and robust software development, with expertise in technologies like React Native, Redux, Laravel, Git, Docker, and AWS. My problem-solving approach and ability to deliver tailored solutions have been key to project success.",
     "work_history": [
       {
-        "start_date": "2022-03-28",
+        "start_date": "2024-04-01",
         "end_date": "",
         "is_current": true,
+        "company": "Tractics",
+        "company_image": "tractics.png",
+        "position": "Senior Software Engineer - React Native",
+        "description": "As a Senior Engineer specializing in React Native, I work on the development of high-quality mobile applications. I collaborate closely with cross-functional teams to design, develop, and maintain scalable solutions that meet user needs and business goals.",
+        "tasks": [
+          "Participate in Agile sprints, ensuring timely delivery of features and addressing defects or enhancement requests",
+          "Design and implement user interfaces using React Native, ensuring responsiveness and performance across various devices",
+          "Collaborate with designers, product managers, and backend developers to create seamless user experiences",
+          "Conduct code reviews and provide constructive feedback to team members",
+          "Stay updated with the latest industry trends and best practices in mobile development"
+        ],
+        "achievements": [
+          {
+            "title": "Tractics Construction Platform",
+            "description": "The Tractics mobile crew app is an important part of the Tractics construction management platform, designed for contractors by contractors. With a focus on streamlining operations, enhancing communication, and improving project efficiency, Tractics empowers construction teams to tackle complex projects with ease.",
+            "image": "tractics.webp",
+            "url": "https://tractics.io/",
+            "date": "2022-03-01",
+            "tech_stack": [
+              {
+                "name": "Expo",
+                "icon": "expo.svg"
+              },
+              {
+                "name": "React Native",
+                "icon": "react.svg"
+              },
+              {
+                "name": "TestFlight",
+                "icon": "apple-appstore.svg"
+              },
+              {
+                "name": "Google Play",
+                "icon": "googleplay.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "start_date": "2022-03-28",
+        "end_date": "2024-11-01",
+        "is_current": false,
         "company": "AlphaPoint",
         "company_image": "alphapoint.png",
         "position": "Senior Developer - React Native",
@@ -131,7 +174,7 @@
           {
             "title": "Canjeaton Application",
             "description": "An innovative mobile app developed with React Native, Redux, and Laravel, available on Google Play Store.",
-            "image": "canjeaton.png",
+            "image": "canjeaton3.png",
             "url": "https://play.google.com/store/apps/details?id=com.tenxinformatica.gt.canjeaton",
             "date": "2019-07-01",
             "tech_stack": [
