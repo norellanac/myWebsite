@@ -14,7 +14,7 @@ const FloatingActionButtons = ({ data }: FloatingActionButtons) => {
       {data.map((item: ContactInfo, index: number) => (
         <div className="floating-button">
           <LinkItem key={index} to={item.url}>
-          <Avatar sx={{ display: 'flex', mr: 1, height: 30, width: 30 }} alt="A" src={`${publicPath}/images/icons/${item.icon}`} />
+          <Avatar sx={{ display: 'flex', mr: 1, height: 30, width: 30, backgroundColor: 'white' }} alt="A" src={`${publicPath}/images/icons/${item.icon}`} />
           </LinkItem>
         </div>
       ))}
